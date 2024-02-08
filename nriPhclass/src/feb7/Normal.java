@@ -1,10 +1,13 @@
 package feb7;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 import java.util.TreeSet;
@@ -22,6 +25,12 @@ public class Normal {
 		arr[1] = 45456  ;
 		arr[2] = 45465  ;
 		arr[3] = 475  ;
+		
+	
+		
+		
+		
+		
 		
 		
 		
@@ -201,13 +210,96 @@ for( int  i =0  ;i<st.size() ;i++) {
 		
 		
 		
-	    List l = new ArrayList<>() ;
-	    l.add("saschin") ;
-	    l.add(2323) ;
+	    Object[] ariiir = sss.toArray() ;
 	    
+	   
+	   boolean b =   sss.contains(89999) ;
+	   
+	   System.out.println(b);
+	   
+	   
+ 	   List <Integer> ii  = new ArrayList<>() ;
+ 	   ii.add(232) ;
+ 	   ii.add(2334) ;
+ 	  ii.add(24) ;
+ 	 ii.add(4) ;
+ 	 ii.add(8) ;
+ 	 ii.add(null) ;
+ 	 ii.add(null) ;
+ 	 ii.add(null) ;
+ 	 
+ 	// ii.add("Aschin") ;
+ 	 
+ 	 
+ 	 int[] arrrtr  = new int [2] ;
+ 	 
+ 	   
+ 	 
+ 	 for (Integer qq :ii) {
+ 		 System.out.println(qq);
+ 	 }
+ 	   
 		
-		
-		
+ 	 
+ 	 System.out.println("=======================");
+ 	 
+ 	 LinkedList <Integer>  ledlist = new LinkedList<>() ;
+ 	ledlist.add(2323) ; // jab ye save ho raha hai tab do chije save hoogi phle ye kuch cvalue and second hai vo aagli valye ka address 
+ 	ledlist.add(3) ;
+ 	ledlist.add(6) ; // 6 k baad 12 
+ 	ledlist.add(7) ;
+ 	ledlist.add(8) ;
+ 	System.out.println(ledlist);
+ 	for(Integer kk :ledlist) {
+ 		System.out.println(kk);
+ 	}
+ 	
+ 	
+ 	
+// 	Sachin :85 
+// 	punam  :33 
+// 	
+// 	akshay :85
+// 	null :
+//   asdasdf: null 
+//   sdfasdff:null
+   
+ 	
+  	
+ 	
+ 	Map<String , Integer > mp  = new LinkedHashMap<>() ;
+ 	//mp.add("345324543" ,234543) ;
+ 	
+ 	mp.put("sachin" , 35) ;
+ 	
+ 	mp.put("vikas " ,56) ;
+ 	mp.put("raha " ,56666) ;
+ 	mp.put("paneer " ,536) ;
+ 	mp.put("tejas " ,546) ;
+ 	mp.put("surbhi " ,5766) ;
+ 	mp.put("akshy " ,5986) ;  
+ 	
+
+ 	//  Set se=mp.entrySet();
+ 	
+ 	for ( Map.Entry<String, Integer> e:mp.entrySet()) {
+ 		System.out.println(e.getKey() +" " + e.getValue());
+ 		
+ 	}
+	
+	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	 
+ 	 
+ 	 
 		
 		
 	}
