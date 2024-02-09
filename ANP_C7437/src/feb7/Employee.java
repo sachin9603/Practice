@@ -9,6 +9,9 @@ public class Employee {
 	
 	
 	public int salary() {
+		
+		// suppose 100 line 
+		
 		return 70000 ;
 		
 	}

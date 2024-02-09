@@ -29,6 +29,7 @@ public static void main(String[] args) {
 	
 	
 	MehgiClass mg5   =  MehgiClass.getobjOFMehgiClass();
+	
 	MehgiClass mg3   =   MehgiClass.getobjOFMehgiClass();
 	MehgiClass mg4   =  MehgiClass.getobjOFMehgiClass();
 	

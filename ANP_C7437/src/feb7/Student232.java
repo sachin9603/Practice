@@ -1,8 +1,9 @@
 package feb7;
 
-public class Student232
-{
-/// encapsulation ,abstrction  , inheritance  , polymorphishm 
+import java.util.Objects;
+
+public class Student232 {
+    // encapsulation ,abstrction  , inheritance  , polymorphishm 
 	
 	// java bean kese banati or iska kya purpose 
 	
@@ -26,8 +27,8 @@ public class Student232
 		return studentId;
 	}
 
-	public void setStudentId(int studentId) {
-		this.studentId = studentId;
+	public void setStudentId(int d) {
+		this.studentId = d;
 	}
 
 	public String getStudentName() {
@@ -94,7 +95,29 @@ public class Student232
 	public String toString() {
 		return "Student232 [studentId=" + studentId + ", studentName=" + studentName + ", marks=" + marks + "]";
 	}
+
 	
+	
+	
+	
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(marks, studentId, studentName);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student232 other = (Student232) obj;
+		return marks == other.marks && studentId == other.studentId && Objects.equals(studentName, other.studentName);
+	}
+//	
 	
 	
 	// by implementing a method called toString 

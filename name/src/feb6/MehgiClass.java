@@ -12,9 +12,6 @@ public class MehgiClass {
 	// ek private satatic variable  of same class type  
 	
 	
-	
-	
-	
 	private static MehgiClass mgc  ;
 	
 	

@@ -54,12 +54,31 @@ public class Basic {
 		
 		
 		
-		Employee sa = new FrontEnd() ;
+		FrontEnd sa = new FrontEnd() ;
 		
 		sa.id = 56565 ;
 		sa.name  = "raja " ;
 		
+	int ans =	sa.add(12, 13) ;
+	System.out.println(ans);
+		
+	int ans1 =	sa.add(12, 13 , 45) ;
+	System.out.println(ans1);
+		
+	
+	
+		
+		
 		System.out.println(sa.salary());
+		
+		
+		Employee sap = new Fullstack() ;
+		
+		sap.id = 56565 ;
+		sap.name  = "raja babu " ;
+		System.out.println(sap.salary());
+		
+		
 		
 		
 		
