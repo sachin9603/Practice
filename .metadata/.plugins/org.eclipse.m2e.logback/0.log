@@ -106,3 +106,5 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whites
 	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
 	... 26 common frames omitted
 2024-02-08 12:50:06,763 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-09 10:34:23,343 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-09 16:31:38,843 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

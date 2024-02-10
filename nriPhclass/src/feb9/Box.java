@@ -7,7 +7,9 @@ public class Box <color , size>{
  }
  
   public void sizrre (Integer size) {
-	  System.out.println("is box ka size "  +size );
+	  System.out.println("is box ka size "  + size );
   }
+  
+  
 
 }

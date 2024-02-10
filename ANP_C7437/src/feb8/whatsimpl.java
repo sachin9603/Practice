@@ -7,5 +7,10 @@ public class whatsimpl extends whatsapp {
 		// TODO Auto-generated method stub
 		System.out.println("what s message has been sent ");
 	}
+	
+	// construtor 
+//	public whatsimpl () {
+//		super() ;
+//	}
 
 }

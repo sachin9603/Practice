@@ -3,7 +3,7 @@ package feb9;
 import java.util.* ;
 import java.util.Map.Entry;
 
-public class Mpa {
+public class Mpa  {
 	
 	
 	public static void main(String[] args) {
@@ -62,21 +62,24 @@ public class Mpa {
 				System.out.println(e.getKey() +" -------> " + e.getValue());
 			}
 			
-			ArrayList l  = new ArrayList<>() ;
+			ArrayList <String> l  = new ArrayList() ;
 			
 			l.add("Sachin") ;
-			l.add(4324234) ;
-			l.add('c') ;
-			l.add(true) ;
-			
+//			l.add(4324234) ;
+//			l.add('c') ;
+//			l.add(true) ;
+//			
 			System.out.println(l);
 			
 			
 			
+			
+			Box <>b  = new Box;
 			
 		
 		
 		
 	}
 
+	
 }
