@@ -12,9 +12,7 @@ public class Bank {
 			
 		}
 	}
-	
 	public static void main(String[] args) {
-		
 		try {
 			login("sachin@123.gmail" , "1234") ;
 		} catch (LoginException e) {
