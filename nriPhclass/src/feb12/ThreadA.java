@@ -1,7 +1,7 @@
 package feb12;
 
-public class ThreadA  extends Thread{
-
+public class ThreadA  extends Thread {
+///extends Thread  --- toh iski 
 	
 	@Override
 	public void run() {

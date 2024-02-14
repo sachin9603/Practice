@@ -1,6 +1,6 @@
 package feb12;
 
-public class Multi implements Runnable {
+public class Multi implements Runnable , Comparable<Multi>{
 	
 	
 // run method k ander vo saari method likhna hai jo aap main thread k parallel mai chalana  chhate 

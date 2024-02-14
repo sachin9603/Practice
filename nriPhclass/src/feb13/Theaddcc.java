@@ -2,7 +2,7 @@ package feb13;
 
 public class Theaddcc  implements Runnable 
 {
-	
+	// toh inheritance property abhi bhi hai 
 	int  sum   =0  ;
 
 	@Override

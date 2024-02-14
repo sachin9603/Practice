@@ -5,7 +5,11 @@ public class MultiThreaddd2 implements Runnable  {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		
+		// 5 
+		// 1 it is for minimum
+		// 10 it is for maximum 
+		// getName 
+		//setname 
 		
 		String name   = Thread.currentThread().getName() ;
 		Thread.currentThread().setPriority(10);
