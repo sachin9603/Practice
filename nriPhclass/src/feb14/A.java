@@ -15,6 +15,9 @@ public class A implements Runnable {
 			sum += i ;
 			
 		}
+		// 5055
+		
+		//10000 line 
 	}
 	
 	

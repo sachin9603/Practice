@@ -8,11 +8,13 @@ public class Mainm {
 	public static void main(String[] args) {
 		Common c  = new Common() ;// yaha par ek lock bhi create hotahai 
 		
-		Common c1  = new Common() ;
+		Common c2  = new Common() ;
 		
-		ThreadA a  = new ThreadA(c , "Banesingh") ;
+		// classlevel lock chahiye static bhi or synchronized
 		
-		ThreadB b  =new ThreadB(c1 , "Bhupender jogi") ;
+		ThreadA a = new ThreadA(c , "Banesingh") ;
+		
+		ThreadB b = new ThreadB(c2 , "Bhupender jogi") ;
 		
 		a.start(); 
 		b.start();
