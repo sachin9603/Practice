@@ -1,0 +1,41 @@
+package Tender.Usecase;
+
+import java.util.Scanner;
+
+import Tender.Exception.AdminException;
+import Tender.Model.Vender;
+import Tender.dao.adminDao;
+import Tender.dao.adminDaoImpl;
+
+public class registerVenderByAdmin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		 
+		int VId = sc.nextInt();
+		String VName = sc.next();
+		String VUsername = sc.next();
+		String VPassword = sc.next();
+		
+		Vender vender = new Vender();
+		
+		adminDao dao = new adminDaoImpl();
+		
+		try {
+			String result = dao.registerVender(vender);
+			System.out.println(result);
+		} catch (AdminException e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		
+		
+
+		
+		
+
+	}
+
+}

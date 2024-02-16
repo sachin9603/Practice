@@ -8,6 +8,7 @@ public static void main(String[] args) {
 	System.out.println(t1.sss);
 	synchronized(t1) {
 		try {
+			
 			t1.wait();// lock release
 				
 				System.out.println(" main fir se chalu hogaya ");

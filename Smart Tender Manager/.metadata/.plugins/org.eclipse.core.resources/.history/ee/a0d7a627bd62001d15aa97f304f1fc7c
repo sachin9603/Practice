@@ -1,0 +1,79 @@
+package Tender.Mainclasses;
+
+import java.util.Scanner;
+
+import Tender.Exception.AdminException;
+import Tender.Model.Admin;
+import Tender.dao.adminDao;
+import Tender.daoImpl.adminDaoImpl;
+
+public class adminmain {
+	
+//	The Role of Administrator is: 
+//		1. Login with his account.
+//		2. Register new Vendor. (assign a new username and password to him)
+//		3. View all the vendors.
+//		4. Create new tenders.
+//		5. View All the Tenders.
+//		6. View All the Bids of a tender.
+//		7. Assign tender to a vendor.
+	
+	
+	public static adminDao dao = new adminDaoImpl();
+	public static Scanner sc =  new Scanner (System.in);
+	
+	
+	public static void Admintask() {
+		
+		
+	System.out.println(" Login into your account.");
+	
+	System.out.println("admin enter your user name ");
+	 String username = sc.next();
+	 
+	 System.out.println("Enter Your Password");
+	 String password = sc.next();
+	 
+	Admin ans = dao.loginIntoAdmin( username , password) ;
+	System.out.println(ans);
+			
+		if(ans != null){
+					System.out.println("Welcome "+ username);
+					
+					while(true) {
+						System.out.println("Enter Your Choice");
+						System.out.println("  2  for  Register new Vendor. (assign a new username and password to him)");
+						System.out.println("  3 View all the vendors");
+						System.out.println("  4 Create new tenders.");
+						System.out.println("  5 View All the Tenders.");
+						System.out.println("  6 Assign tender to a vendor .");
+						
+						System.out.println("  7 to exit.");	
+					}
+					
+					
+				}else {
+					System.out.println("wrong user name and password ");
+				}
+				
+				
+				
+				
+			} catch (AdminException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			break;
+		case 2 : 
+			System.out.println("Thank You");
+			return;
+			
+		}
+		
+		
+		
+		
+	}
+	
+
+}

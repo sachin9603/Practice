@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+E:\vs code\dead-juice-5954\Smart Tender Manager\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3747779379.index
+1112575695.index
+40201870.index

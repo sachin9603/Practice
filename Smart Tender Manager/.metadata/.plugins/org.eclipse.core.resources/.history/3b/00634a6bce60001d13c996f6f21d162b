@@ -1,0 +1,10 @@
+package Tender.Usecase;
+
+public class getAllVender {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,123 @@
+package Tender.dao;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.mysql.cj.xdevapi.Result;
+
+import Tender.Exception.AdminException;
+import Tender.Exception.VenderException;
+import Tender.Model.Vender;
+
+import Tender.utility.Dao;
+
+public class adminDaoImpl implements adminDao{
+
+	@Override
+	public String loginIntoAdmin(String AUsername, String APassword) throws AdminException{
+		
+		// Admin is hardcoded  if correct username and password is present then message is login
+		String message = "Not Login";
+		
+		if(AUsername == "sachin" && APassword == "sachin7410") {
+			message = "Login";
+		}
+		return message ;
+	}
+
+	@Override
+	public String registerVender(Vender vender) throws AdminException{
+		//if user is adimn then it will allow 
+		
+		String result = "vender not registered";
+		
+		try(Connection conn = Dao.provideConnection()){
+		PreparedStatement   ps = conn.prepareStatement("insert into vender values (?,?,?,?)");
+		
+		ps.setInt(1, vender.getVid());
+		ps.setString(2, vender.getVname());
+		ps.setString(3, vender.getUsername());
+		ps.setString(4, vender.getPassword());
+		
+			int x = ps.executeUpdate();
+			if (x > 0 ) {
+				result = "verder register Succesfully ";
+			}
+			
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new AdminException(e.getMessage());
+			
+		}
+		
+		
+	
+		
+		
+		
+		
+		
+		return result;
+		
+		
+		
+	}
+
+	@Override
+	public List<Vender> getAllVender() throws VenderException {
+		 List<Vender> venders = new ArrayList<>();
+			try(Connection conn = Dao.provideConnection()){
+				
+				PreparedStatement ps = conn.prepareStatement("select * from vender" );
+				
+				ResultSet rs = ps.executeQuery();
+				
+				while(rs.next()) {
+					int Vid = rs.getInt("VId");
+					String Vname = rs.getString("VName");
+					String VUsername = rs.getString("VUsername");
+					String VPassword = rs.getString("VUsername");
+					
+					Vender vender = new Vender ();
+					vender.setVid(Vid);
+					vender.setVname(Vname);
+					vender.setUsername(VUsername);
+					vender.setPassword(VPassword);
+					
+					venders.add(vender);
+					
+					
+				}
+				
+//				
+//				for (Vender vender : vendes) {
+//					System.out.println(vender);
+//				}
+//				
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+		
+				
+			}
+			
+			
+			
+			return venders;
+		
+	
+	}
+
+	
+
+}

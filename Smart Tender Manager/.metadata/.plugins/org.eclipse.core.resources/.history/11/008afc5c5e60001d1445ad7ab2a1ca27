@@ -1,0 +1,13 @@
+package Tender.dao;
+
+import Tender.Exception.AdminException;
+import Tender.Model.Vender;
+
+public interface adminDao {
+	
+
+  public String loginIntoAdmin(String AUsername,String APassword) throws AdminException;
+  
+  public String registerVender(Vender vernder) throws AdminException;
+ 
+}

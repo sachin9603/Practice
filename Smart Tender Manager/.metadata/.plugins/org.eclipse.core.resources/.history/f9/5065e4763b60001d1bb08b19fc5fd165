@@ -1,0 +1,5 @@
+package Tender.utility;
+
+public class DBUtil {
+
+}

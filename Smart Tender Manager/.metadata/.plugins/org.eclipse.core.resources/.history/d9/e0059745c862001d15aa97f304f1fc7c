@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+import Tender.Mainclasses.adminmain;
+
+public class Main {
+	
+	public static adminmain adminobj = new adminmain();
+public static void main(String[] args) {
+	
+	System.out.println("enter your choice ");
+	System.out.println("1 for admin ");
+
+	System.out.println("2 for vender ");
+
+	System.out.println("3 for exit ");
+	
+	Scanner sc = new Scanner(System.in);
+	
+	int a = sc.nextInt();
+	
+
+	if(a==1){
+		
+		adminobj.Admintask();
+	}else if(a==2) {
+		
+		
+	}else if(a==3) {
+	return;
+	};
+
+	
+}
+}

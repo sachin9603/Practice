@@ -1,0 +1,30 @@
+package Tender.Usecase;
+
+import java.util.List;
+
+import Tender.Exception.VenderException;
+import Tender.Model.Vender;
+import Tender.dao.adminDao;
+import Tender.dao.adminDaoImpl;
+
+public class getAllVender {
+
+	public static void main(String[] args) {
+		
+		adminDao dao = new adminDaoImpl();
+	try {
+		List <Vender> venders =	dao.getAllVender();
+		
+		for (Vender vender : venders) {
+			System.out.println(vender);
+		}
+	} catch (VenderException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+		
+		
+	}
+
+}

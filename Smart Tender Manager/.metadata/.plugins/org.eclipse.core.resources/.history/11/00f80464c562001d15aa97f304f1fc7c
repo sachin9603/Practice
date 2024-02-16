@@ -1,0 +1,16 @@
+package Tender.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import Tender.Exception.VenderException;
+import Tender.Model.Tender;
+import Tender.Model.Vender;
+
+public interface venderDao {
+	
+	public List <Tender> getAllTender();
+	public Vender  LoginVender (String username,String Password) throws VenderException ;
+    public String  bid_tender ( int TenderId ,int bidId);
+     public  Map<String, Boolean > bidStatus(int venderId);
+}

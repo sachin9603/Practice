@@ -1,0 +1,45 @@
+package Tender.dao;
+
+import java.sql.Connection;
+
+import Tender.Exception.AdminException;
+import Tender.Model.Vender;
+import Tender.utility.DBUtil;
+
+public class adminDaoImpl implements adminDao{
+
+	@Override
+	public String loginIntoAdmin(String AUsername, String APassword) throws AdminException{
+		
+		// Admin is hardcoded  if correct username and password is present then message is login
+		String message = "Not Login";
+		
+		if(AUsername == "sachin" && APassword == "sachin7410") {
+			message = "Login";
+		}
+		return message ;
+	}
+
+	@Override
+	public String registerVender(Vender vernder) throws AdminException{
+		//if user is adimn then it will allow 
+		
+		String result = "vender not registered";
+		
+		Connection conn = DBUtil.class
+		
+		
+	
+		
+		
+		
+		
+		
+		return null;
+		
+		
+		
+	}
+	
+
+}

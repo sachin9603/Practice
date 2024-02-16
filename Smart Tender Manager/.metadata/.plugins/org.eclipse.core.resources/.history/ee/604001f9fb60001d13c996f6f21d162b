@@ -1,0 +1,20 @@
+package Tender.dao;
+
+import java.util.List;
+
+import Tender.Exception.AdminException;
+import Tender.Exception.VenderException;
+import Tender.Model.Vender;
+
+public interface adminDao {
+	
+
+  public String loginIntoAdmin(String AUsername ,String APassword) throws AdminException;
+  
+  public String registerVender(Vender vernder) throws AdminException;
+  
+   public List<Vender>  getAllVender()throws VenderException;
+   
+   public String CreateNewTender(Vender vernder) throws AdminException;
+ 
+}

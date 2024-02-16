@@ -1,0 +1,12 @@
+package Tender.Model;
+
+public class Admin {
+	
+	private int AId;
+	private String AName;
+	private String AUsername;
+	private String APassword;
+	
+	
+
+}
