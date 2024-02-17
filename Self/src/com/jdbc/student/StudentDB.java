@@ -20,7 +20,6 @@ public class StudentDB {
 		
 		StudentDB  sdb  = new  StudentDB() ;
 		
-		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
@@ -36,7 +35,7 @@ public class StudentDB {
 			System.out.println("2 for  get record");
 			System.out.println("3  for callable statement ");
 			
-			
+			System.out.println("000 for create data base ");
 			
 			int choice  = Integer.parseInt(sc.nextLine()) ;
 			
@@ -44,14 +43,16 @@ public class StudentDB {
 			case 1 : 
 				sdb.insertRecord(); 
 				break  ;
-				
 			case 2 :
 				sdb.selectRecord();
 				break  ;
 				
 			case 3: 
 				sdb.updateRecord();
-				
+				break  ;
+			case 4 :
+				sdb.createDatabase();
+				break  ;
 				default :
 					break ;
 		
@@ -180,15 +181,31 @@ System.out.println(" Enter roll number to find out data ");
         	  break  ;
         default :
         	break ;
-        		  
-        	  
-          }
+        		 }
           
           
 		}else {
 			System.out.println( "no record found"  );
 		}
 	
+		
+	}
+	
+	
+	public void createDatabase() throws SQLException {
+       System.out.println(" Enter your data base name  ");
+		
+		String database = sc.nextLine() ;
+		
+		Statement st;
+		
+			st = connection.createStatement();
+		
+		String  sql = "create database " + database; 
+		
+		ResultSet resulSet = st.executeQuery(sql) ;
+		
+		System.out.println("data base has been created ");
 		
 	}
 	
