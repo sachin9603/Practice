@@ -27,9 +27,11 @@ public class Demo {
 //		int arr[]  
 		
 		Address a1  = new Address() ;
-		a1.setCity("Indore");
+		a1.setCity("Shajapur");
 		a1.setPincode("456211");
 		a1.setState("MP");
+		
+		System.out.println(a1);
 		
 		Student s1 = new Student() ; // default cont use ho rha hai 
 		
@@ -42,7 +44,7 @@ public class Demo {
 		
 		
  Student s2 = new Student("Mahima", 456 , new Address("543245" , "Bhoapal" , "mp"));
- Student s3 = new Student("puja", 456 , new Address("543245" , "Bhoapal" , "mp"));
+ Student s3 = new Student("puja", 456 , new Address("543245" , "indore" , "mp"));
 
  
  Student sjjjj = new Student("Matrix", 456 , new Address("543245" , "Bhoapal" , "mp"));
@@ -103,8 +105,6 @@ public class Demo {
 			System.out.println("777777");
 			aass.getAddress().setCity(null) ;
 			System.out.println(aass);
-			
-		
 		}
 		
 		LinkedList <Integer> linklist  = new LinkedList<>() ;
@@ -113,7 +113,7 @@ public class Demo {
 		//se save ho rha hai data 
 		
 		linklist.add(12) ;
-		linklist.add(2) ;
+		linklist.add(2)  ;
 		linklist.add(19) ;
 		linklist.add(98) ;
 		linklist.add(77) ;
@@ -140,6 +140,7 @@ public class Demo {
 		// 
      Stack<Integer>  st  = new Stack<>() ;
      
+     st.push(98989 ) ;
     
      st.add(23) ;
      st.add(33) ;
@@ -147,12 +148,18 @@ public class Demo {
      st.add(886) ;
      st.add(966) ;
      
+    
      st.pop() ;
      st.pop() ;
-     st.pop() ;
-     System.out.println(st.peek());
      
-     System.out.println(st);
+     System.out.println( st.peek());
+     
+     // you have to reverse a string using stack 
+     // check palindrom 
+     // check anagram 
+     // {2,4,5,6,7,8,9} k  = 11 
+     
+     //System.out.println(st);
      
  
 		
