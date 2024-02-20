@@ -16,7 +16,7 @@ public interface adminDao{
   
   public String registerVender(Vender vernder) throws AdminException;
   
-   public List<Vender>  getAllVender()throws VenderException;
+   public List<Vender> getAllVender()throws VenderException;
    
    public String CreateNewTender( int TenderId,String TenderName );
    public List<Tender> getAllTender();

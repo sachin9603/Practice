@@ -80,8 +80,6 @@ public class VenderDaoimpl implements venderDao {
 					int r = rs.getInt("VID");
 					String n = rs.getString("VName");
 					String a = rs.getString("VUsername");
-					
-					
 					String p = rs.getString("VPassword");
 					
 					 vender = new Vender (r,n,a,p);		

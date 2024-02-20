@@ -8,21 +8,23 @@ public class Demo {
 		Employee e1  =new Employee(1, "RAJU" , 60000) ;
 		Employee e2  =new Employee(2, "puja" , 69000) ;
 		Employee e3  =new Employee(3, "nita" , 68000) ;
-		Employee e4  =new Employee(4, "takur" , 65000) ;
+		Employee e4  =new Employee(4, "RAJ" , 65000) ;
+		Employee e5 =new Employee(5, "Aman" , 69000) ;
 		
 		ArrayList<Employee>  li  = new ArrayList<>() ;
 		li.add(e4) ;
 		li.add(e2) ;
 		li.add(e3) ;
 		li.add(e1) ;
-		System.out.println(li);
+		li.add(e5) ;
 		
-		Collections.sort(li);
-//		for (Employee s: li) {
-//			
-//			System.out.println(s.getEmpID() + "  ---- >" + s.getEmpSalary());
-//			
-//		}
+		
+		System.out.println(li.hashCode());
+		
+		Collections.sort(li , new nameAndSalaryComparator());
+		
+		// i want to sort the data on the baises of name , salaray , id 
+		
 		
 		System.out.println(li);
 		

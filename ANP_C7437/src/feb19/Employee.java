@@ -39,7 +39,7 @@ public class Employee implements Comparable<Employee> {
 	public String toString() {
 		return "Employee [empID=" + empID + ", empName=" + empName + ", empSalary=" + empSalary + "]";
 	}
-	
+//	
 	
 	// ye method automatic hi aayi jab aap comaparable interface ko implements karoge 
 	
@@ -48,14 +48,11 @@ public class Employee implements Comparable<Employee> {
 		// TODO Auto-generated method stub
 		if (this.getEmpSalary() == o.getEmpSalary()) {
 			return 0 ;
-		}else if ( this.getEmpSalary() < o.getEmpSalary()) {
+		}else if ( this.getEmpSalary() > o.getEmpSalary()) {
 			return 1 ;
 		}else {
 			return  -1  ;
-			
 		}
-		
-		
 	} 
 	
 	

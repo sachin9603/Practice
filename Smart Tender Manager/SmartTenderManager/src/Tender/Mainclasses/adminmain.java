@@ -81,9 +81,6 @@ public class adminmain {
 
 			
 			break;
-			
-			
-
 		case 4:
 			System.out.println("Enter tender ID");
 

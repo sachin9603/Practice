@@ -17,15 +17,23 @@ public class SETSET {
 	  set.add(87) ;
 	  set.add(9) ;
 	  set.add(67) ;
+	  set.add(67) ;
 	  set.add(null) ;
 	  set.add(null) ;
 	  // duplicat data will be removed and insersation order will not followed 
+	  // only one null value is allowed 
 	  
+	  Object 
+	  
+	  for (Integer i  : set) {
+		  System.out.println(i);
+	  }
 	  System.out.println(set);
 	  
 	  // suppose you want to follow insertion order also 
 	  
 	  LinkedHashSet<String>  lset  = new LinkedHashSet<>() ;
+	 
 	  lset.add("sachin") ;
 	  lset.add("Sachin") ;
 	  lset.add("surbhi") ;
@@ -34,10 +42,11 @@ public class SETSET {
 	  lset.add("bhavesh") ;
 	  lset.add(null) ;
 	  lset.add(null) ;
+	  
 	  System.out.println(lset);
 	  // it maintains ascending 
 	  TreeSet<String> tset = new TreeSet<>() ;
-	  tset.add("Sachin") ;
+	  tset.add("sachin") ;
 	  tset.add("surbhi") ;
 	  tset.add("priya") ;
 	  tset.add("bhavesh") ;
@@ -45,17 +54,23 @@ public class SETSET {
 	  tset.add("anmol") ;
 	//  tset.add(null) ;
 	//  tset.add(null) ;
+	  System.out.println("treeset--------------->");
 	  
 	  System.out.println(tset);
 	  
 	  System.out.println("-------------------------queue-------------");
+	  //LIFO(Stack) 
 	  
+	  //FIFO(Queue)
 	  PriorityQueue<String> queue  = new PriorityQueue<>() ;
+	  queue.addAll(lset) ;
 	  queue.add("Sachin") ;
 	  queue.add("Sachin") ;
 	  queue.add("shivam") ;
 	  queue.add("bhim") ;
 	  queue.add("arjun") ;
+	  System.out.println();queue.contains("shivam") ;
+	  
 	  
 	  System.out.println(queue.peek());
 	  System.out.println(queue.element());
