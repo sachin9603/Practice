@@ -26,11 +26,7 @@ public class Main {
 		String username  = "root" ;
 		
 		String password  = "1999";
-		
-		
-
-		
-		try {
+	try {
 			Connection connection  = DriverManager.getConnection(url, username, password) ;
 			Scanner sc = new Scanner(System.in) ;
 			
@@ -38,15 +34,13 @@ public class Main {
 			
 			String  name  = sc.next() ;
 			
-System.out.println("Enter the marks of student " );
+			System.out.println("Enter the marks of student " );
 			
 			int  marks  = sc.nextInt() ;
 			
-System.out.println("Enter the Address of student " );
+			System.out.println("Enter the Address of student " );
 			
 			String  address  = sc.next() ;
-			
-			
 			
 			String query  = "insert into student (sname, smarks , saddress) values (? ,?, ?) " ;
 			
@@ -56,6 +50,7 @@ System.out.println("Enter the Address of student " );
 			ps.setInt(2, marks);
 			ps.setString(3, address);
 			
+		    
 			// step 4 
 			int row  =  ps.executeUpdate() ;
 			
@@ -64,7 +59,7 @@ System.out.println("Enter the Address of student " );
 			}
 			
 			
-			connection.close();
+			 connection.close();
 			
 			
 		} catch (SQLException e) {

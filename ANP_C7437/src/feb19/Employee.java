@@ -1,5 +1,7 @@
 package feb19;
 
+import java.util.Objects;
+
 public class Employee implements Comparable<Employee> {
 	
 	private int empID  ;
@@ -46,14 +48,38 @@ public class Employee implements Comparable<Employee> {
 	@Override
 	public int compareTo(Employee o) {
 		// TODO Auto-generated method stub
-		if (this.getEmpSalary() == o.getEmpSalary()) {
-			return 0 ;
-		}else if ( this.getEmpSalary() > o.getEmpSalary()) {
-			return 1 ;
-		}else {
-			return  -1  ;
-		}
-	} 
+//		if (this.getEmpSalary() == o.getEmpSalary()) {
+//			return 0 ;
+//		}else if ( this.getEmpSalary() > o.getEmpSalary()) {
+//			return 1 ;
+//		}else {
+//			return  -1  ;
+//		}
+		
+	
+		//o.getEmpID().compare
+	return o.getEmpName().compareTo( o.getEmpName()) ;
+	 
+	}
+	// hascode // what is equals 
+	@Override
+	public int hashCode() {
+		return Objects.hash(empID, empName, empSalary);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		return empID == other.empID && Objects.equals(empName, other.empName)
+				&& Double.doubleToLongBits(empSalary) == Double.doubleToLongBits(other.empSalary);
+	}
+	
+	//
 	
 	
 
