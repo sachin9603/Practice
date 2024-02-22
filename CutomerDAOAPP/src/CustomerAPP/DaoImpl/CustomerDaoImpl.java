@@ -95,31 +95,6 @@ public class CustomerDaoImpl implements CustomerDao {
 		
 	}
 
-	@Override
-	public boolean login(int customerId, String password) throws CustomerException {
-		// TODO Auto-generated method stub
 	
-		try(Connection con  = Dao.provideConnection() ) {
-			PreparedStatement  psc  = con.prepareStatement("select Cid, Cpassword from customer where cId="+customerId ) ;
-			
-			ResultSet rs =psc.executeQuery() ;
-			
-			if (rs.next()) {
-				String pass  =  rs.getString("Cpassword") ;
-				if(pass.equals(password)){
-					return true  ;
-				}else {
-					throw new CustomerException("your password is not correct ") ;
-					
-				}
-			}
-			throw new CustomerException("your are not exist into our data base ") ;
-
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return false;
-	}
 
 }

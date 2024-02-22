@@ -6,7 +6,7 @@ import CustomerAPP.Exception.CustomerException;
 import CustomerAPP.model.Orders;
 
 public interface OrderDao {
-	// suppose wants to order  then i have to login first  then  order something 
+	// suppose  I have to  order  someting  then i have to login first  then  order something 
 	 
 	public String doingOrder(Orders o) throws CustomerException ;
 	

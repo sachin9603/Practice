@@ -9,7 +9,7 @@ public interface CustomerDao {
 
 	public  String registerCustomer(Customer cus) throws CustomerException ;
 	
-	public boolean login(int customerId  , String password )throws CustomerException ;
+	//public boolean login(int customerId  , String password )throws CustomerException ;
 	
 	public List<Customer> getAllCustomer();
 	

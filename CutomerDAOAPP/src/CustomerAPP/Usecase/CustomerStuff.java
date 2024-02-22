@@ -77,7 +77,7 @@ public class CustomerStuff {
 				
 				break ;
 			case 8  :
-				System.out.println("enter your order ");
+				System.out.println("enter your id  ");
 				int id  =sc.nextInt() ;
 				List<Orders> allorders;
 				try {
