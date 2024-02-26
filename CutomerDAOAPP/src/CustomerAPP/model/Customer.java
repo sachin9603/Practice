@@ -1,7 +1,8 @@
 package CustomerAPP.model;
 
-public class Customer {
-
+public class Customer implements Comparable <Customer>{
+// kya ye pojo hai yessss  // kya ye bean hai no 
+	// for bean every varible should be private 
 	private int  cId ; // C001 .,C002 , C003 .,C004 
 	
 	private String CName  ;
