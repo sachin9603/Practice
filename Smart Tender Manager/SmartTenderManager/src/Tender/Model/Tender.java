@@ -1,8 +1,10 @@
 package Tender.Model;
 
 public class Tender {
+	
 	private int TenderId ;
 	private String TenderName;
+	
 	public int getTenderId() {
 		return TenderId;
 	}

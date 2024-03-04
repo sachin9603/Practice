@@ -16,15 +16,16 @@ public class App
     public static void main( String[] args )
     {
     	
+    	Address  a  = new Address("lanka" , "00000" ,"shilanka");
+    	
     	Dost d1  = new Dost() ;
-    	d1.setdAddress("indore" );
-    	d1.setdId(2);
-    	d1.setdName("swati");
+    	
+    	d1.setdAddress(a);
+    	d1.setdId(366);
+    	d1.setdName("surpanka");
     	
     
-    	Configuration con  = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Dost.class) ;
-    	
-    	
+    	Configuration con  = new Configuration().configure().addAnnotatedClass(Dost.class) ;
     	SessionFactory sf  = con.buildSessionFactory();
     	
     	
@@ -32,10 +33,11 @@ public class App
        
        Transaction tx  = session.beginTransaction() ;
     
-       session.save(d1) ;
+       Dost df   = (Dost) session.get(Dost.class,3) ;
        
        tx.commit();
     
+       System.out.println(df);
     	
     }
 }

@@ -39,7 +39,7 @@ public class adminDaoImpl implements adminDao{
 		
 			int x = ps.executeUpdate();
 			if (x > 0 ) {
-				result = "verder register Succesfully ";
+				result = "vender register Succesfully ";
 			}
 			
 			

@@ -7,15 +7,15 @@ import CustomerAPP.model.Customer;
 
 public interface CustomerDao {
 
-	public  String registerCustomer(Customer cus) throws CustomerException ;
+	public  String registerCustomer(Customer cus) throws CustomerException ; // create
 	
 	//public boolean login(int customerId  , String password )throws CustomerException ;
 	
-	public List<Customer> getAllCustomer();
+	public List<Customer> getAllCustomer();//read
 	
-	public Customer updateCustomer(Customer cus  , int C_id) ;
+	public Customer updateCustomer(Customer cus  , int C_id) ; // update 
 	
-	public void deleteCustomer(int c_id) ;
+	public void deleteCustomer(int c_id) ; // detele 
 	
 	
 }

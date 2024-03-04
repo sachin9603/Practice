@@ -5,6 +5,7 @@ public class Vender {
 	 private String Vname;
 	 private String Username;
 	 private String Password ;
+	 
 	public int getVid() {
 		return Vid;
 	}

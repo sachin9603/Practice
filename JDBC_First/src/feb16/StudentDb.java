@@ -23,14 +23,14 @@ public class StudentDb {
 		StudentDb  db  = new StudentDb() ;
 		
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver") ; // pehli step 
+		//	Class.forName("com.mysql.cj.jdbc.Driver") ; // pehli step 
 			
-			String databaseURL  = "jdbc:mysql://localhost:3306/sage" ;
+			String databaseURL  = "jdbc:mysql://localhost:3306/nri" ;
 			String userName  = "root" ;
 			String password  =  "1999" ;
 			
 			try {
-				connection = DriverManager.getConnection(databaseURL , userName  , password) ;
+				Connection connection= DriverManager.getConnection(databaseURL , userName  , password) ;
 			
 			System.out.println("Enter your choice to perform your task ");
 			

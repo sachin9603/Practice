@@ -6,6 +6,7 @@ public class Admin {
 	private String AName;
 	private String AUsername;
 	private String APassword;
+	
 	public int getAId() {
 		return AId;
 	}

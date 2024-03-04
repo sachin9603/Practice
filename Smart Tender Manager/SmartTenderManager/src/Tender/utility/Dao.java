@@ -18,7 +18,6 @@ public class Dao {
 		}
 		
 		String url = "jdbc:mysql://localhost:3306/tenderProject";
-		
 		try {
 			conn = DriverManager.getConnection(url, "root", "1999");
 		} catch (SQLException e) {

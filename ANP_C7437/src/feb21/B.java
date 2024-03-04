@@ -6,12 +6,15 @@ public class B implements Runnable   {
 	
 	@Override
 	public void run() {
+		//yaha 
+		// 1000 line ka code likha hai 
 		
 		for (int i= 1 ; i<=100; i++) {
-			
-			sum += i ;
-			
+			sum = sum + i ;
 		}
+		
+		//10000 line ka code yaha par bhi lkiha ha 
+		
 		//System.out.println(sum) ;
 		
 	}
