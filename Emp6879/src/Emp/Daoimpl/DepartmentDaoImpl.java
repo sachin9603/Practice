@@ -16,7 +16,8 @@ public class DepartmentDaoImpl implements DepartmentDao{
 	@Override
 	public String registerdep(Deparment d) {
 		// TODO Auto-generated method stub
-		String ms  = "" ;
+		String ms  = "not register" ;
+		
 		try(Connection con  = Dao.provideConnection()){
 			PreparedStatement ps  = con.prepareStatement("insert into department values(? ,?)") ;
 			ps.setInt(1, d.getdId());

@@ -1,5 +1,6 @@
 package Emp.MainClasses;
 
+import java.util.List;
 import java.util.Scanner;
 
 import Emp.Dao.EmployeeDao;
@@ -8,6 +9,7 @@ import Emp.Exception.EmployeeException;
 import Emp.model.Employee;
 
 public class EmpMain {
+	
 	private static Scanner sc  = new Scanner(System.in);
 	
 	private static EmployeeDao  dao  = new EmployeeDaoImpl() ;
@@ -19,6 +21,11 @@ public class EmpMain {
 	while(flg) {
 		System.out.println(" 1 for register employee");
 		
+		System.out.println(" 2 for get All employee");
+		
+		System.out.println(" 3 for get employee by id");
+		
+		System.out.println(" 4  for highest salary department wise ");
 	int choice  = sc.nextInt();
 	
 	switch(choice) {
@@ -48,7 +55,41 @@ public class EmpMain {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		break ;
 		
+	case 2  :
+		
+		try {
+			
+			List<Employee> list  = dao.getAllEmp();
+			for(Employee d:list) {
+				System.out.println(d);
+			}
+		} catch (EmployeeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	case 3 : 
+		
+		System.out.println("you have to get emp data by id ");
+		
+		System.out.println("kindly give emp id");
+		
+		int eid = sc.nextInt();
+		
+		try {
+			Employee e  = dao.getEmpByID(eid);
+			System.out.println(e);
+			
+		} catch (EmployeeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		break ;
+case 4 : 
+		
+	dao.gethighestsalaryDepartmentwise();
 		
 		
 	}
