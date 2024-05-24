@@ -1,5 +1,8 @@
 package com.Anudip.batch7437_hibernate;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -16,11 +19,22 @@ public class App
     	Address a  = new Address("Pune" , "Maharastra" ,  "3232");
     	
     	Address aa  = new Address("bhopal_indrapuri" , "mp" ,  "323452");
-        Student s  = new Student (99 ,"sachin" ) ;
+    	
+        Student s  = new Student (9 ,"Karan" ) ;
         
-       s.setHome_address(a);
-       s.setCurr_address(aa);
         
+        List<Address> list = new ArrayList<>() ;
+        
+        list.add(aa) ;
+        list.add(a) ;
+        
+        s.setListOfaddress(list);
+        
+        
+//        
+//       s.setHome_address(a);
+//       s.setCurr_address(aa);
+//        
         
         EntityManagerFactory emf  = Persistence.createEntityManagerFactory("Studentsdsd") ;
         

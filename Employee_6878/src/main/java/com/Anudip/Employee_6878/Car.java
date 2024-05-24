@@ -2,6 +2,8 @@ package com.Anudip.Employee_6878;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Car {
@@ -12,6 +14,9 @@ public class Car {
 	private String carname ;
 	
 	private int empId  ;
+//	
+//	@ManyToOne
+//	private Employee emp ;
 
 	public Car(int carid, String carname, int empId) {
 		super();

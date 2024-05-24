@@ -1,10 +1,13 @@
 package Com.Anudip.hibernate6879Student;
 
-import javax.persistence.Embeddable;
 
-@Embeddable
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Address {
 	
+	@Id
 	private int aid  ;
 	
 	private String city ;

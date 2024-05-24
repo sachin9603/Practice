@@ -2,13 +2,16 @@ package Com.Anudip.hibernate6879Student;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
+import javax.persistence.ManyToOne;
 import javax.persistence.NamedNativeQueries;
 import javax.persistence.NamedNativeQuery;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
@@ -40,13 +43,30 @@ public class Student {
 	//@Column(name  = "studentKaNaam")
 	private String name  ;
 	
-	public Student(int id, String name, String ad) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.ad = ad;
+	@ManyToOne// jab student ka data mai insert karva raha honga tab hi address bhi student table mai fill hojaayega 
+	@JoinColumn(name = "aid")
+	private Address address  ;
+	
+	
+	@OneToMany(cascade=CascadeType.ALL)
+	private List<Book> books ;
+	
+	
+	
+	public List<Book> getBooks() {
+		return books;
 	}
-	private String ad  ;
+	public void setBooks(List<Book> books) {
+		this.books = books;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	
+
 
 	public int getId() {
 		
@@ -69,16 +89,10 @@ public class Student {
 		
 	}
 	 
-	public Student() {}
-		public String getAd() {
-		return ad;
-	}
-	public void setAd(String ad) {
-		this.ad = ad;
-	}
+	
 		@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", address=" + ad + "]";
+		return "Student [id=" + id + ", name=" + name + ", address=" + "]";
 	}
 	
 	

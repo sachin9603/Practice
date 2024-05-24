@@ -74,20 +74,23 @@ public class Appnot
 //    	
 //    	
     Department ddd  = em.find(Department.class, 232);
+    
+    
     Set <Employee> eee =ddd.getEmployees() ;
     
-    
-    for(Employee ddf :eee) {
+     for(Employee ddf :eee) {
+    	
     	System.out.println(ddf);
+    	
     }
     
-    
-   System.out.println(ddd.getDname()); 
+//    
+  System.out.println(ddd.getDname()); 
 
 //    	
 //   	em.persist(e2);
 //    	em.persist(e);
-    	
+    	//em.persist(d);
     	
     	em.getTransaction().commit();
     	em.clear();

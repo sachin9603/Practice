@@ -7,6 +7,7 @@ public class Bank  extends RBI{
 	
 	public Bank() {
 		this.amount   = 1000 ;
+		System.out.println();
 	}
 	
 	public  void deposit(double d) {
