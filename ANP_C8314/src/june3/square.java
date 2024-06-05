@@ -32,11 +32,10 @@ public class square {
 	// * * * * 
     // *     *
 	// *     *
-	// * * * *
-		
+	// * * * *  dry run 
 		for (int i=1 ;i<=4 ; i++) {
 			
-			if(i == 1 || i == 4) {
+			if(i == 1  || i == 4) {
 			 
 				for (int j=1 ;j<=4 ; j++) {	
 					System.out.print("* ");
