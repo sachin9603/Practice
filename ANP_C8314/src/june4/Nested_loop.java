@@ -23,6 +23,7 @@ public class Nested_loop {
 			for(int j=1 ;j<=5-i+1;j++) {
 				System.out.print("* ");
 		}
+			
 			System.out.println(); // ye har baar line change kar rha hai 
 			}
 		
