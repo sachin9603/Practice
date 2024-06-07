@@ -5,7 +5,7 @@ public class Car {
 	
     // class kya hoti hai 
 	// hum sabhi kisi class se aarhe hai jese ki there is class human class and this human have there 
-	// own features like skin color , 206 bones  ,red blood , like we do have one heart andgy two eyes 
+	// own features like skin color , 206 bones  ,red blood , like we do have one heart and two eyes 
 	
 	// we do have behaviour also that is love ,angry , greedy , calm 
 	
@@ -22,9 +22,9 @@ public class Car {
 	// it is template for  creating object 
 	
 	
-	int tyre  ;
+	public int tyre  ;
 	
-	String modelname  ;
+	protected String modelname  ;
 	
 	String brand ;
 	
@@ -45,13 +45,13 @@ public class Car {
 	}
 	
 	// implicitly given constructor 
-	 public  Car(){// ye bhale hi humne nahi banai (explicitly ) but ye automatic system nai genrated kar ke aapko doi hai 
-		 // kyuki jo class banti hai uska object banegaa hi 
-		 // is method ki khaas baat hai return type kuch nahi hoga 
-		 // same as Class name rahegi 
-		
-	}
-	
+//	 public  Car(){// ye bhale hi humne nahi banai (explicitly ) but ye automatic system nai genrated kar ke aapko doi hai 
+//		 // kyuki jo class banti hai uska object banegaa hi 
+//		 // is method ki khaas baat hai return type kuch nahi hoga 
+//		 // same as Class name rahegi 
+//		
+//	}
+//	
 	 
 	
 	

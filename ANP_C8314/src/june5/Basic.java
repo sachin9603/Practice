@@ -32,7 +32,7 @@ public class Basic {
 		/// student 
 	
 	
-	Student s1  = new Student() ;
+	Student s1  = new Student() ;// s1 object bana hai default conructor se 
 	
 	s1.rollNumber = 9211 ;
 	s1.name = "Nitish" ;

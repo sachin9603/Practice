@@ -2,16 +2,16 @@ package june5;
 
 public class Student {
 	
-	int rollNumber ;
+   int rollNumber ;
 	String name ;
 	String address ;
 	String subject ;
 	
 	// source -genrate const. using field  -select all  - genrated
-	public Student(int rollNumber, String name, String address, String subject) {
+	public Student(int ro, String n, String address, String subject) {
 	
-		this.rollNumber = rollNumber;
-		this.name = name;
+		this.rollNumber = ro;
+		this.name = n;
 		this.address = address;
 		this.subject = subject;
 	}
@@ -20,8 +20,7 @@ public class Student {
 	// cons mil rha tha vo nahi milegaa ab aapko vo banana hai har baaar
 	
 	
-	
-	public Student() {} ;
+	public Student(){ } ; /// ye automaticallly is class ka object retun kra rhai hai 
 	// default contructor
 	
 	
