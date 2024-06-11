@@ -19,7 +19,7 @@ public class Employee {
 //	The standard IDE's are providing the facility to generate the getters and setters. So, it is easy and fast to create an encapsulated class in Java.
 //}
 	
-	private  int empId  ;
+	private int empId  ;
 	private String empName  ;
 	
 	private  Address address ;///" indore 26442323 mp "
