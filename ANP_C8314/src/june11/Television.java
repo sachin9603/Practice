@@ -25,9 +25,6 @@ public class Television extends Appliance {
 		this.size = size;
 		this.loudness = loudness;
 	}
-	
-
-
 	public int getSize() {
 		return size;
 	}

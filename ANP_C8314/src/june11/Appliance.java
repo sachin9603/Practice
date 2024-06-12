@@ -5,7 +5,9 @@ public class Appliance {
 	private String brandName  ;
 	
 	private double price  ;
+
 	
+	// one method 
 	
 	public void mainFunction() {
 		System.out.println(" making life  easy  ");
@@ -28,7 +30,7 @@ public class Appliance {
 	}
 
 	public Appliance(String brandName, double price) {
-		super();
+	
 		this.brandName = brandName;
 		this.price = price;
 	}
