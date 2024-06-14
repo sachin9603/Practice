@@ -31,6 +31,11 @@ public class Smartphone extends Device {
 
 		
 	}
+	@Override
+	public void takingPower( ) { 
+		
+		System.out.println("smartphone is taking o.5 kw electricity");
+	}
 	
 	
 	

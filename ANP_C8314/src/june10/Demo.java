@@ -26,6 +26,16 @@ public class Demo {
 		
 		d1.eat();
 		
+		Cat c1 = new Cat() ;
+		
+		
+		System.out.println("cat eating ");
+		c1.eat();
+		c1.speak();
+		
+		
+		
+		
 		
 		
 		

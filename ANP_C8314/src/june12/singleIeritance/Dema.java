@@ -11,10 +11,19 @@ public class Dema {
 	d.operatingSystem = "AOX" ;
 	d.cameraResolution = "500px" ;
 	
+	
 	d.display();
 	d.powerOff();
 	d.powerOn(); 
 	d.takePhoto();
+	
+	d.takingPower();
+	
+	Device dd  = new Device() ;
+	dd.takingPower();
+	
+	
+	
 		
 	}
 
