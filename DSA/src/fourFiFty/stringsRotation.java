@@ -8,25 +8,12 @@ public class stringsRotation {
 	       
 	      
 	       
-	       
-	       for( int  i = 0  ;i<n.length() ;i++) {
-	                String g =  "" ;
-	           
-	           for (int j  =i ;j < n.length() ;j++  ) {
-	               //geeksforgeeks
-	               g = g + n.charAt(j) ; 
-	               System.out.println(g);
-	               
-	               if (g.equals(s2)){
-	                   return true ;
-	               }
-	               
-	               
-	           }
-	           
-	       }
-	       
-	       return false  ;
+	     if (n.contains(s2)) {
+	    	 return true  ;
+	     }else {
+	    	  return false  ; 
+	     }
+	     
 	   }
 	    
 	public static void main(String[] args) {
