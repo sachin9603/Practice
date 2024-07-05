@@ -25,7 +25,7 @@ public abstract class DemoAbstract{
 	 
 	public  DemoAbstract() {
 		this(100) ;
-		System.out.println("abstrct class normal contructor ");
+		System.out.println(" abstrct class normal contructor ");
 		
 		 
 	 }

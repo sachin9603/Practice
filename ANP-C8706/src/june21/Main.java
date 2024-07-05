@@ -2,9 +2,15 @@ package june21;
 
 import java.util.Scanner;
 
-public class Main {
+import jul1.Demo;
+
+public class Main extends Demo  {
 	
 	public static void main(String[] args) { //main+ctrl+space
+		Demo s = new Demo() ; 
+		Main mmm  = new Main() ;
+		
+	System.out.println(	mmm.id);
 		
 		System.out.println("enter your age ");
 		
