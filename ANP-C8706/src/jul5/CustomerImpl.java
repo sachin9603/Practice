@@ -38,5 +38,5 @@ public class CustomerImpl implements CustomerInterface , Comparator<CustomerImpl
 		System.out.println("giving service ");
 		
 	}
-
+	
 }

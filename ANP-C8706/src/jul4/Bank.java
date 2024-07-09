@@ -25,7 +25,7 @@ public abstract class Bank {
 	}
 	
 	
-	public Bank( ) {
+	public Bank() {
 		this(100) ;
 		System.out.println("yes Bank construotr is called ");
 	} ;

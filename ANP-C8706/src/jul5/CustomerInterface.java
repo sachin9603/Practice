@@ -18,8 +18,11 @@ public interface CustomerInterface  extends CustomerKAFatherInterface{
 		System.out.println("it is default method ");
 	};
 	
-	
-	
+//	private void checkcheck() {
+//		System.out.println("checking.....");
+//	}
+//
+//	
 	
 
 	

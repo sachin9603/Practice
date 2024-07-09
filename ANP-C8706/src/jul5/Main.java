@@ -11,6 +11,7 @@ public class Main {
 		CustomerImpl  vv  = new CustomerImpl() ;
 		
 		vv.deleteCustomer();
+		
 		vv.saveCustomer();
 		
 		vv.upateCustomer();

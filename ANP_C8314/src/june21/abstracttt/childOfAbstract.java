@@ -1,7 +1,7 @@
 package june21.abstracttt;
 
 public class childOfAbstract extends DemoAbstract {
-
+//yes it 
 	// suppose yaha contructor  hai 
 	public childOfAbstract() {
 		
