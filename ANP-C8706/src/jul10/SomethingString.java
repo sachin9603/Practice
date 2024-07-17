@@ -20,7 +20,7 @@ public class SomethingString {
 		// toh there is space in heap area to store this special literal string that is know as 
 		/// String constant pool  
 		// when you waant to create a string with literal so jvm willl check first 
-		//scp if there is already present a "welcome" so jvm will no creeate a new String 
+		//String constant pool if there is already present a "welcome" so jvm will not creeate a new String 
 		
 		String h = "welcome" ; // welcome  
 		 // welcome home 
