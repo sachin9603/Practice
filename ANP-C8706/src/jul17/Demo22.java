@@ -20,7 +20,7 @@ public class Demo22 {
 	public  static void m() {
 		System.out.println("m top");
 		n() ;
-//		try {
+//		try(sdvasdfasdfasd){
 //			
 //		}catch(Exception e) {
 //			

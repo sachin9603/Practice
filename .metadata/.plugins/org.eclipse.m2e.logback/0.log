@@ -9957,3 +9957,5 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whites
 2024-07-16 14:14:15,357 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
 2024-07-16 14:14:15,458 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2a1f0721{HTTP/1.1, (http/1.1)}{127.0.0.1:59773}
 2024-07-16 14:14:15,488 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@2a3c1b05{STARTING}[12.0.3,sto=0] @349080563ms
+2024-07-17 13:07:58,153 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-07-19 13:08:43,803 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
