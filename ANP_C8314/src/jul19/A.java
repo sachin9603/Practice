@@ -3,6 +3,9 @@ package jul19;
 public class A implements Runnable {
    int sum  ;
    
+   
+   // suppose there are two thread  second thread wants some value from first thread 
+   
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
@@ -34,6 +37,7 @@ public class A implements Runnable {
 		}//Here main thread will wait until the t thread completes
 		//if we comment t.join then we will get incorrect value.
 		int result = a1.sum;
+		
 		for (int i = 0; i < 10; i++) {
 		System.out.println("inside main thread....");
 		System.out.println(result);
