@@ -10206,3 +10206,5 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whites
 2024-07-25 19:24:18,699 [Worker-134: Launching ServiceTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\test\resources
 2024-07-25 19:24:55,157 [Worker-137: Launching ServiceTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\main\resources
 2024-07-25 19:24:55,163 [Worker-137: Launching ServiceTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\test\resources
+2024-07-25 19:25:40,614 [Worker-137: Launching ServiceTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\main\resources
+2024-07-25 19:25:40,619 [Worker-137: Launching ServiceTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\test\resources
