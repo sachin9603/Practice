@@ -1,0 +1,58 @@
+create datAbase ANPC8314 ;
+use ANPC8314  ;
+
+show tables  ;
+
+create Table Student( Studentid  int ,  StudentName varchar(25) , Address varchar(25)  ) ;
+
+
+desc Student ;
+
+insert into student values ( 32 , "Piyush"  , "Indore" ),  ( 1232 , "Shivani"  , "Bhopal" ), ( 2 , "Shudhansu"  , "Indore" ), ( 512 , "Mohit"  , "Inodre" );
+
+insert into Student (StudentId ,StudentName) values (2323  , "Rakhi" ) ;
+
+select sTUDENTnAME , StudentId from Student ;
+
+select * from student where studentId > 32 or Address = "Indore" ;
+
+CREATE TABLE Employee (
+    empId_id INT PRIMARY KEY,
+    emp_name VARCHAR(225),
+    emp_salary DOUBLE,
+    emp_city VARCHAR(225),
+    emp_state VARCHAR(225)
+);
+
+desc Employee ;
+
+select * from student ;
+
+INSERT INTO Employee (empId_id, emp_name, emp_salary, emp_city, emp_state)
+VALUES
+  (1, 'Rajesh Sharma', 500000, 'Mumbai', 'Maharashtra'),
+  (2, 'Amita Patel', 450000, 'Delhi', 'Delhi'),
+  (3,  'Suresh Kumar', 380000, 'Bangalore', 'Karnataka'),
+  (4, 'Priya Verma', 420000, 'Chennai', 'Tamil Nadu'),
+  (5,  'Vikram Singh', 480000, 'Hyderabad', 'Telangana'),
+  (6,  'Neha Desai', 390000, 'Kolkata', 'West Bengal'),
+  (7,  'Rahul Gupta', 410000, 'Pune', 'Maharashtra'),
+  (8,  'Aarti Mishra', 430000, 'Jaipur', 'Rajasthan'),
+  (9,  'Rohit Patel', 460000, 'Ahmedabad', 'Gujarat'),
+  (10, 'Anjali Sharma', 400000, 'Lucknow', 'Uttar Pradesh'),
+  (11,  'Vivek Singh', 470000, 'Chandigarh', 'Chandigarh'),
+  (12,  'Meera Patel', 420000, 'Bhopal', 'Madhya Pradesh'),
+  (13,  'Karan Gupta', 440000, 'Patna', 'Bihar'),
+  (14,  'Priya Verma', 450000, 'Bhubaneswar', 'Odisha'),
+  (15,  'Vikram Singh', 480000, 'Nagpur', 'Maharashtra'),
+  (16,  'Neha Desai', 390000, 'Kochi', 'Kerala'),
+  (17,  'Rahul Gupta', 410000, 'Indore', 'Madhya Pradesh'),
+  (18,  'Aarti Mishra', 430000, 'Kanpur', 'Uttar Pradesh'),
+  (19,  'Rohit Patel', 460000, 'Surat', 'Gujarat'),
+  (20,  'Anjali Sharma', 400000, 'Ranchi', 'Jharkhand');
+
+ 
+ drop table employee ;
+ 
+ 
+

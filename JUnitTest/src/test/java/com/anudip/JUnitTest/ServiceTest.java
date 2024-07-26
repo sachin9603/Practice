@@ -46,11 +46,12 @@ public class ServiceTest {
 	
 	 }
    
-   @Test
-   public void productOfTwoNumber() {
+   @Test(timeout=1000)
+   public void productOfTwoNumberTest() {
 	   int act  = Service.productTwoNumber(12, 12) ;
 	   int ext = 144  ;
-	   Assert.assertEquals(ext, act );
+	   Assert.assertEquals("check product of two number ",ext, act );
+	  
    }
    
    
