@@ -10216,3 +10216,5 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whites
 2024-07-26 17:50:20,372 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
 2024-07-26 17:50:20,482 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3857e6ea{HTTP/1.1, (http/1.1)}{127.0.0.1:62245}
 2024-07-26 17:50:20,578 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@39893681{STARTING}[12.0.3,sto=0] @16869751ms
+2024-07-26 17:55:06,556 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\main\resources
+2024-07-26 17:55:06,566 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\test\resources
