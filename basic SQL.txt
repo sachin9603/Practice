@@ -54,5 +54,102 @@ VALUES
  
  drop table employee ;
  
+ INSERT INTO Employee (empId_id, emp_name, emp_salary, emp_city, emp_state)
+VALUES
+  (3000, 'Rakesh Ahuja', 50000, 'Mumbai', 'Maharashtra');
+ select Distinct emp_state, emp_city ,emp_salary from Employee  ;
+ 
+ select * from Employee order by Emp_salary desc , emp_state asc  ;
+ # we can use all function and with paramenter only with group by with particuar parameter 
+ 
+ select  Max( Emp_salary)  as Total_Salary, Emp_state as State  from Employee group by Emp_state ;
+
+#I have to find only those state whose avg salary is greater than 450000
+select avg(emp_salary) as Average_salary, emp_state from Employee group by emp_state having Average_salary > 450000 ;
+
+
+ select * from Employee ;
+ 
+ SELECT group_concat(emp_city) as "designation"  , emp_state FROM employee group by emp_state;
+SELECT CONCAT(emp_city ,' ', emp_state) as "designation"  FROM employee;
+
+ select * from employee where empId_id > 5 or (emp_state = 'Maharashtra' and emp_salary >=500000) ;
+ 
+ # I want to get emp name whose name is starting from R  ;
+ 
+ select * from employee where Emp_name like 'R%' ;
+ 
+ # suppose i want to get name whose name is ending from A  ;
+  select * from employee where Emp_name like '%a' ;
+  
+  
+  # suppose i want whose name's second letter is a 
+  select * from employee  where Emp_name like '_a%' ; 
+  
+  #suppose I want to get data in which  t is there
+  
+  select *  from employee where emp_name  like '%t%';
+  
+  select *  from employee where emp_name  like 'R%l';
+  
+  # i want to get entire 
+  select name , MAX(emp_salary)from employee group by emp_salary ;
+  # simaran 
+  
+
+  
+select * from employee order by emp_salary desc  limit 1; 
+
+# nd highest salary 
+
+select * from employee order by emp_salary desc  limit 1 offset 1; 
+# 3 rd highest salary 
+select distinct *  from employee order by emp_salary ; 
+
+update Employee set emp_salary = 400000 where emp_name = 'suresh kumar' ;
+
+
+
+
+
+
+select * from Employee where emp_salary = (select max(emp_salary) from Employee);
+set SQL_SAFE_UPDATES = 0;
+ DELETE FROM Employee WHERE empId_id=20; 
+ 
+ 
+
+
+  
+  
+  
+  
+ 
+
+
+
+
+
+  select  Max( Emp_salary)  as Total_Salary, Emp_state as State  from Employee group by Emp_state ;
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  select * from Employee where emp_state = 'Maharashtra' order by Emp_salary desc  ;
+  
+  select * from employee where emp_state ="Maharashtra"  And emp_salary  >= 500000 ;
+  
+select * from employee where emp_state ="Maharashtra"  or  emp_salary  >= 500000 ;
+
+ 
+ 
+ 
+ 
  
 

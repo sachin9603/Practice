@@ -10218,3 +10218,4 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whites
 2024-07-26 17:50:20,578 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@39893681{STARTING}[12.0.3,sto=0] @16869751ms
 2024-07-26 17:55:06,556 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\main\resources
 2024-07-26 17:55:06,566 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\JUnitTest\src\test\resources
+2024-07-29 13:19:29,782 [Worker-18: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
