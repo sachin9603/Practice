@@ -1,1 +1,16 @@
-Hello World. This is my java program
+
+
+https://refactoring.guru/design-patterns/factory-method
+
+
+design pattern 
+
+sheyansh jain  at udemy 
+
+
+d
+
+there  are two type of memory in java ram and harddisk 
+cpu  -- mips(millon instructonper secon=d )
+]
+basically it will not reduce searching time but it will increase Input-output time cost 
