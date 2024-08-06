@@ -41,10 +41,6 @@ public class adminDaoImpl implements adminDao{
 			if (x > 0 ) {
 				result = "vender register Succesfully ";
 			}
-			
-			
-			
-			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

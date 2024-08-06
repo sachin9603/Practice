@@ -22,25 +22,25 @@ public class MAinTest1 {
 		       System.out.println(s.get());  
 		       
 		       
-		    //   Runnable a  = new Runnable() {
-//		    	    public void run() {
-//		    		  
-//		    		   System.out.println("I am from Runnable Interface Anonymous class ");
-//		    	   }
-//		       } ;
+	     Runnable a  = new Runnable() {
+	    	 
+		    	    public void run() {
+		    		   System.out.println("I am from Runnable Interface Anonymous class ");
+		    	   }
+		       } ;
+		   
+		   Thread t1  = new Thread(a) ;
+		   
+		   t1.start();
+		   
+		   
+//		   ThreadAA  oo = new ThreadAA() ;
 //		   
-//		   Thread t1  = new Thread(a) ;
+//		   Thread cc = new  Thread(oo) ; 
 //		   
-//		   t1.start();
-		   
-		   
-		   ThreadAA  oo = new ThreadAA() ;
-		   
-		   Thread cc = new  Thread(oo) ; 
-		   
-		   
-		  cc.start();
-		   
+//		   
+//		  cc.start();
+//		   
 		   
 		   
 	}
