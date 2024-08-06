@@ -6,13 +6,15 @@ import java.sql.SQLException;
 
 public class ConnectionFactory  {
  
-	// siglton class 
+	// singleton class -- essi class jiska ek obj banega 
 	
 	
 	 String url  = "jdbc:mysql://localhost:3306/anp8706";
 	 String dbname  = "root" ;
 	 String dbpass  = "root" ;
 		
+	 
+	 // isi class ka cont private ---
 	private ConnectionFactory() {
 		try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -44,7 +46,7 @@ public class ConnectionFactory  {
 	
 	
 	
-	public   Connection getConnection() throws SQLException {
+	public Connection getConnection() throws SQLException {
 		
 		Connection con = DriverManager.getConnection(url, dbname, dbpass) ;
 		
