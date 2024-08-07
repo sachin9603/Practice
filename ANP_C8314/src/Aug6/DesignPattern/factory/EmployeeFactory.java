@@ -2,6 +2,7 @@ package Aug6.DesignPattern.factory;
 
 public class EmployeeFactory {
 	
+	// virtual constructor 
 	
 	public static Employee getEmp(String empType) {
 		
