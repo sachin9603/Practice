@@ -42,9 +42,6 @@ public class ConnectionFactory  {
 	}
 	
 	
-	// method to get connection from this singleton class 
-	
-	
 	
 	public Connection getConnection() throws SQLException {
 		
