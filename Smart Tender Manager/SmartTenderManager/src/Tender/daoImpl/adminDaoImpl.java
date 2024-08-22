@@ -26,12 +26,9 @@ public class adminDaoImpl implements adminDao{
 	@Override
 	public String registerVender(Vender vender) throws AdminException{
 		//if user is adimn then it will allow 
-		
 		String result = "vender not registered";
-		
 		try(Connection conn = Dao.provideConnection()){
 		PreparedStatement   ps = conn.prepareStatement("insert into vender values (?,?,?,?)");
-		
 		ps.setInt(1, vender.getVid());
 		ps.setString(2, vender.getVname());
 		ps.setString(3, vender.getUsername());
@@ -47,27 +44,14 @@ public class adminDaoImpl implements adminDao{
 			throw new AdminException(e.getMessage());
 			
 		}
-		
-		
-	
-		
-		
-		
-		
-		
-		return result;
-		
-		
-		
-	}
+			return result;
+		}
 
 	@Override
 	public List<Vender> getAllVender() throws VenderException {
 		 List<Vender> venders = new ArrayList<>();
 			try(Connection conn = Dao.provideConnection()){
-				
 				PreparedStatement ps = conn.prepareStatement("select * from vender" );
-				
 				ResultSet rs = ps.executeQuery();
 				
 				while(rs.next()) {
@@ -81,24 +65,12 @@ public class adminDaoImpl implements adminDao{
 					vender.setVname(Vname);
 					vender.setUsername(VUsername);
 					vender.setPassword(VPassword);
-					
 					venders.add(vender);
-					
-					
 				}
-				
-//				
-//				for (Vender vender : venders) {
-//					System.out.println(vender);
-//				}
-//				
-				
-			} catch (SQLException e) {
+				} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-		
-				
-			}
+		  }
 			
 			
 			

@@ -15,6 +15,15 @@
   </properties>
 
   <dependencies>
+	  
+	  <dependency>
+		  
+    <groupId>org.hibernate.validator</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>8.0.0.Final</version>
+    
+    </dependency>
+	  
 	  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 <dependency>
     <groupId>org.hibernate</groupId>

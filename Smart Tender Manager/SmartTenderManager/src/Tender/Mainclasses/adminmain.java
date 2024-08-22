@@ -27,6 +27,12 @@ public class adminmain {
 	public static Scanner sc =  new Scanner (System.in);
 
 	public static void Adminstuff() {
+		
+		
+		/// yaha ek main method  ------  enter 1 for admin  aminStuff() call ho jaayegi 
+		                     // ------- enter 2 for venderstuff() 
+		                       // 3  --- for extit 
+		
 
 		while(true){
 			System.out.println("Enter Your Choice");

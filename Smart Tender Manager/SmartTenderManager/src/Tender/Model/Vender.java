@@ -1,6 +1,7 @@
 package Tender.Model;
 
 public class Vender {
+	
 	 private int Vid ;
 	 private String Vname;
 	 private String Username;
