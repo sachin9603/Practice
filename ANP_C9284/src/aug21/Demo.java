@@ -11,7 +11,9 @@ public class Demo {
 		
 		
 		Student s1  = new Student();
+		
 		s1.name  = "Ranjit" ;
+		s1.name  = "sheya" ; 
 		s1.id  = 90  ;
 		s1.address = p1 ;
 		System.out.println(s1);
@@ -28,7 +30,18 @@ public class Demo {
 		
 		p6.salary = 80000 ;
 		p6.bonous  = 8000 ;
+		p6.doingjob();
 		System.out.println(	p6.salary);
+		
+		
+		
+		BabyDog ani = new BabyDog() ;
+			
+			ani.eat();
+			ani.sound() ;
+			ani.weep();
+			
+	
 		
 		
 		

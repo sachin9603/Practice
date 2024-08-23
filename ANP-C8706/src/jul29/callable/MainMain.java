@@ -6,6 +6,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class MainMain {
+	
+	PrintJob pj   ;
+	
 
 	public static void main(String[] args) {
 		
