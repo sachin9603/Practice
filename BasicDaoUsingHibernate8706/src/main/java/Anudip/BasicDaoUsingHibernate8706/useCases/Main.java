@@ -20,6 +20,7 @@ public class Main {
 		p1.setDelAddress("Indore vijay nagr");
 	
 		
+		
 		boolean ans = dao.addProduct(p1);
 		System.out.println(ans);
 		

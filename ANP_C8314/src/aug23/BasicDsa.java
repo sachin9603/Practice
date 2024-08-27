@@ -11,7 +11,6 @@ public class BasicDsa {
 		                                                       // 4 * 6 factorialFind(3)
 		}                                                          //3*2 factorialFind(2)
 		                                                              //2*1 factorialFind(1)
-		                                                                   //1*1 ;
 	}
 	//2                                       1 2
 	public static void print(int i ) {

@@ -17,14 +17,14 @@ import javax.persistence.Transient;
 public class Product {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)// homework 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int productId  ;
 	
 	@Column(name= "PName")
 	private String ProductName  ;
 	private double productPrice  ;
 	
-	@Transient // it will ignore this address thing into our database 
+	// it will ignore this address thing into our database 
 	private String delAddress;
 	
 	@Temporal(TemporalType.DATE)
