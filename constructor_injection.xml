@@ -1,0 +1,28 @@
+
+Constructor Injection:
+	spring supports creating objects using parameterized Constructor
+
+	<constructor-args>
+		<value>b </value>
+	</constructor-args>
+
+
+	<constructor-args>
+		<ref bean="" />
+	</constructor-args>
+
+	=>as tag
+		<constructor-args>
+			<value>bvalue>
+		</constructor-args>
+
+	=>as property
+		<constructor-args value="your value" />
+			
+		
+
+	=>c:schema
+
+	<bean c:parameter="value"/>
+
+

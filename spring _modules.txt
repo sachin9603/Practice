@@ -1,0 +1,61 @@
+Spring Modules
+_____________
+
+1) spring core and spring beans provide fundamental part of the framework jaise ki IOC and Dependency Injection Factures.
+
+2) 
+The Context module inherits its features from the Beans module and adds support for internationalization
+(using, for example, resource bundles), event propagation, resource loading, and the transparent
+creation of contexts by, for example, a Servlet container. The Context module also supports Java EE
+features such as EJB, JMX, and basic remoting. 
+
+
+3)The spring-expression module provides a powerful Expression Language for querying and
+manipulating an object graph at runtime.
+
+_________________________________________________________________________________________
+AOP - ascpect oriented programming - allowing you to define, for example, method interceptors and pointcuts to cleanly
+decouple code that implements functionality that should be separated. 
+
+
+The spring-instrument module provides class instrumentation support and classloader
+implementations to be used in certain application servers
+
+
+
+Messaging
+to serve as a
+foundation for messaging-based applications. The module also includes a set of annotations for mapping
+messages to methods, similar to the Spring MVC annotation based programming model
+
+___________________________________________________________________________________
+Data Access/Integration: 
+The spring-jdbc module provides a JDBC-abstraction layer that removes the need to do tedious
+JDBC coding and parsing of database-vendor specific error codes.
+
+The spring-orm module provides integration layers for popular object-relational mapping APIs,
+including JPA and Hibernate. 
+
+The spring-oxm module provides an abstraction layer that supports Object/XML mapping
+implementations such as JAXB, Castor, JiBX and XStream.
+
+
+The spring-jms module (Java Messaging Service) contains features for producing and consuming
+messages. Since Spring Framework 4.1, it provides integration with the spring-messaging module.
+
+__________________________________________________________________________________________
+WEB
+
+The spring-web module provides basic web-oriented integration features such as multipart file upload
+functionality and the initialization of the IoC container using Servlet listeners and a web-oriented
+application context. It also contains an HTTP client and the web-related parts of Spring’s remoting
+support.
+
+
+Testing 
+
+__________
+The spring-test module supports the unit testing and integration testing of Spring components with
+JUnit or TestNG. It provides consistent loading of Spring ApplicationContexts and caching of those
+contexts. It also provides mock objects that you can use to test your code in isolation
+

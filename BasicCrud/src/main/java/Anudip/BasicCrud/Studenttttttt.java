@@ -5,12 +5,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name  = "studentdata") 
+@Table(name = "studentdata")
 public class Studenttttttt {
 	/// student ka object data base mai insert 
 	
 	//select * from Studenttttttt ;
 	
+	@Override
+	public String toString() {
+		return "Studenttttttt [id=" + id + ", name=" + name + "]";
+	}
+
 	@Id
 	private int id  ;
 	
