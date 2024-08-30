@@ -2,6 +2,7 @@ package Anudip.BasicCrud.RelationsM21;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -20,7 +21,7 @@ public class Student {
 	// multiple studdent have one addess that saved in that addess table 
 	/// many student belg to one address 
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.ALL   , fetch = FetchType.EAGER)
 	@JoinColumn(name  = "AID")
 	private Address address ;
 // yaha par cascadeType.All lagta uski help se aapka student k saath secondary object jo ki addess hai vo bhi 

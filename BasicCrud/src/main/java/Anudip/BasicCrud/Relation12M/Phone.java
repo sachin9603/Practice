@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Phone {
 	
-	
+	// ki ye jo ma
 	@Id
 	@GeneratedValue(strategy  = GenerationType.AUTO)
 	private int phoneId  ;
@@ -18,6 +18,14 @@ public class Phone {
 	
 	
 	
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
 	public Phone() {} ;
 	
 	public int getPhoneId() {

@@ -30,7 +30,8 @@ public class Phoneuser {
 	
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name  = "USERID")
+	@JoinColumn(name  ="UserId" )  //isase   3 rd table nahi banegi  jo ki 
+	                               //jono ko relation maintain karti hai 
 	private List<Phone>  phoneTables ;
 
 

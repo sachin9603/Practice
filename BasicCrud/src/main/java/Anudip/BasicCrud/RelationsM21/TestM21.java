@@ -39,14 +39,31 @@ public class TestM21 {
 			s3.setName("Raavan  ");
 			
 			
-			em.persist(s3); 
-			em.persist(s2);
-			em.persist(s1);
+//			em.persist(s3); 
+//			em.persist(s2);
+//			em.persist(s1);
+			
+			Student  student1  = em.find(Student.class, 4);
+			// lazy   loading hoti hai  iska matlab hai  
+			//or tab load hoga jab usko calll  karoge 
+			// jo adddress hai vo hai secondary object 
+			System.out.println(student1.getName());
+			System.out.println(student1.getAddress().getCity()); // load ho jaayega but ye load k liye 
+			// data base mai request 
+			// buta agr maalo ki  id load karna ahai 
+			System.out.println(student1.getId()); // toh koi request nahi data base k paas   paas   
+			// iska matlab hai ki jab find ko calll karaa tha tabhi puraa student load lekin uska second obj nahiaa yaya 
+			
+			//System.out.println(student1.getAddress());// nahi aayega address yaha par kyuki connection close hogaya hai 
+			// or 
+			//System.out.println(student1.getId()); // id call karoge toh aajaye kuki vo toh pehle load ho chuki hai 
+			
+			
 			
 			
 			em.getTransaction().commit(); 
-			em.close();
 			
+			em.close();
 			
 			
 			
