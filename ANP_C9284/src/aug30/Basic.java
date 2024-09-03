@@ -5,14 +5,15 @@ import java.util.List;
 // java mai jo bhi nahi chije aap use kar rhe ho uska package import karna padata hai
 // java mai  java. lang package automatic import rehata hai there is no need import explicitly 
 
+
+// jvm archi ---- 
 public class Basic {
 	
 	// class area ,   heap area   , stack area 
 	
 	public static void doingSomeTask(){
+		
 		System.out.println("work done "); 
-		
-		
 		
 	}
 	
@@ -29,12 +30,12 @@ public class Basic {
 		
 		System.out.println(task);
 		
-		System.out.println(" 10000 lines of code ");
+		System.out.println("10000 lines of code ");
 		
 		
 		doingSomeTask() ;
 		
-// unchecked ---- matlab ki program ko jab run kar rahe hai tab isse aarha ahai
+//     unchecked ---- matlab ki program ko jab run kar rahe hai tab isse aarha ahai
 		// they are called as runtime Exception 
 		
 		// error kisko bolte 
@@ -46,6 +47,8 @@ public class Basic {
 		arr[2] = 14  ;
 		arr[3] =15  ;
 		arr[4]  = 17  ;
+		//arr[89] = 9000 ;
+		
 		
 		
 		
@@ -82,10 +85,10 @@ public class Basic {
 		
 		
 		
-		// notes ---- Exception jo bhi class extend kar rahi hai  all are
+		// notes ---- Exception  ko jo bhi class extend kar rahi hai  all are
 		// checked exception except Runtime exception
 		
-		// notes  --- jo bhi class Runtime  Exception ko extend kar rahi hai vo saariu
+		// notes  --- jo bhi class Runtime  Exception ko extend kar rahi hai vo saari
 		
 		// uncheckexception hoti hai 
 		
