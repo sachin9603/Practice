@@ -23,4 +23,5 @@ public interface adminDao{
    public List<Bid> getAllBidOfAVender (int VenderId);
    
    public String AssignTenderToAVendor(int TenderId , int VID);
+   
 }
