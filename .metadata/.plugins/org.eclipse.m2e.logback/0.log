@@ -11379,3 +11379,9 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.hibernate
 2024-09-02 13:22:01,295 [Worker-5: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
 2024-09-02 18:24:07,484 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\BasicCrud\src\main\resources
 2024-09-02 18:24:07,497 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\BasicCrud\src\test\resources
+2024-09-03 19:36:36,138 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.3; built: 2023-10-27T03:25:22.284Z; git: a873259fd5af141dedaa6c7fa8fe8fbdedce0d61; jvm 21.0.2+13-LTS-58
+2024-09-03 19:36:36,282 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@79978f17{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@e716710{STARTED}}
+2024-09-03 19:36:36,285 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-09-03 19:36:36,353 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@e5cfb74{HTTP/1.1, (http/1.1)}{127.0.0.1:61140}
+2024-09-03 19:36:36,416 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@5070e1ff{STARTING}[12.0.3,sto=0] @109151478ms
+2024-09-04 16:41:18,163 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
