@@ -11385,3 +11385,13 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.hibernate
 2024-09-03 19:36:36,353 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@e5cfb74{HTTP/1.1, (http/1.1)}{127.0.0.1:61140}
 2024-09-03 19:36:36,416 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@5070e1ff{STARTING}[12.0.3,sto=0] @109151478ms
 2024-09-04 16:41:18,163 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-04 16:43:15,732 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-09-04 16:43:16,597 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\BasicCrud\src\main\resources
+2024-09-04 16:43:16,601 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\BasicCrud\src\test\resources
+2024-09-04 20:02:55,993 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.3; built: 2023-10-27T03:25:22.284Z; git: a873259fd5af141dedaa6c7fa8fe8fbdedce0d61; jvm 21.0.2+13-LTS-58
+2024-09-04 20:02:56,144 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@2deac97e{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@2b818888{STARTED}}
+2024-09-04 20:02:56,147 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-09-04 20:02:56,211 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@39067e9d{HTTP/1.1, (http/1.1)}{127.0.0.1:59390}
+2024-09-04 20:02:56,257 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@76d51abc{STARTING}[12.0.3,sto=0] @12132658ms
+2024-09-04 22:25:22,465 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@76d51abc{STOPPING}[12.0.3,sto=0]
+2024-09-04 22:25:22,524 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@39067e9d{HTTP/1.1, (http/1.1)}{127.0.0.1:0}

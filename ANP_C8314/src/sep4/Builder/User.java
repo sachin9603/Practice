@@ -8,7 +8,9 @@ public class User {
 	private final String userName  ;
 	private final String userEmail  ;
 	
+
 	
+	// initially we need to our constructor private 
 	private User(UserBuilder builder) {
 		
 		// they should be initialize 
@@ -55,10 +57,11 @@ public class User {
 		
 		
 		
-		
+		// constructor
 		public UserBuilder() {
 			
 		}
+		//  new student().
 
 		public UserBuilder setUserId(String userId) {
 			
