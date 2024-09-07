@@ -16,7 +16,7 @@ public class Arrayyyy {
 		arr[3] = 8000  ;
 		arr[4] = 8999   ;
 		
-		//arr[5] = 777  ;//arrayindeoutofbond  session
+		//arr[5] = 777  ;//arrayindeoutofbond exception 
 		
 		
 		

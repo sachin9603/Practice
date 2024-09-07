@@ -1,11 +1,16 @@
 package Anudip.BasicCrud.M21and12MBidirection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class EmployeeNayaVala {
@@ -13,13 +18,16 @@ public class EmployeeNayaVala {
 	@Id
 	@GeneratedValue(strategy  = GenerationType.AUTO)
 	private int empId  ;
-	
+	@NotNull
+	@NotEmpty
 	private String empName ;
 	
+	@Email(message = "your email is not valid ")
 	private String email ;
 
 	
-	@ManyToOne
+	
+	@ManyToOne(cascade = CascadeType.ALL )
 	@JoinColumn(name  = "depId")
 	private Department department ;
 

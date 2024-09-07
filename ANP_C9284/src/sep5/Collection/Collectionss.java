@@ -13,12 +13,8 @@ public class Collectionss {
 		// arraylist is dynamic in size 
 		List<Student>   list  = new ArrayList<>() ;
 		
-		list.add(new Student(232 , "sdadfa " , new Address("asdas" ,"dfdsf","asdfasd"))) ;
-		list.add("kisan lal" ) ;
-	
-		list.add("devkaran") ;
-		list.add("ghanshyaam") ;
-		list.add("Puran") ;
+		list.add(new Student(232 , "sdadfa " , new Address("asdas" ,"dfdsf",8989))) ;
+		
 		
 		// what are the genric in java 
 		// for the type saftey 

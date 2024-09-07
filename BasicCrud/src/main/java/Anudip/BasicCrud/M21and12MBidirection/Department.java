@@ -9,19 +9,29 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.transaction.Transactional;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Entity
+@Table(name = "DEPARTMENT")
 public class Department {
 	
 	@Id
 	@GeneratedValue(strategy  = GenerationType.AUTO)
 	private int depId  ;
 	
+	@NotNull
+	@NotEmpty
 	private String depName ;
 	
-	@OneToMany(mappedBy = "department" , cascade = CascadeType.ALL )
-	private Set<EmployeeNayaVala> employees  = new HashSet<EmployeeNayaVala> () ;
+	@OneToMany(mappedBy = "department", cascade = CascadeType.ALL  )
+	private Set<EmployeeNayaVala> employeeNayaValas  = new HashSet<EmployeeNayaVala> () ;
 
+	
+     
+        
 	public int getDepId() {
 		return depId;
 	}
@@ -38,19 +48,19 @@ public class Department {
 		this.depName = depName;
 	}
 
-	public Set<EmployeeNayaVala> getEmployees() {
-		return employees;
+	public Set<EmployeeNayaVala> getEmployeeNayaValas() {
+		return employeeNayaValas;
 	}
 
-	public void setEmployees(Set<EmployeeNayaVala> employees) {
-		this.employees = employees;
+	public void setEmployeeNayaValas(Set<EmployeeNayaVala> employees) {
+		this.employeeNayaValas = employees;
 	}
 
-	public Department(int depId, String depName, Set<EmployeeNayaVala> employees) {
+	public Department(int depId, String depName, Set<EmployeeNayaVala> employeeNayaValas) {
 		super();
 		this.depId = depId;
 		this.depName = depName;
-		this.employees = employees;
+		this.employeeNayaValas = employeeNayaValas;
 	}
 	
 	
