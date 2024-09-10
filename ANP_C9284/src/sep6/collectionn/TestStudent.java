@@ -67,6 +67,17 @@ public class TestStudent {
 		System.out.println(gg);
 	}
 	
+	
+	TreeSet<NewStudent>  treeSet  = new TreeSet<NewStudent>(new NameComparator()) ;
+	
+	
+	treeSet.add(sr4) ;
+	treeSet.add(sr2) ;
+	treeSet.add(sr1) ;
+	treeSet.add(sr3) ;
+	
+	System.out.println(treeSet);
+	
 		
 	}
 
