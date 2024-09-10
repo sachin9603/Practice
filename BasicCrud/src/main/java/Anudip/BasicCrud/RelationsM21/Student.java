@@ -19,7 +19,7 @@ public class Student {
 	
 	
 	// multiple studdent have one addess that saved in that addess table 
-	/// many student belg to one address 
+	/// many student belg to one addrNewStudentess 
 	
 	@ManyToOne(cascade = CascadeType.ALL   , fetch = FetchType.EAGER)
 	@JoinColumn(name  = "AID")

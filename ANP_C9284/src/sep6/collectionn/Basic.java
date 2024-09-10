@@ -37,8 +37,8 @@ public class Basic {
 		vecto.add("sunil") ;
 		vecto.add(null) ;
 		vecto.add(null) ;
-//		HashTable
-//		Stack
+//		HashTable <key value >
+//		Stack 
 //		Dictionary
 //		Properties
 //		Vector
@@ -78,7 +78,7 @@ public class Basic {
 		
 		
 		//Creating HashSet and adding elements  
-		HashSet<String> set=new HashSet<String>();  
+		Set<String> set=new HashSet<String>();  
 		set.add("Ravi");  
 		set.add("Vijay");  
 		set.add("Ravi");  

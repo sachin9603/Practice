@@ -10,16 +10,14 @@ public class Quicksort {
 		int pivot = arr[high] ;//8
 		int i  = low - 1 ; // -1
 		//{6,3,9,5,2,8} ;
-		for(int j  =0  ;j<high  ;j++) {
+		for(int j  =low  ;j<high  ;j++) {
 			if(arr[j] <pivot) {
 				i++ ;
 				int temp = arr[i] ;
 				arr[i] = arr[j] ;
 				arr[j] = temp ;
-				
- 			}
+			}
 		}
-		
 		i++ ;
 		int temp = arr[i] ;
 		arr[i] = arr[high] ;
@@ -40,6 +38,21 @@ public class Quicksort {
 		
 	}
 	
+	
+public static void main(String[] args) {
+		
+		int[] arr  = {6,3,9,5, 2,8 };
+		
+		// 2  3 5 6 8 9 
+		
+		quickSort(arr , 0 , 5 );
+		
+		for ( int jj:arr) {
+			System.out.print(jj+" ");
+		}
+		
+	}
+
 	
 	
 }

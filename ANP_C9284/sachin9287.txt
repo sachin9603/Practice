@@ -1,1 +1,19 @@
-welcome this AJP course 
+DBMS ---->  
+
+sql  ---
+RDBMS ----> a employee is related to department  (1 department can have multiple Employee) OneToOne  ------(ek table rahegi 
+
+person ki  (id  ,name  , age  , address , drivingID)) ------>    (dusari table hai  Driving license(cardId , state , type ,drivingID )) 
+
+noSQL ----->  mongoDB
+
+// kuch commond likhana padegi 
+
+
+
+it is basic english crud(Create , Read , upate , delete )
+it is not case sensetive 
+
+basic end  ----- saare crud  ---- java k through database se connection (jdbc) -- hibernate  -->  ORM -->Student (12  ,"ramu" , "Indore") ; em.save(st) ;
+
+sring(ioc) ---> springboot --->

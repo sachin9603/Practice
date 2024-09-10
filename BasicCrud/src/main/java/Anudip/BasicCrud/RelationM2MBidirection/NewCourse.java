@@ -18,9 +18,47 @@ public class NewCourse {
 	
 	private String cname  ;
 	
-	
 	@ManyToMany(mappedBy  = "courses" , cascade =CascadeType.ALL)
 	private Set<NewStudent>  students   ;
+	
+	
+	
+public NewCourse() {} ;
+
+
+	public int getCid() {
+		return cid;
+	}
+
+
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+
+
+	public String getCname() {
+		return cname;
+	}
+
+
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+
+
+	public Set<NewStudent> getStudents() {
+		return students;
+	}
+
+
+	public void setStudents(Set<NewStudent> students) {
+		this.students = students;
+	}
+	
+	
+	
+	
+	
 	
 
 }
