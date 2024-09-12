@@ -6,6 +6,8 @@ public class Student implements Comparable<Student>{
 	private String name  ;
 	private int marks  ;
 	
+	
+	
 	public int getId() {
 		return id;
 	}
