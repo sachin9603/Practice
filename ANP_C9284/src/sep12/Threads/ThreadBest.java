@@ -16,6 +16,8 @@ public class ThreadBest implements Runnable {
 
 		}
 		
+		// thread life cycle  -- > new state   ---- >
+		
 	}
 
 }
