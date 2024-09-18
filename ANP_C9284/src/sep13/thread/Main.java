@@ -18,7 +18,7 @@ public class Main {
 			e.printStackTrace();
 		}
 		
-		System.out.println(tt.sum); //  0   , some patial result  , may get full result 
+		System.out.println(tt.sum); //  0   , some partial result  , may get full result 
 		
 		
 		
