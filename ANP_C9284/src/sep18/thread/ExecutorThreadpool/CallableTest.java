@@ -11,6 +11,7 @@ public class CallableTest {
 	public static void main(String[] args) {
 		
 		CallableChild [] newArray  = {
+				
 				new CallableChild(1) ,
 				new CallableChild(10) ,
 			
