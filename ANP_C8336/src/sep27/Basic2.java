@@ -69,14 +69,14 @@ public class Basic2 {
 		
 		int count  =0 ;
 		
-		while(true) {
+		while(true){
+			
 			count++ ;
 			if(count  == 100) {
 				break ;
 			}
 			System.out.println("mai hu while loop ");
-			
-		}
+			}
 		
 		
 		//do while loop  
