@@ -14,6 +14,9 @@ public class Ploymorphismmm {
 	return sum ;
 		
  	}
+	public static void main(int s ) {
+		System.out.println("sachin +" + s);
+	}
 	
 	
 	
@@ -34,6 +37,8 @@ public class Ploymorphismmm {
 		
 		int  k  = pp.add(12 , 12 , 12) ;
 		System.out.println(k);
+		
+		pp.main(55);
 		
 		
 		
