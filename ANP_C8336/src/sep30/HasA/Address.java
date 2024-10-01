@@ -2,14 +2,13 @@ package sep30.HasA;
 
 public class Address {
 	
-	@Override
-	public String toString() {
-		return "Address [city=" + city + ", pincode=" + pincode + ", state=" + state + "]";
-	}
+	
 
 	String city  ;
 	String pincode  ;
 	String state  ;
+	
+	
 	public Address(String city, String pincode, String state) {
 		super();
 		this.city = city;
@@ -20,6 +19,9 @@ public class Address {
 	public Address() {} ;
 	
 	
-	
+	@Override
+	public String toString() {
+		return "Address [city=" + city + ", pincode=" + pincode + ", state=" + state + "]";
+	}
 
 }

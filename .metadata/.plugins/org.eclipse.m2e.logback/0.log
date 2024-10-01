@@ -11654,3 +11654,6 @@ org.eclipse.core.runtime.CoreException: Launch configuration App (6) references 
 2024-09-25 19:44:13,297 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2024-09-27 18:58:24,500 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2024-09-30 18:22:41,083 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-30 21:01:06,397 [Worker-84: Downloading sources for mysql-connector-j-9.0.0.jar] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/mysql/mysql-connector-j/9.0.0/mysql-connector-j-9.0.0-sources.jar
+2024-09-30 21:01:10,364 [Worker-84: Downloading sources for mysql-connector-j-9.0.0.jar] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/mysql/mysql-connector-j/9.0.0/mysql-connector-j-9.0.0-sources.jar
+2024-10-01 19:34:01,975 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
