@@ -8,17 +8,29 @@ public class Device {
 	
 	boolean power ;
 	
+	int price ;
+	
 
 	
-	public Device(String brand, String model) {
+	public Device(String brand, String mo) {
 	
 		this.brand = brand;
-		this.model = model;
+		this.model = mo;
+		
+	}
+	
+	private Device(int price) {
+		
+		this.price  = price ;
+		
 		
 	}
 
 	
 	public Device() {
+		this(500) ;// it should be only very first 
+		System.out.println("mai hu normal device ");
+	
 		
 		
 	}
@@ -50,7 +62,6 @@ public class Device {
 		System.out.println("it is already OFF");
 			
 		}
-		
 	}
 	
  

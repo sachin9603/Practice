@@ -7,9 +7,7 @@ public class Apple  extends Smartphone{
 	
 	public void privacyy(){
 		
-		System.out.println("extra privacy   😎😎😎😎");
-		
-		
+		System.out.println("extra privacy 😎😎😎😎");
 	}
 	
 

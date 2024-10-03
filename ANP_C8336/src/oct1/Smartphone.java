@@ -7,7 +7,9 @@ public class Smartphone  extends Device{
 	String cameraResolution ;
 
 	public Smartphone(String brand, String model, String operatingSystem, String cameraResolution) {
-		super(brand, model);
+		super(brand, model);//parent k contructor ko call // itshould be very first line of cons.
+		
+		
 		this.operatingSystem = operatingSystem;
 		this.cameraResolution = cameraResolution;
 	}

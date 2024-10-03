@@ -107,6 +107,7 @@ public class StudentCrud {
 			
 			
 			while(true) {
+				
 				System.out.println("press 1 for adding student  \n"
 						+ "press 2 for updating existing data \n"
 						+ "press 0 for exit ");

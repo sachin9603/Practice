@@ -15,7 +15,7 @@ public class Ploymorphismmm {
 		
  	}
 	public static void main(int s ) {
-		System.out.println("sachin +" + s);
+		System.out.println("sachin + " + s);
 	}
 	
 	

@@ -20,6 +20,15 @@ public class Test {
 		ll.deviceInformation();
 		
 		
+		Device charger  = new Device() ;
+		System.out.println( charger.price );
+		
+	//	Device charger2  = new Device(500) ;
+		
+		
+		
+		
+		
 		
 		
 		
