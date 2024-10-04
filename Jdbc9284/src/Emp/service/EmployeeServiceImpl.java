@@ -23,7 +23,10 @@ public class EmployeeServiceImpl  implements EmployeeServicee {
 	@Override
 	public List<Employee> getAllEmp() throws EmployeeException {
 		// TODO Auto-generated method stub
-		return null;
+		 List<Employee> list  = dao.getAllEmp() ;
+		 
+		
+		return list;
 	}
 
 	@Override

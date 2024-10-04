@@ -3,8 +3,10 @@ package oct3;
 public final class NomalClass {
 // final 
 	
-	//this
+	// this
 	// this() 
+	
+	// super()
 	
 	
 	final String adhar =  "6789076578546789" ; 
@@ -13,7 +15,10 @@ public final class NomalClass {
 	// method can not be override 
 	// class can't be extends 
 	
-	final String pan ;
+	final String pan    ;
+	
+	String name   ;
+	
 	
 	
 	final int speed  = 70  ;
@@ -28,8 +33,9 @@ public final class NomalClass {
 	
 
 	NomalClass( String ll){
+		
 		this.pan = ll ;
-		speed  = 90  ;
+		this.name = ll  ;
 		
 		
 	}
@@ -37,11 +43,25 @@ public final class NomalClass {
 	
 	
 	public final void breathing() { // in methods ko aap override nahi kar sakte 
+		
 		System.out.println("yes you to breath");
+		
 	}
 	
+	
+	public final void breathing( int s ) { // in methods ko aap override nahi kar sakte 
+		
+		System.out.println("yes you to breath");
+		
+	}
+	
+	
 	public static void main(String[] args) {
-		NomalClass  kk  = new NomalClass () ;
+		NomalClass  kk  = new NomalClass ("678907689") ;
+		
+		kk.pan = "87798e798y" ;
+		
+		
 		//kk.adhar  = "8927398273" ;
 		System.out.println(kk);
 		
