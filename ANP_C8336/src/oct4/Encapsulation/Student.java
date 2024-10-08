@@ -10,9 +10,12 @@ public class Student {
 	// create to String  method also 
 	
 	private String name  ;
-	private String addess  ;
+
 	private String adhar  ;
-    public static  String Collegename  = "IES" ;
+    //public static  String Collegename  = "IES" ;
+	
+	private Address addess  ;
+	
 	
 	
 	// or in varibal ko access karne k liye aapko do method banan hai ek kaa hai value ko set
@@ -40,13 +43,6 @@ public class Student {
 	
 	
 	
-	public String getAddess() {
-		return addess;
-	}
-
-	public void setAddess(String addess) {
-		this.addess = addess;
-	}
 
 	public String getAdhar() {
 		return adhar;
@@ -56,25 +52,34 @@ public class Student {
 		this.adhar = adhar;
 	}
 
-	public Student(String name, String addess, String adhar) {
 	
-	this.name = name;
-	this.addess = addess;
-	this.adhar = adhar;
-	    
+	
+	
+	public Address getAddress() {
+		return addess;
 	}
-	
-	
+
+	public void setAddress(Address address) {
+		this.addess = address;
+	}
+
+	public Student(String name, String addess, String adhar, Address address) {
+		super();
+		this.name = name;
+		this.addess = address;
+		this.adhar = adhar;
+		//this.address = address;
+	}
+
 	public Student() {
 		
 	}
 
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", addess=" + addess + ", adhar=" + adhar + "]";
-	};
-	
-	
+		return "Student [name=" + name + ", addess=" + addess + ", adhar=" + adhar  + "]";
+	}
+
 	
 
 }

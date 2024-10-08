@@ -11,9 +11,9 @@ public class Test extends Car {
 	
 	public static void main(String[] args) {
 		Student.busfeeS();
-		Student s  = new Student( "Kaali" , "Mum" , "76878hih98987")  ;
-		s.busfeeS();
-		
+//		Student s  = new Student( "Kaali" , "Mum" , "76878hih98987")  ;
+//		s.busfeeS();
+//		
 //		System.out.println(s.addess);
 //		System.out.println(s.name);
 //		System.out.println(s.adhar);
