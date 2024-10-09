@@ -18,6 +18,18 @@ public class TestTest {
 		WhatsUpImpl obj  = new WhatsUpImpl() ;
 		
 		obj.appyStatus();
+		System.out.println(obj.pinChatLimit);
+       int j =   Whatsup.pinChatLimit ;
+       
+       obj.whatsuplogo();
+       
+       obj.whatsupthem() ;
+       
+       Comparable
+       
+       
+         
+		
 		
 		
 	}

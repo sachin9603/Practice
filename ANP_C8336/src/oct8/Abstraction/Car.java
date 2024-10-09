@@ -27,6 +27,7 @@ public abstract class Car {  // 0 to 100 abstraction
 	/// yes it do  have constructor 
 	
 	public Car() {
+		
 		this(250) ;
 		
 	System.out.println("mai hu khaali koi kaam nahi but still playing big role in creating object of child  ");	

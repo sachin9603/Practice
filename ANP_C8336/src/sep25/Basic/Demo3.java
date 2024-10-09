@@ -1,6 +1,6 @@
-package sep25.Basic;
+ package sep25.Basic;
 
-public class Demo3 {
+public class Demo3  {
 	
 	public static void main(String[] args) {
 		int aa  = 10  ;

@@ -1,6 +1,6 @@
-package oct8.Abstraction;
-
-public class WhatsUpImpl  implements Whatsup{
+package oct8.Abstraction; 
+                      // extends 
+public class WhatsUpImpl  implements Whatsup , Facebook {
 
 	@Override
 	public void sendMessage() {
@@ -17,6 +17,18 @@ public class WhatsUpImpl  implements Whatsup{
 	
 		
 	}
+	
+   public void whatsuplogo() {
+		
+		System.out.println(" dil vaala logo  ");
+		
+	}
+   
+   
+   static void whatsupthem() {
+ 	  
+ 	  System.out.println("green ");
+   }
 
 	@Override
 	public void appyStatus() {
@@ -24,6 +36,12 @@ public class WhatsUpImpl  implements Whatsup{
 		
 		
 		System.out.println("just select");
+	}
+
+	@Override
+	public void findchannel() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

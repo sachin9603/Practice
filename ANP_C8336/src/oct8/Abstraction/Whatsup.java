@@ -10,6 +10,24 @@ public interface Whatsup {
 	
 	public void appyStatus();
 	
+	int pinChatLimit  = 3  ;  // final or sataic 
+	
+	
+	
+	default void whatsuplogo() {
+		
+		System.out.println("green logo");
+		
+	}
+	
+      static void whatsupthem() {
+    	  
+    	  System.out.println("green and white");
+      }
+	
+      //
+      Cloneable
+	
 	
 	// java 8  
 //	Since Java 8, we can have default and static methods in an interface.
