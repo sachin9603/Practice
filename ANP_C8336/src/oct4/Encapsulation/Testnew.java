@@ -15,7 +15,18 @@ public class Testnew {
 		s.setName("Richard Jhonson");
 		
 		
+//		add.setCity("Delhi");
+//		s.setAddress(add);
+		
+		
+		s.getAddress().setCity("MUMBAI");
+		
+		System.out.println(s.getAddress().getCity());
+		
+		
 		System.out.println(s);
+		
+		
 		
 		// you have only this 
 		//s 

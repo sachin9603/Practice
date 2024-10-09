@@ -19,7 +19,7 @@ public class EmpMain {
 		
 		while(true ) {
 			
-			System.out.println("1 for registerdata \n"
+				System.out.println("1 for registerdata \n"
 					+ "2 for update \n"
 					+ "3 for delete \n"
 					+ "4 get data by id \n"

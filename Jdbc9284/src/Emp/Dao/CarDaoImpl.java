@@ -2,12 +2,15 @@ package Emp.Dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import Emp.Exception.CarException;
 import Emp.Exception.EmployeeException;
 import Emp.model.Car;
+import Emp.model.Employee;
 import Emp.utility.ConnectioFactory;
 import Emp.utility.QueryUtility;
 
@@ -54,8 +57,37 @@ public class CarDaoImpl implements CarDao{
 
 	@Override
 	public List<Car> getAllCarBYEMPID(int id) throws EmployeeException, CarException {
-		// TODO Auto-generated method stub
-		return null;
+		
+		List<Car>  ss = new ArrayList<>() ;
+		
+		try {
+			Connection conn  = ConnectioFactory.getInstance().getConnection();
+			
+            PreparedStatement ppst  =  conn.prepareStatement("select * from car where empid  = ? ");
+            
+			ppst.setInt(1, id);
+			 
+			ResultSet rset  = ppst.executeQuery();
+			
+			while(rset.next()) {
+//				
+//				Employee e  = new Employee()  ;
+//				e.setName(rset.getString("ename"));
+//				e.setEid(rset.getInt("eid"));
+//				e.setSalary(rset.getDouble("esalary"));
+				
+				
+				Car c  = new Car()  ;
+				c.setCarId(rset.getInt("carId"));
+				
+//			
+				
+			}
+		
+		//	conn.close();
+			return null  ;
+					
+			
 	}
 
 	@Override
