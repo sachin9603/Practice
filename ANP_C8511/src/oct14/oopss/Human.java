@@ -13,7 +13,7 @@ public class Human {
 	// behav
 	
 	// state 
-   int eye  = 2  ;
+   int eye = 2  ;
    
    int leg  = 2  ;
    
@@ -30,11 +30,10 @@ public class Human {
    }
    
    
+  // public Human() {} ;
    
-   public Human() { };
    
-   }
-	
+  
 	
 	
 

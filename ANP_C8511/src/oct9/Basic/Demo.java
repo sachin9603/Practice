@@ -22,7 +22,7 @@ public class Demo {
 		//Integer
 		
 		// 1 ,23,5
-		int x  = 90  ; //4 byte 
+		int x  = 900000000  ; //4 byte 
 		short i  = 90  ;// 2 byte
 		long p  = 909999999999l ;// 8 byte
 		byte o = 90 ; // 1 byte 
@@ -41,6 +41,9 @@ public class Demo {
 		/// user defined data type 
 		
 		Employee e  ;
+		
+		
+		Integer s  = 900  ;
 		
 		//Array
 		

@@ -10,8 +10,16 @@ public class Test {
 		FrontEndDeveloper fd  = new FrontEndDeveloper (01 , "Raakhi"  , 40000) ;
 		
 		fd.learning(); 
-		fd.Shift();
-		System.out.println(fd.Eid);
+		fd.shift();
+		System.out.println(fd.eid);
+		System.out.println(fd.name);
+		System.out.println(fd.Salary);
+		
+		System.out.println("line number 16 ");
+		FrontEndDeveloper  obj  = new FrontEndDeveloper()  ;
+		
+		
+		
 		
 		
 		

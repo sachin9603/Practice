@@ -19,9 +19,6 @@ public class Student {
 	// khaali  
 	// no - args  // default constructor   // yes it is function 
 	public Student() {
-		
-		
-		
 	}
 	//  parameter  vala 
 	// all args constructor
@@ -32,6 +29,15 @@ public class Student {
 		password = pass  ;
 		email   = e  ;
 	}
+	
+	public Student(String naam  , String pass  , String e , int id   ) {
+		sid  = id  ;
+		sname   = naam  ;
+		password = pass  ;
+		email   = e  ;
+	}
+	
+	
 	
 	public Student( String naam  , String pass  , String e) {
 		sname   = naam  ;
