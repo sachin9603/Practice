@@ -22,6 +22,7 @@ public class EmployeeDaoImpl  implements EmployeeDao{
 	@Override
 	public String registerEmp(Employee emp) throws EmployeeException {
 		
+		// hibernate.save(emp)
 
 		
 		String msg = null   ;

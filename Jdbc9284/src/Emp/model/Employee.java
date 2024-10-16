@@ -1,7 +1,9 @@
 package Emp.model;
 
+
 public class Employee {
 	// all entity yahi save 
+
 	private int eid  ;
 	private String name  ;
 	private double salary  ;
