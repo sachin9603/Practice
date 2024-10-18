@@ -7,7 +7,7 @@ public class Test {
 		
 		
 		
-		Student   s  = new Student() ; // ye jo obj ban raha hai ye ban rha hai constructor ki help
+		Student   s  = new Student() ; // ye jo obj ban raha hai ye ban rha hai constructor ki help  (Default)
 		
 		s.sname  = "Shushant" ;
 		s.sid = 90  ;

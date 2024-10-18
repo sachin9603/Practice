@@ -1,11 +1,13 @@
 
 package oct16.hasARelation;
-
+ //Employee has a Address
 public class Employee {
 	
 	int id    ;
 	String name  ;
+	
 	Address address ;
+	
 	
 	
 	

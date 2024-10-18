@@ -11,6 +11,9 @@ public class Demo {
 		System.out.println(e);
 		System.out.println(e.address.pincode);
 		
+		
+		
+		
 	}
 
 }

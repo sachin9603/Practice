@@ -16,32 +16,67 @@ public class Demo {
 		EntityManager em = emf.createEntityManager() ;
 		
 	
-//		em.getTransaction().begin(); 
-//		
-//		Employee e1  = new Employee( 78  , "Raahul" , "CS" ) ;
-//		em.persist(e1);
-//		em.getTransaction().commit(); 
-//		
-//		em.close();
-//		
+		em.getTransaction().begin(); 
+		
+		Employee e1  = new Employee( "purohit"  ) ;
+		em.persist(e1);
+		em.getTransaction().commit(); 
+		
+		em.close();
+		
 		
 		
 		// delete the data
+////		
+////		System.out.println("please enter your employee Id that you want to delete ");
+////		Scanner sc  =new Scanner(System.in) ;
+////		
+////		int eid  = sc.nextInt() ;
+////		
+////		Employee ee  = em.find(Employee.class, eid);
+////		
+////		
+////		if (ee!= null) {
+////
+////			em.getTransaction().begin(); 
+////			em.remove(ee);
+////			em.getTransaction().commit(); 
+////			System.out.println("Employee has been removed ");
+////			em.close();
+////			
+////			
+////			
+////		}else {
+////			
+////			System.out.println("There is no such employee with this id ");
+////			
+////		}
+////		
+////		
 //		
-//		System.out.println("please enter your employee Id that you want to delete ");
+//		 // update////////////////////////////////////////////////////
+//		
+//		System.out.println("please enter your employee Id that you want to update ");
 //		Scanner sc  =new Scanner(System.in) ;
 //		
 //		int eid  = sc.nextInt() ;
 //		
 //		Employee ee  = em.find(Employee.class, eid);
 //		
+//		System.out.println("please add your Surname into");
+//		
+//		String surname  = sc.next() ;
+//
+//	     String fullname  = ee.getEname()+" " +surname ;
+//	 
+//		 ee.setEname(fullname);
 //		
 //		if (ee!= null) {
 //
 //			em.getTransaction().begin(); 
-//			em.remove(ee);
+//			
 //			em.getTransaction().commit(); 
-//			System.out.println("Employee has been removed ");
+//			System.out.println("Employee has been update  ");
 //			em.close();
 //			
 //			
@@ -51,41 +86,6 @@ public class Demo {
 //			System.out.println("There is no such employee with this id ");
 //			
 //		}
-//		
-//		
-		
-		 // update////////////////////////////////////////////////////
-		
-		System.out.println("please enter your employee Id that you want to update ");
-		Scanner sc  =new Scanner(System.in) ;
-		
-		int eid  = sc.nextInt() ;
-		
-		Employee ee  = em.find(Employee.class, eid);
-		
-		System.out.println("please add your Surname into");
-		
-		String surname  = sc.next() ;
-
-	     String fullname  = ee.getEname()+" " +surname ;
-	 
-		 ee.setEname(fullname);
-		
-		if (ee!= null) {
-
-			em.getTransaction().begin(); 
-			
-			em.getTransaction().commit(); 
-			System.out.println("Employee has been update  ");
-			em.close();
-			
-			
-			
-		}else {
-			
-			System.out.println("There is no such employee with this id ");
-			
-		}
 		
 		
 

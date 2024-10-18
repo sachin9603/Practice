@@ -1,5 +1,6 @@
 package oct_15;
  //FrontEndDeveloper is a employee
+
 public class FrontEndDeveloper extends Employee  {
 	// FrontEndDeveloper is a child class of this employee Class
 	

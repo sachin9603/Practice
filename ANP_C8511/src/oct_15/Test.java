@@ -11,11 +11,13 @@ public class Test {
 		
 		fd.learning(); 
 		fd.shift();
+		
 		System.out.println(fd.eid);
 		System.out.println(fd.name);
 		System.out.println(fd.Salary);
 		
-		System.out.println("line number 16 ");
+		System.out.println( "line number 16 " );
+		
 		FrontEndDeveloper  obj  = new FrontEndDeveloper()  ;
 		
 		
