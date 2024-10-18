@@ -2,7 +2,7 @@ package oct17.Polymorphism;
 
 public class Demo {
 	
-	
+	//
 	public int add(int a  , int b) {
 		
 		int sum  = a+ b ;
@@ -10,6 +10,8 @@ public class Demo {
 		return sum ;
 		
 	}
+	
+
 	public void add(String a  , int b) {
 		String  sum  = a+ b ;
 		System.out.println(sum);
@@ -21,6 +23,24 @@ public class Demo {
 		int sum  = a+ b+ c ;
 		System.out.println(sum);
 		return sum ;
+		
+	}
+	
+	
+	public int add(int  ... a ) {
+	//	d1.add(1,34,56,78,90,76);
+
+		// a is not int type but it is array of integer
+		int sum  =  0  ;
+		
+		for (int  i =0  ;i<a.length ;i++) {
+			sum += a[i] ;
+			
+		}
+		
+		System.out.println(sum);
+		
+				return sum ;
 		
 	}
 	
@@ -39,6 +59,9 @@ public class Demo {
 		d1.add(8, 12, 4);
 		d1.add("Sachin",10) ;
 		
+		System.out.println("line 60 ");
+		d1.add(1,34,56,78,90,76);
+		
 		/// compiletime --- Polymorphism 
 		
 		// var-args  in java 
@@ -46,10 +69,10 @@ public class Demo {
 		
 		
 		Employee kk  = new Developer() ;
-		Employee k  = new Employee() ;
+		// k  = new Employee() ;
 		
 		kk.salary(); // this is example of Runtime polymorphism 
-		k.salary(); 
+		//k.salary(); 
 		
 		
 		

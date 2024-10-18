@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedNativeQuery;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -15,6 +17,14 @@ import javax.persistence.Transient;
 
 @Entity
 @Table(name = "CompanyEmployee")
+//@NamedQuery(query  = "select e from Employee e where e.id = :id" , name = "find_emp_by id")
+
+
+@NamedNativeQuery(
+	name  = "Employee.findAllEmployee" ,
+	
+	query  = "select * from CompanyEmployee" , resultClass  = Employee.class
+)
 public class Employee {
 	
 	@Id
@@ -31,12 +41,13 @@ public class Employee {
 	@Temporal(TemporalType.DATE )
 	 Date myObj = new Date(); ; // Create a date object
 	 
+	 
 	    // System.out.println(myObj); // Display the current date
 	
 	
 	//  GenerationType.auto --- khud ki table  table banayega  hibernate sequence
 	//  GenerationType.IDENTITY)  -----> data base increment freature use karega ( GenerationType.IDENTITY))
-	// .Table mai ek table bangeaa 
+	//                 .Table mai ek table bangeaa 
 	//GenerationType.SEQUENCE  -- it uses sequence feature of data base 
 	
 	

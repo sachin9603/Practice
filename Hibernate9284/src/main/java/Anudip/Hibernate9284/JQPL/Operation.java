@@ -7,6 +7,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+import Anudip.Hibernate9284.Employee;
+
 public class Operation {
 
 	public static void main(String[] args) {
@@ -19,22 +21,54 @@ public class Operation {
 		
 		//scaler function 
 		// JPQL
-		Query  q  = em.createQuery("select Upper(e.ename) from Employee e") ;
+//		Query  q  = em.createQuery("select Upper(e.ename) from Employee e") ;
+//		
+//		List<String>  list  = q.getResultList() ;
+//		
+//		for(String name   : list ) {
+//			System.out.println(name);
+//		}
+//		
+//		
+//		
+//      Query  qq  = em.createQuery("select MAX(e.eid) from Employee e") ;
+//		
+//	
+//      Integer s = (Integer) qq.getSingleResult() ;
+//		
+//		System.out.println(s);
+//		
 		
-		List<String>  list  = q.getResultList() ;
 		
-		for(String name   : list ) {
-			System.out.println(name);
-		}
-		
-		
-		
-      Query  qq  = em.createQuery("select MAX(e.eid) from Employee e") ;
-		
+//	Query q  = 	em.createNamedQuery("find_emp_by id") ;
+//	
+//	q.setParameter("id", 12) ;
+//	
+//	Employee dd  = (Employee) q.getSingleResult() ;
+//	System.out.println(dd);
+	// Named Native Query  ---- naam diya gaya sawaal 
+//	
+//	Query  kk  = em.createNativeQuery(null, null
+
 	
-      Integer s = (Integer) qq.getSingleResult() ;
+	
+	
+		Query qq  = em.createNativeQuery("Select * from CompanyEmployee  where eid = 902" , Employee.class) ;
 		
-		System.out.println(s);
+		Employee dd  = (Employee) qq.getSingleResult() ;
+		
+		System.out.println(dd);
+	
+		
+		Query kk  = em.createNamedQuery("Employee.findAllEmployee") ;
+		List<Employee>  list  = kk.getResultList() ;
+		
+		System.out.println(list);
+		
+		
+		
+		
+		
 		
 		
 		
