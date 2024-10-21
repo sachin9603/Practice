@@ -1,5 +1,5 @@
 package oct17.Polymorphism;
-
+// Developer is a Employee
 public class Developer extends Employee  {
 	
 	

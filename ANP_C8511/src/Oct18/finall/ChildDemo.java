@@ -7,6 +7,10 @@ public  class ChildDemo extends Deemo {
 		// TODO Auto-generated constructor stub
 	}
 	
+
+	public final void crying() {
+		System.out.println("yes more njb and more ");
+	}
 	
 	
 	public static void main(String[] args) {

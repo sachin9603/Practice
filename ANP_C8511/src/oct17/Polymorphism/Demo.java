@@ -66,9 +66,10 @@ public class Demo {
 		
 		// var-args  in java 
 		
+		Employee k  = new Employee() ;
 		
-		
-		Employee kk  = new Developer() ;
+		k.salary();
+		Employee kk  =  new Developer() ; 
 		// k  = new Employee() ;
 		
 		kk.salary(); // this is example of Runtime polymorphism 

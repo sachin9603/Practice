@@ -2,13 +2,13 @@ package Oct18.finall;
 
 public class Deemo {
 	
-	// variable
-	// method
+	// variable ----
+	// method ----- 
 	// class 
 	
-	final String property = " we all highly spritual from inside " ;
+	final String property = " we all are highly spritual from inside " ;
 	
-	final String nationality ;
+	final String nationality  ;
 	
 	
 	public Deemo(String s) {
@@ -16,10 +16,12 @@ public class Deemo {
 		
 	}
 	
-	public final void  crying() {
+	public final void crying() {
 		System.out.println("yes more and more ");
 	}
 	
+	
+	//property =  "somthing " ;
 	
 	public static void main(String[] args) {
 		

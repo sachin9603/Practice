@@ -1,5 +1,7 @@
 package oct_15;
 
+import oct21.Encapsulationnn.Alien;
+
 public class Test {
 	
 	public static void main(String[] args) {
@@ -22,9 +24,11 @@ public class Test {
 		
 		
 		
+		// ctrl + space 
+		Thonas kk  = new Thonas () ;
+		String suitinformation  =  kk.alienSuit ;
 		
-		
-		
+	
 		
 	}
 
