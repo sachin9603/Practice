@@ -11925,3 +11925,6 @@ org.eclipse.core.runtime.CoreException: Launch configuration App (6) references 
 2024-10-18 21:48:33,366 [Worker-156: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\test\resources
 2024-10-18 21:49:08,595 [Worker-155: Launching Demo (62)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\main\resources
 2024-10-18 21:49:08,602 [Worker-155: Launching Demo (62)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\test\resources
+2024-10-18 21:50:41,957 [Worker-158: Launching Demo (62)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\main\resources
+2024-10-18 21:50:41,962 [Worker-158: Launching Demo (62)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\test\resources
+2024-10-21 15:47:50,465 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
