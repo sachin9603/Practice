@@ -55,6 +55,8 @@ public class Student  {
 		}
 		 
 		
+		// no-args constructor 
+		
 		public Student() {}
 
 		@Override
@@ -62,7 +64,7 @@ public class Student  {
 			
 			return "Student [id=" + id + ", name=" + name + ", adress=" + adress + "]";
 		} ;
-		
+//		
 		
 		
 		///Constructor

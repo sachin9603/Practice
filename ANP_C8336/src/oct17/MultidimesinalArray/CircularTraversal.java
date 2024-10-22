@@ -10,15 +10,12 @@ public class CircularTraversal {
 	            {16, 17, 18, 19,  20}, //  30    31    32   33   34
 	            {21, 22, 23, 24,  25}  //  40    41    42   43   44
 	        };
-		 
 		
-		
-		
-		
+		// 21 16 11 6 1 2 3 4 5 10 15 20 25 24  23 22 17 12 7 8 9 14 19 18 13
 		int top  = 0  ;
 		int bot  = mat.length-1  ;
-		 int left  =0 ;
-		 int right  = mat[0] .length-1;
+		 int left  = 0 ;
+		 int right  = mat[0].length-1;
 		 
 		 while(top<=bot && left <= right) {
 		 

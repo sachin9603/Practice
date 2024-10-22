@@ -1,12 +1,17 @@
 package Anudip.Hibernate9284.HasARelationShip;
 
+import java.util.Objects;
+
 public class Address {
 	
 	private String pin ;
 	private String city ;
 	private String state ;
 	
-	public Address() {};
+	public Address(){
+		
+		
+	};
 	
 	
 	public Address(String pin, String city, String state) {
@@ -38,6 +43,25 @@ public class Address {
 	@Override
 	public String toString() {
 		return "Address [pin=" + pin + ", city=" + city + ", state=" + state + "]";
+	}
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(city, pin, state);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Address other = (Address) obj;
+		return Objects.equals(city, other.city) && Objects.equals(pin, other.pin) && Objects.equals(state, other.state);
 	}
 	
 	

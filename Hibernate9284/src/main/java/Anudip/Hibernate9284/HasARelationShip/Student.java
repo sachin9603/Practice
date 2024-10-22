@@ -1,20 +1,33 @@
 package Anudip.Hibernate9284.HasARelationShip;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.JoinColumn;
 
 @Entity
 public class Student {
 	
 	 @Id
 	 private int id  ;
+	
 	 private String name  ;
 	 
+	 @ElementCollection
 	 @Embedded
-	 private Address add ;
+	 @JoinTable(name  = "StAdd" , joinColumns = @JoinColumn(name  = "SSid"))
+	 private Set<Address> multipleAddress = new HashSet <Address>() ;
 	 
 	 
+	
 
 	public int getId() {
 		return id;
@@ -32,28 +45,25 @@ public class Student {
 		this.name = name;
 	}
 
-	public Address getAdd() {
-		return add;
-	}
-
-	public void setAdd(Address add) {
-		this.add = add;
-	}
-
-	public Student(int id, String name, Address add) {
-		
-		this.id = id;
-		this.name = name;
-		this.add = add;
-	}
-	 
-	 
 	public Student() {}
 
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", add=" + add + "]";
-	} ;
+	public Set<Address> getMultipleAddress() {
+		return multipleAddress;
+	}
+
+	public void setMultipleAddress(Set<Address> multipleAddress) {
+		this.multipleAddress = multipleAddress;
+	}
+
+	public Student(int id, String name, Set<Address> multipleAddress) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.multipleAddress = multipleAddress;
+	}
+
+	
+
 	
 	 
 	 

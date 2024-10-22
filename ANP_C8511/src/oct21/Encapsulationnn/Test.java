@@ -18,13 +18,14 @@ public class Test {
 	    
 	    Student jh  = new Student() ; 
 	   // jh.name = "Phaagoon " ;
-	    jh.setName("Phaagoon");
+	    jh.setName("kulpratap");
 	    jh.setAdress("Kuravar");
 	    jh.setId(9090)  ;
 	    
 	    System.out.println(jh.getName());
 	    
 	    System.out.println(jh);
+	    System.out.println(jh.hashCode());
 		
 		
 		
