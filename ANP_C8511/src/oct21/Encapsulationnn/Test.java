@@ -24,7 +24,7 @@ public class Test {
 	    
 	    System.out.println(jh.getName());
 	    
-	    System.out.println(jh);
+	    System.out.println(jh.toString());    
 	    System.out.println(jh.hashCode());
 		
 		
