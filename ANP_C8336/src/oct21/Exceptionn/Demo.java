@@ -10,6 +10,7 @@ public class Demo {
 		System.out.println("sum of any");
 	
 		
+		
 	}
 	
 	
@@ -17,9 +18,11 @@ public class Demo {
 	
 	
 	public static void main(String[] args) {
+	
 		
 		System.out.println("line 1");
 		
+	
 		
 		//System.out.println( 100/0 );// problem hai line 
 		//they are recover
@@ -56,17 +59,6 @@ public class Demo {
 		
 		
   	 
-		try {
-			
-			Class.forName("com.mysql.cj.jdbc") ;// samabhaavna hai ki ye problematic ho sakti hai 
-			
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			System.out.println(e);;
-		} // kyuki ye class exception deti hai jo ki check ed exception hai 
-		// matlab ki ye likhte vakt hi pata lagaya ki ye class kuch exception 
-		
-
 		
 		try {
 		 	
