@@ -16,27 +16,26 @@ public class Demo {
 		
 		em.getTransaction().begin(); 
 		
-		Set<Address> k  = new HashSet<>() ;
-		Address l  = new Address("990909" ,"MUM" , "MH") ;
-		Address ll  =  new Address("89899" ,"Bhopal" , "MP");
+//		Set<Address> k  = new HashSet<>() ;
+//		
+//		Address l  = new Address("990909" ,"MUM" , "MH") ;
+//		Address ll  =  new Address("89899" ,"Bhopal" , "MP");
+//		
+//		
+    Student ss  = 	em.find(Student.class, 7) ;
+    
+    em .close();
 		
-		em.find(Student.class, 7) ;
-		
-		
-		k.add(ll) ;
-		k.add(l) ;
-		
+		System.out.println(ss.getId() );
+		System.out.println(ss.getName());
+		System.out.println("////////////////////////////////////////");
+		Set <Address> set  = ss.getMultipleAddress() ;
 
 		
+		for(Address s :  set) {
+			System.out.println(s);
+		}
 		
-		Student s  = new Student(7  , "Piyush" , k ) ;
-		
-		//s.setName("9090909");
-		
-		em.persist(s);
-		
-		em.getTransaction().commit();
-		em.close();
 		
 		
 		

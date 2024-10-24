@@ -5,8 +5,12 @@ public class Demo {
 	public void  finallyEx() {
 		
     try {System.out.println("This is try blocK");
+    
+
 			System.out.println(100/0);
-			return ;
+			
+			System.exit(1);
+			
 		
 			
 		}catch(NumberFormatException e) {
@@ -16,15 +20,13 @@ public class Demo {
 		}catch (StringIndexOutOfBoundsException e) {
 			System.out.println("I am Rider");
 			
-			 
-			
-			
 		}catch(Exception ll) {
 			System.out.println(ll);
 			System.out.println("I am final");
 			
 			
 		}finally {
+			
 			System.out.println(" this will run every time   ");
 			
 		}

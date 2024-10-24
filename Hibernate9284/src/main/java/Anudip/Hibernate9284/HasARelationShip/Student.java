@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.JoinColumn;
@@ -21,7 +22,7 @@ public class Student {
 	
 	 private String name  ;
 	 
-	 @ElementCollection
+	 @ElementCollection(fetch=FetchType.EAGER)
 	 @Embedded
 	 @JoinTable(name  = "StAdd" , joinColumns = @JoinColumn(name  = "SSid"))
 	 private Set<Address> multipleAddress = new HashSet <Address>() ;
