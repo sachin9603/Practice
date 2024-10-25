@@ -151,8 +151,8 @@ public class Mat {
 		
 		int [][]arr  =  {
 				//       0  1 2  3  4
-					    {1, 2, 3, 4,     5},       // 00 01 02 03  04
-			            {6, 7, 8, 9,     10},      // 10 11 12 13  14
+					    {1,  2,  3,  4,   5},       // 00 01 02 03  04
+			            {6,  7,  8,  9,  10},      // 10 11 12 13  14
 			            {11, 12, 13, 14, 15},  // 20 21 22 23  24
 			            {16, 17, 18, 19, 20},  // 30 31 32 33  34
 			            {21, 22, 23, 24, 25}   // 40 41 42 43  44
@@ -193,8 +193,35 @@ public class Mat {
 		
 		}
 		
+		System.out.println();
+		
 	}
 		
+	
+	
+	public void diamond() {
+		
+		
+		int [][]arr  =  {
+				//       0  1 2  3  4
+					    {1,  2,  3,  4,   5},       // 00 01 02 03  04
+			            {6,  7,  8,  9,  10},      // 10 11 12 13  14
+			            {11, 12, 13, 14, 15},  // 20 21 22 23  24
+			            {16, 17, 18, 19, 20},  // 30 31 32 33  34
+			            {21, 22, 23, 24, 25}   // 40 41 42 43  44
+			} ;
+		 
+		int row  = arr.length -1 ;
+		int col = arr[0] .length-1 ;
+		
+		
+		for ( int  i  =row/2 , j = col ; i>=0 && j>= col/2;i-- , j--  ) {
+			
+		     System.out.print(arr[i][j]+" ");
+		
+		}
+		
+	}
 		
 	public static void main(String[] args) {
 		Mat m  = new Mat() ;
@@ -203,6 +230,8 @@ public class Mat {
 		m.nReverseTraversal() ;
 		m.circularTraversal();
 		m.spiralTraversal();
+		m.diamond()  ;
+		
 		
 		
 	}

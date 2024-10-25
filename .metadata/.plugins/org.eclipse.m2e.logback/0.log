@@ -12162,3 +12162,5 @@ org.eclipse.core.runtime.CoreException: Launch configuration App (6) references 
 2024-10-24 21:58:28,578 [Worker-163: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\test\resources
 2024-10-24 22:01:26,490 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\main\resources
 2024-10-24 22:01:26,493 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\test\resources
+2024-10-24 22:03:33,712 [Worker-171: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\main\resources
+2024-10-24 22:03:33,717 [Worker-171: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Anudip\eclipse-workspace\Practice\Hibernate9284\src\test\resources
