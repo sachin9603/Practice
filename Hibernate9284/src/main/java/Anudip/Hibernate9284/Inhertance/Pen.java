@@ -23,7 +23,8 @@ public class Pen extends MyProduct{
 		this.color = color;
 	}
 	
-	public Pen() {};
+	public Pen() {
+		};
 	
 	
 	
