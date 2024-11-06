@@ -28,10 +28,10 @@ public class Voting {
 		
 		Voting v  =new Voting()  ;
 		
-		v.ageValidator(age) ;
+		v.ageValidator(age);
 		
 		
-		try {
+		try{
 			if(v.ageValidator(age)) {
 				System.out.println("yes you can vote ");
 			}		} catch (AgeException e) {

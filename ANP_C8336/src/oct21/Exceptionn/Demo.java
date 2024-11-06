@@ -1,5 +1,7 @@
 package oct21.Exceptionn;
 
+import java.util.ArrayList;
+
 public class Demo {
 	
 	// Exception  =---- Checked Exception  (Compile time exception ) ,--- (Code likhte vakt )
@@ -7,9 +9,8 @@ public class Demo {
 	// Error  ======
 	
 	public void sum() {
-		System.out.println("sum of any");
-	
 		
+		System.out.println("sum of any");
 		
 	}
 	
@@ -23,6 +24,12 @@ public class Demo {
 		System.out.println("line 1");
 		
 	
+		ArrayList<Object> list = new ArrayList<> () ;
+		list.add("Ruhul" );
+		list.add("Mehul" );
+		list.add(232); 
+		
+		
 		
 		//System.out.println( 100/0 );// problem hai line 
 		//they are recover
@@ -62,13 +69,17 @@ public class Demo {
 		
 		try {
 		 	
-			String ll  = "888"  ;
-			Integer.parseInt(ll) ;
-			ll.charAt(9) ;
-			System.out.println("this linee is imp ");
+			return ;
 			
+//			String ll  = "888"  ;
+//			Integer.parseInt(ll) ;
+//			ll.charAt(9) ;
+//			System.out.println("this linee is imp ");
+//			
 		}catch(NumberFormatException e) {
+			
 			System.out.println(e);
+			
 		}catch (StringIndexOutOfBoundsException e) {
 			
 			

@@ -13,6 +13,8 @@ public class SimpleClass {
 		
 		try(
 			FileOutputStream file  = new FileOutputStream("AJPNEW.txt") ;
+			
+				
 				
 			) {
 			

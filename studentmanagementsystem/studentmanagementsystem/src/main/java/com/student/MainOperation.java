@@ -18,6 +18,8 @@ public static void mainOps()
 			+ "\nPress 3.to provide feedback\nPress 4. to Enrollment\n"
 			+ "Press 5.Course Details\nPress 6.to check all enrollment details based on course\n"
 			+ "Press 7 for quit");
+	
+	
 	int input=sc.nextInt();
 
 	switch(input)
