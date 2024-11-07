@@ -7,6 +7,7 @@ import java.util.Vector;
 import java.util.function.Predicate;
 public class Demo {
 	
+	
 	public static void main(String[] args) {
 		
 		int []arr = new int[5] ;
