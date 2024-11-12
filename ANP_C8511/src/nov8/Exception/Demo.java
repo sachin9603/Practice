@@ -21,7 +21,13 @@ public class Demo {
 
 	
 	public static void main(String[] args) {
-		
+		Demo d  = new Demo()  ;
+		try {
+			d.wait();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Scanner sc = new Scanner (System.in) ;
 		System.out.println("Enter your AGE..");
 		int age  = sc.nextInt() ;

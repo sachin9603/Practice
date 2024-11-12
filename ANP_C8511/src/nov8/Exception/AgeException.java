@@ -1,6 +1,16 @@
 package nov8.Exception;
 
-public class AgeException  extends Exception{
+import java.util.Arrays;
+
+// same age Exception can be type of Checked and unchecked 
+public class AgeException  extends RuntimeException{
+
+	
+	
+	@Override
+	public String toString() {
+		return  "it is object of exception " ;
+	}
 
 	public AgeException() {
 	
