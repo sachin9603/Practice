@@ -14,6 +14,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "CompanyEmployee")
@@ -32,6 +34,8 @@ public class Employee {
 	
 	private int  eid  ; 
 	
+	@NotNull(message = "Name cannot be null")
+    @Size(min = 2, max = 50, message = "Name must be between 2 and 50 characters")
 	@Column(name  = "EmpName")
 	private String  ename  ;
 	

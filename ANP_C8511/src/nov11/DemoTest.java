@@ -8,21 +8,16 @@ public class DemoTest {
 		
 		Account a  = new Account("Chandan" , "34567892") ;
 		
-		a.deposit(-1);;// it is runtime exception 
-		
 		try {
-			
+			a.deposit(-1);;// it is runtime exception 
 		} catch (InvalidAmountException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		      e.printStackTrace();
 		}
-		
-		
 		
 		try {
 			a.withdraw(200);
 		} catch (InsufficientFundsException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
