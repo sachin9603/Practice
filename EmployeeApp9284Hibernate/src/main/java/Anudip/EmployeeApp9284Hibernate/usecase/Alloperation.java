@@ -26,7 +26,12 @@ public class Alloperation {
 		System.out.println("Enter Employee  username");
 		String username  = sc.next() ;
 		
-		Employee ee  = new Employee( name  , username ) ;
+		Employee ee  = new Employee() ;
+	//	ee.setEmployeeId(id);
+		ee.setEmployeeName(name);
+		ee.setEmployeeUsername(username);
+		System.out.println(ee);
+		
 		
 		return ee ;
 		

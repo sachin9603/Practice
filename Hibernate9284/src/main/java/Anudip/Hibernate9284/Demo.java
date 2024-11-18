@@ -18,7 +18,8 @@ public class Demo {
 	
 		em.getTransaction().begin(); 
 		
-		Employee e1  = new Employee( ""  ) ;
+		Employee e1  = new Employee()  ;
+		e1.
 		em.persist(e1);
 		em.getTransaction().commit(); 
 		

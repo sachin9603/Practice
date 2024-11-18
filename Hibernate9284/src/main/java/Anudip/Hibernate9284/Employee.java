@@ -17,6 +17,12 @@ import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 @Entity
 @Table(name = "CompanyEmployee")
 //@NamedQuery(query  = "select e from Employee e where e.id = :id" , name = "find_emp_by id")
@@ -27,6 +33,11 @@ import javax.validation.constraints.Size;
 	
 	query  = "select * from CompanyEmployee" , resultClass  = Employee.class
 )
+@Getter
+@Setter
+
+@AllArgsConstructor
+@ToString
 public class Employee {
 	
 	@Id
@@ -56,42 +67,20 @@ public class Employee {
 	
 	
 	
-	public int getEid() {
-		return eid;
-	}
-	public void setEid(int eid) {
-		this.eid = eid;
-	}
-	public String getEname() {
-		return ename;
-	}
-	public void setEname(String ename) {
-		this.ename = ename;
-	}
-	public String getDep() {
-		return dep;
-	}
-	public void setDep(String dep) {
-		this.dep = dep;
-	}
-	
-	
-	public Employee(int eid, String ename, String dep) {
-		super();
-		this.eid = eid;
-		this.ename = ename;
-		this.dep = dep;
-	}
-	
 	public Employee( String ename)  {
-		super();
+		
 	
 		this.ename = ename;
 		
 	}
 	
+	public Employee()  {
+		
+		
+		
+		
+	}
 	
-	public Employee() {}
 	
 	
 	

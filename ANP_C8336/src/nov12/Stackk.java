@@ -16,8 +16,6 @@ public class Stackk {
 		top  = -1  ;
 		
 	}
-	
-	
 	public void push(int data) {
 		if (top == max_size-1) {
 			System.out.println("stack is full");

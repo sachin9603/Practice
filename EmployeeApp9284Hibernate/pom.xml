@@ -27,7 +27,14 @@
     
     
     
-    
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.32</version>
+    <scope>provided</scope>
+</dependency>
+
       
     
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
@@ -45,7 +52,27 @@
     <version>8.0.28</version>
 </dependency>
 
-     
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>5.4.3.Final</version>
+</dependency>
+
+
+
+<dependency>
+	<groupId>javax.el</groupId>
+	<artifactId>javax.el-api</artifactId>
+	<version>2.2.4</version>
+</dependency>
+
+<dependency>
+<groupId>org.glassfish.web</groupId>
+<artifactId>javax.el</artifactId>
+<version>2.2.4</version>
+</dependency>
+
      
     
   </dependencies>
