@@ -1,7 +1,8 @@
 package nov_14.collection;
 
-public class Student {
+public class Student  implements Comparable<Student>{
 
+	// if i want to store its object into treeset then i need to implements Comparable interface 
 	
 	private  int id  ;
 	private	String name  ;
@@ -42,6 +43,25 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
+	}
+	@Override
+	public int compareTo(Student o) {
+	// these is deal with two object 
+		// +  -  0 
+		
+		if (this.id == o.id) {
+			return o.getName().compareTo(this.getName()) ;
+			
+		}else if (this.id > o.id) {
+			return 1  ;
+		}else {
+			return -1  ;
+			
+		}
+		
+		
+		
+	
 	}
 	
 	

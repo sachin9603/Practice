@@ -206,7 +206,7 @@ public class Example {
   tset.add("Lucky");
   tset.add("Attya");
   tset.add("priya");
-  tset.add("Satish");
+  tset.add("satish");
   tset.add("poonam");
 	
   
@@ -220,19 +220,90 @@ System.out.println(tset);
 System.out.println("/////////////////////////////////something IMP//////////////////////////////");
 		
 
-   ArrayList<Student> ll = new ArrayList() ;
-   
-   ll.add(new Student(23  , "Surya" , 89)) ;
-   ll.add(new Student(223  , "purvi" , 8923)) ;
-   ll.add(new Student(243  , "Vaibhav" , 839)) ;
-   
-   for (Student kk:ll) {
-	  System.out.println(kk);
-   }
-   
-
+ 
    
    
+   ///// comparable and comparator 
+   
+   TreeSet<Integer>  k  = new TreeSet<>() ;
+   k.add(12) ;
+   k.add(124) ;
+   k.add(12442) ;
+    k.add(3) ;
+    System.out.println(k);
+  
+    
+    TreeSet<Student>  kk  = new TreeSet<>() ;
+    kk.add(new Student(23  , "Surya" , 89)) ;
+    kk.add(new Student(23  , "Purvi" , 8923)) ;
+    kk.add(new Student(243  , "Vaibhav" , 839)) ;
+    
+    kk.add(new Student(1  , "Raakesh" , 839)) ;
+    kk.add(new Student(999  , "Vikas" , 839)) ;
+    
+    System.out.println(kk);
+    
+    Student s1  = new Student(89 , "mohan pyare" , 90) ;
+    Student s2  = new Student(9 , "mohan pyare" , 90) ;
+    
+    ;
+    System.out.println( s1.compareTo(s2));
+    
+    
+    
+    
+    ArrayList<Student> ll = new ArrayList() ;
+    
+    ll.add(new Student(23  ,"Surya" , 89)) ;
+    ll.add(new Student(223  ,"Purvi" , 8923)) ;
+    ll.add(new Student(243  ,"Vaibhav" , 839)) ;
+    ll.add(new Student(43  , "Abhay" , 839)) ;
+    ll.add(new Student(24  , "Zyan" , 839)) ;
+    
+  //  Collections.sort(ll , new NameComaprator()) ;
+    
+    
+//    Collections.sort(ll);
+//    
+//    
+//    for (Student p:ll) {
+// 	  System.out.println(p);
+//    
+//   
+//    }
+//
+//   
+    
+    Queue<Integer> tt =  new LinkedList<> ();
+    
+    // fifo 
+    tt.add(121) ;
+    tt.add(11) ;
+    tt.add(5) ;
+    tt.add(7) ;
+    
+    tt.add(1211) ;
+    tt.offer(99) ;
+    
+   tt.remove() ;
+   
+   
+   int kll  = tt.peek() ;
+   
+   int h =  tt.poll()  ;
+   
+   
+   System.out.println(kll);
+   System.out.println(tt);
+   System.out.println(h);
+   
+   System.out.println(tt);
+    tt.clear() ;
+    
+    
+    int kjl = tt.poll() ;
+    System.out.println(kjl);
+    
    
 
 		

@@ -1,11 +1,11 @@
 
 package nov_14.collection;
 
-public class Box<T>{
+public class Box3{
 	
-	T  p   ;
+	Boolean  p   ;
 
-	public Box(T p) {
+	public Box3(Boolean p) {
 		
 		this.p = p;
 	}
@@ -24,10 +24,7 @@ public class Box<T>{
 	public static void main(String[] args) {
 		
 //		Box<Integer> jk = new Box<>(7987)  ;
-		Box<Boolean> bb = new Box<>(false);
-		
-		Box<Integer> kl =  new Box<>(90);
-		
+		Box3 bb = new Box3(true) ;
 		
 		
 		bb.display();

@@ -4,7 +4,7 @@ public class X  extends Thread{
 	
 	// now this classs have capacity to create its own thread 
 	
-	
+	@Override
 	public void run() {
 		
 	// isi method mai vo saari chije likhna hai jo main thread k pallel aap run karnaa 
