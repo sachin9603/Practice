@@ -3,6 +3,7 @@ package nov6;
 import java.util.*;
 
 public class Basic22 {
+	//core java --sql----> jdbc ( java database connectivity )  ----- > orm tools(hybernate)---->spring ---- > sprintboot 
 	
 	
 	public static void main(String[] args) {
