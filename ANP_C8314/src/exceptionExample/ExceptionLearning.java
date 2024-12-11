@@ -19,8 +19,9 @@ public class ExceptionLearning {
 		}
 		
 		
-		
-		
+	// Throwable ----Exception -------> CompileTime Exception 
+		    //        |
+		   //         |______--->RuntimeExceptionClass -----> Runtime Exception
 //		try {
 //			Class.forName("Aug6.BuilderPattern.userClass") ;
 //		} catch (ClassNotFoundException e) {
