@@ -1,7 +1,6 @@
 package com.student.util;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 
 import com.student.entity.Course;
@@ -17,13 +16,15 @@ private static SessionFactory buildSessionFactory()
 {
 
 	try {
-		return new Configuration().configure("hibernate.cfg.xml")
-				.addAnnotatedClass(Student.class)
-				.addAnnotatedClass(Course.class)
-				.addAnnotatedClass(Instructor.class)
-				.addAnnotatedClass(Enrollment.class)
-				.addAnnotatedClass(Feedback.class)
-				.buildSessionFactory();
+		
+			return new Configuration().configure("hibernate.cfg.xml")
+					.addAnnotatedClass(Student.class)
+					.addAnnotatedClass(Course.class)
+					.addAnnotatedClass(Instructor.class)
+					.addAnnotatedClass(Enrollment.class)
+					.addAnnotatedClass(Feedback.class)
+					.buildSessionFactory();
+		
 		
 	}catch (Throwable e) {
 		throw new ExceptionInInitializerError(e);
@@ -36,7 +37,12 @@ public static SessionFactory getSessionFactory() {
 
 public static Session getSession()
 {
-  return getSessionFactory().openSession(); //session opened
+  try {
+	return getSessionFactory().openSession();
+} catch (HibernateException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+} //session opened
 }
 	
 }

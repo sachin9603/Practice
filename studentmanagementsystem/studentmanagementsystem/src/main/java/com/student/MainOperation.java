@@ -25,6 +25,7 @@ public static void mainOps()
 	switch(input)
 	{
 		case 1:
+			
 			StudentOperations();
 			System.out.println("=======================================");
 	          break;
@@ -66,7 +67,7 @@ public static void mainOps()
 public static void main(String[] args)
 {
 	
-	mainOps();
+   mainOps();
 
 }
 }
