@@ -2,43 +2,52 @@ package studentManagementSystem.model;
 
 public class Student {
 	
-	private Integer rollnumber ;
-	private String name  ;
-	private String address ;
-	
-	public Integer getRollnumber() {
-		return rollnumber;
+//	  StudentID INT primary key ,
+//	    studentName VARCHAR(225),
+//	    studentAddress VARCHAR(225),
+//	    classid INT ,
+	private Integer StudentID ;
+	private String studentName  ;
+	private String studentAddress ;
+	private Integer classid ;
+	public Student(Integer studentID, String studentName, String studentAddress, Integer classid) {
+		super();
+		StudentID = studentID;
+		this.studentName = studentName;
+		this.studentAddress = studentAddress;
+		this.classid = classid;
 	}
-	public void setRollnumber(Integer rollnumber) {
-		this.rollnumber = rollnumber;
+	public Integer getStudentID() {
+		return StudentID;
 	}
-	public String getName() {
-		return name;
+	public void setStudentID(Integer studentID) {
+		StudentID = studentID;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public String getStudentName() {
+		return studentName;
 	}
-	public String getAddress() {
-		return address;
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public String getStudentAddress() {
+		return studentAddress;
 	}
-	
-	public Student(Integer rollnumber, String name, String address) {
-		
-		this.rollnumber = rollnumber;
-		this.name = name;
-		this.address = address;
+	public void setStudentAddress(String studentAddress) {
+		this.studentAddress = studentAddress;
 	}
-	public Student() {
-	
+	public Integer getClassid() {
+		return classid;
 	}
+	public void setClassid(Integer classid) {
+		this.classid = classid;
+	}
+ 
+	public Student() {}
 	@Override
 	public String toString() {
-		return "Student [rollnumber=" + rollnumber + ", name=" + name + ", address=" + address + "]";
-	}
-	
+		return "Student [StudentID=" + StudentID + ", studentName=" + studentName + ", studentAddress=" + studentAddress
+				+ ", classid=" + classid + "]";
+	}  ;
 	
 	
 	

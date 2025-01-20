@@ -28,15 +28,8 @@ public class Dao {
 	
 	public Connection getConnection() throws SQLException {
 		
-		Connection  con  = DriverManager.getConnection("jdbc:mysql://localhost:3306/anpc8336","root", "root") ;
+		Connection  con  = DriverManager.getConnection("jdbc:mysql://localhost:3306/basicpro","root", "root") ;
      return con  ;
 		
 	}
-	
-	
-	
-	
-	
-	
-
 }

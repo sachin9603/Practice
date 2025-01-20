@@ -46,7 +46,7 @@ public class Demo {
 		stArr[1] = new Student(12 , "Gopal" , 2112) ;
 		stArr[2] = new Student(12 , "Satish" , 2112) ;
 		
-		
+		stArr[1].pado();
 		
 		for (Student st  :stArr) {
 			System.out.println(st);

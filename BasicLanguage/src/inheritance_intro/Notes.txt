@@ -1,0 +1,12 @@
+Definition -
+			When we construct a new class from existing class in such a way that a new class access all the 
+			features and properties of existing class called inheritance.
+			 
+			 or
+			 
+			 Inheritance in Java is a mechanism in which one object acquires all the properties 
+			 and behaviors of a parent object.
+			 
+Terms used in Inheritance - 
+
+			Class, Sub Class/Child Class, Super Class/Parent Class, Reusability	
