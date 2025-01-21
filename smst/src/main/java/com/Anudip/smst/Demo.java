@@ -32,20 +32,37 @@ public class Demo {
 		
 		
 		
+//		
+//		smst_ obj  = em.find(smst_.class , 2 ) ;
+//		
+//		
+//		if (obj != null) {
+//			em.getTransaction().begin(); 
+//			em.remove(obj);
+//			
+//			em.getTransaction().commit(); 
+//			em.close();
+//		}
+//		System.out.println("data Get Deleted Successfully ");
+//		
+//		
+//		
 		
-		smst_ obj  = em.find(smst_.class , 2 ) ;
+		// update Operation 
+		
+		// merge() --- it will find the data and replace the data with this new data -
+		// -- but if there is no data so it will create a new data 
+	
+		smst_ student = new smst_(3, "Vaibhav" , "Vidisha" , "268763");
 		
 		
-		if (obj != null) {
-			em.getTransaction().begin(); 
-			em.remove(obj);
-			
-			em.getTransaction().commit(); 
-			em.close();
-		}
-		System.out.println("data Get Deleted Successfully ");
+		em.getTransaction().begin(); 
 		
+		em.merge(student) ;
 		
+		em.getTransaction().commit();
+		
+		em.close();
 		
 		
 		
