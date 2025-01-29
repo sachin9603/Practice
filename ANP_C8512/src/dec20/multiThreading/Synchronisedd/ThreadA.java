@@ -13,7 +13,7 @@ public class ThreadA extends Thread {
 		
 	}
 	
-	public void run() {
+	public void run(){
 		A.fun1(name);
 	}
 	

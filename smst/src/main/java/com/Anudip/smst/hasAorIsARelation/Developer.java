@@ -7,6 +7,7 @@ import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Column ;
@@ -47,7 +48,7 @@ public class Developer {
 //	 @Embedded
 //	private Address OfficeAdd ;	
 //	
-	@ElementCollection 
+	@ElementCollection(fetch = FetchType.EAGER)
 	@Embedded
 	private Set<Address> addresses  = new HashSet<Address>()  ;
 	

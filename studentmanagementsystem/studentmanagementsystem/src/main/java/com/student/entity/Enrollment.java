@@ -17,6 +17,7 @@ public class Enrollment {
 @Id
 @Column(length = 10)
 private String enrollmentId;
+
 @Temporal(TemporalType.DATE)
 private Date enrollmentDate=new Date();
 

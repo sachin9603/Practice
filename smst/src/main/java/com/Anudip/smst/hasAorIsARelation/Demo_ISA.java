@@ -9,10 +9,10 @@ public class Demo_ISA {
 	
 	public static void main(String[] args) {
 		
-EntityManagerFactory emf  = Persistence.createEntityManagerFactory("developerUnit");
+        EntityManagerFactory emf  = Persistence.createEntityManagerFactory("developerUnit");
 		
 		EntityManager em = emf.createEntityManager() ;
-//		
+		
 //		Address  add  = new Address("Inodre" , "MP" , "4652001") ;
 //		Developer dev  = new Developer(8989  , "Ruhul" , 50000  , add) ;
 //		
@@ -21,10 +21,9 @@ EntityManagerFactory emf  = Persistence.createEntityManagerFactory("developerUni
 //		em.persist(dev);
 //		
 //		em.getTransaction().commit(); 
-//		
+		
 //		em.close();
-//		
-//		
+		
 		
 		
 //		Address  add  = new Address("Inodre" , "MP" , "4652001") ;
@@ -43,12 +42,12 @@ EntityManagerFactory emf  = Persistence.createEntityManagerFactory("developerUni
 		
 		
 
-		Address  add  = new Address("Inodre" , "MP" , "4652001") ;
+		Address  home_add  = new Address("Inodre" , "MP" , "4652001") ;
 		Address  addOff  = new Address("Banglore" , "Karnataka" , "4652901") ;
 		Developer dev  = new Developer(8989  , "Pratiksha" , 50000  ) ;
 		dev.getAddresses().add(addOff) ;
 		
-		dev.getAddresses().add(add) ;
+		dev.getAddresses().add(home_add) ;
 		em.getTransaction().begin(); 
 		
 		em.persist(dev);

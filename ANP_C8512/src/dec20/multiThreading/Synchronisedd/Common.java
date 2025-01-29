@@ -3,9 +3,8 @@ package dec20.multiThreading.Synchronisedd;
 public class Common {
 
 	
-	
-	
-	public synchronized static void  fun1(String name) {
+	// we want two thread Should not access this fun1 in one go 
+	public static synchronized  void  fun1(String name) {
 		
 		System.out.print("Welcome ");
 		
