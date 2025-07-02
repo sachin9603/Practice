@@ -1,19 +1,25 @@
 package chupeHuye;
 
+import basicConcept.Employee;
+
 public class Demo {
 	
-	public static void main() {
-		System.out.println("first main");
-		
-	}
 	
-	public static void main(String args[]) {
-		System.out.println("second main");
+	public static void main(String[] args) {
+		
+		Employee e1  = new Employee()  ;
+				
+				e1.shift();
+				String name  =e1.name;
+				
+				System.out.println(name);
+				System.out.println(e1.companyname);
+
 		
 	}
-	public static void main(Integer args[]) {
-		System.out.println("third main");
-		
-	}
+
+	
+	
+	
 
 }
