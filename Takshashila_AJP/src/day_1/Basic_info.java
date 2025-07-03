@@ -32,7 +32,7 @@ public class Basic_info {
 		
 		// syso+ctrl+space
 		
-		System.out.println(" Today is our first day ");
+		xToday is our first day ");
 		
 		//camelCaseThenCapital
 		//PascalCase---->> CapitalSeShuru
