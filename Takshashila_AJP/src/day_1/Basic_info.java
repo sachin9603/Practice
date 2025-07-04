@@ -9,7 +9,17 @@ package day_1;
 asdas
 asdva*/
 
+// parent class  --- super class 
 public class Basic_info {
+	
+	 public String class_name  = " Surya ";
+	 
+	 private String Safe_password = "Surya@123" ;
+	 
+	 
+	 protected double total_property  = 120033323.89 ;
+	 
+	 
 
 // all coloured words are key-words public class package
 	
@@ -32,7 +42,7 @@ public class Basic_info {
 		
 		// syso+ctrl+space
 		
-		xToday is our first day ");
+	
 		
 		//camelCaseThenCapital
 		//PascalCase---->> CapitalSeShuru
