@@ -24,7 +24,7 @@ public class Employee {
 	
 	
 	///
-	//parameter vala 
+	//parameter vala constructor 
 	
 	public Employee(String naam  , double paise  , String dep )  {
 		
@@ -38,17 +38,31 @@ public class Employee {
 	
 
 	// copy contructor
+
+	
+
+	
+	
+	// tostring method is  String  representation of any object 
+	
+
+
+	@Override
+	public String toString() {
+		
+		return "Employee [employee_name=" + employee_name + ", employee_salary=" + employee_salary
+				+ ", employee_deparment=" + employee_deparment + "]";
+		
+	}
+
+
+	
 	
 	
 	// or getter or setter se 
 	
 	// is is special type of method that is used to access private variable 
 	
-	
-
-	
-	
-
 
 	public String getEmployee_name() {
 		return employee_name;
@@ -57,20 +71,29 @@ public class Employee {
 
 
 	public void setEmployee_name(String employee_name) {
+	
 		this.employee_name = employee_name;
 	}
 
 
 
 	public double getEmployee_salary() {
-		return employee_salary;
+		
+				return employee_salary;
 	}
 
 
 
 	public void setEmployee_salary(double employee_salary) {
+		
+		if(employee_salary <10000 ) {
+			this.employee_salary = 25000;
+		}else {
 		this.employee_salary = employee_salary;
+		}
+		
 	}
+	
 
 
 
@@ -82,19 +105,6 @@ public class Employee {
 
 	public void setEmployee_deparment(String employee_deparment) {
 		this.employee_deparment = employee_deparment;
-	}
-
-
-
-	
-	
-	// tostring method is  String  representation of any object 
-	
-
-	@Override
-	public String toString() {
-		return "Employee [employee_name=" + employee_name + ", employee_salary=" + employee_salary
-				+ ", employee_deparment=" + employee_deparment + "]";
 	}
 		
 	
