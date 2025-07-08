@@ -49,19 +49,37 @@ public class Basic_info {
 		
 		/// Variables 
 		//data type--- varibale's name --assigning operator --- Literals 
-		int              age           =           20  ;
+		int              age           =           19  ;
 		
 		///primitive ---- int, char , boolean , float, short, long ,byte, double
 		// non primitive --- those are object --- , they defined as class 
 		
+		/// int , --- wrapper class  ---Integer
+		
 		char s = 's' ;
 		boolean bool = true ;
+		Boolean bb = true ;
+		
+		byte so= 10  ; // 2 byte
+		Integer  ll = 90  //  4 byte 
+		
 		
 		String  name = "Sachin" ;
 		String  adhar  = "1233 7897 9789";// 
 		String pan = "ENRPP7838E" ;
 		
 		System.out.println("sachin's adhar " + adhar);
+		
+		int ss = 20  ;
+		Integer kl = 20  ;
+		
+		System.out.println(Integer.max(age, ss));
+		System.out.println(Integer.MIN_VALUE);
+		
+		
+		
+		
+				
 		
 		
 		
