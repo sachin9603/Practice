@@ -14,6 +14,7 @@ public class Demo {
 	public static void main(String[] args) {
 		
 		Dog dog1 = new Dog() ;
+		
 		int s = dog1.leg ;// animal 
 		
 		dog1.sound(); // 
@@ -24,7 +25,20 @@ public class Demo {
 		rakesh.eat();
 		rakesh.sound();
 		
+		Animal a  = new Animal () ;
+		a.sound();
 		
+		Dog dogeshBhai  = new Dog()  ;
+		
+		dogeshBhai.sound();
+		
+		Animal aa  = new Animal () ;
+		a.sound();
+		
+		
+		Animal dd =  new Dog()  ;
+		dd.sound();
+		//Scenario
 		
 		
 		
