@@ -1,5 +1,5 @@
 package day_3;
-// it is java bean 
+// it is java bean  
 public class Employee {
 	
 	/// class is blue print for object 
@@ -8,6 +8,8 @@ public class Employee {
 	private String employee_name ;
 	private double employee_salary  ;
 	private String employee_deparment ;
+	//public String companyname  ;
+	
 	
 	
 	//constructor--- it is same as method but it does not return any thing explicitly 

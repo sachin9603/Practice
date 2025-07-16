@@ -13,7 +13,7 @@ public abstract class Bank {
 	}
 	
 	// abstract method also 
-	public abstract void bankRuleBook() ;
+	public abstract void bankRuleBook()  ;
 	
 	public abstract void login() ;
 	
@@ -26,9 +26,20 @@ public abstract class Bank {
 	
 	
 	public Bank() {
+		this("No Rule") ;
 		
 	System.out.println("mai hu abs ka contructor or mai ko call kiya hai child class k contructor ");
 	}
+	
+	
+	private Bank(String ruleBook) {
+		
+		System.out.println("welcomee inside private con");
+		
+	}
+	
+	
+	
 	
 	
 	

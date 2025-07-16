@@ -12,6 +12,18 @@ public class Demo {
 		newBranch.rateOFIntrest() ;
 		
 		
+		Demo22 d  = new Demo22()  ;
+		
+		
+		   EmployeeApp.appLogo(); 
+		   
+		EmployeeApp Sanjay  = new EmployeeAppIMPL()  ;
+		Sanjay.save()  ;
+		Sanjay.login();
+	
+		
+		
+		
 		
 		
 		

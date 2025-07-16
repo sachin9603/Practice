@@ -46,6 +46,7 @@ public class SBI extends Bank {
 	}
 	
 	public SBI() {
+		//super() 
 	System.out.println(" mai hu child ka con");
 	}
 
