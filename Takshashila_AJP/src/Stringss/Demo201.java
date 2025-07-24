@@ -7,7 +7,7 @@ public class Demo201 {
 	public static void main(String[] args) {
 		
 		 // 0 1 2 3 4 5       
-		String s  = "Welcome" ;
+		String s  = "Welcome" ; // stp -- string constant pool 
 		String s1  = "Welcome" ;
 		String s3 = new String("Welcome") ;
 		String s4 = new String("Welcome") ;
@@ -15,9 +15,10 @@ public class Demo201 {
 		
 		
 		// you should have idea about  ==  ---it checks memory address (location) 
-		System.out.println( s == s1);
-		System.out.println(s==s3);
-		System.out.println(s3== s4);
+		System.out.println( s == s1); // true 
+		System.out.println(s==s3); // flase
+		System.out.println(s3== s4); // false
+		
 	// .equals check content
 		System.out.println(s.equals(s4));
 		
@@ -64,6 +65,21 @@ public class Demo201 {
 		kkk.append(" parmar") ;
 		System.out.println(kkk);
 		
+		
+		// create all posible substring of sachin -- s sa sac sach sachi sachin
+		
+		StringBuffer newString  =  new StringBuffer("") ;
+		// "" , ""+w = w 
+		//0 123456
+		// welcome
+		for(int i =0  ;i<s.length() ;i++) {
+			
+			newString = newString.append(s.charAt(i)) ;
+			System.out.println(newString) ;
+		}
+	
+		//geeksforgeeks" ---  atm 8923 ---1000 1001 1002 --
+	;
 		
 	}
 
