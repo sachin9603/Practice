@@ -4,6 +4,29 @@ import java.util.Scanner;
 
 public class Demo {
 	
+	
+	public static void ques5()  {
+		 int[][] mat = {
+		            {10, 20, 30, 40, 50}, // row 0
+		            {11, 21, 31, 41, 51}, // row 1
+		            {12, 22, 32, 42, 52}, // row 2 52 41 30x 35
+		            {13, 23, 33, 43, 53}, // row 3
+		            {14, 24, 34, 44, 54}  // row 4
+		        };
+		 int row = mat.length  ;
+		 int col  = mat[0].length;
+		  
+		 
+		 
+		 
+		 
+		 for ( int i =row/2  , j =col-1  ; i>=0 && j>=col/2 ; i-- ,j--) {
+			 System.out.println(mat[i][j]);
+		 }
+		  
+		 
+		 
+	}
 
 public static void ques4() {
 		
@@ -150,14 +173,17 @@ public static void ques3() {
 //		
 //		System.out.println(b);
 		
-	//	ques1() ;
+		//ques1() ;
 		
-		ques2() ;
+//		ques2() ;
+//		
+//		ques3() ;	
+//		System.out.println();
+//		ques4() ;
 		
-		ques3() ;	
-		System.out.println();
-		ques4() ;
+		ques5() ;
 		
+//		
 		
 		
 		
