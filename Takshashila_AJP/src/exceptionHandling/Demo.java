@@ -2,8 +2,27 @@ package exceptionHandling;
 
 public class Demo {
 	
+	
 //	an event that occurs during the execution of a program that disrupts 
 //	the normal flow of instructions.
+	
+	
+	
+	
+	
+	
+	public static void login(int n) throws LoginException {
+		
+		if (n!=100) {
+			throw new LoginException("your code is wrong and login is failed ") ;
+			
+		}else {
+			System.out.println("login successfull ");
+		}
+		
+		
+	}
+
 	
 	public static void main(String[] args) {
 		int a  = 0  ;
@@ -18,7 +37,8 @@ public class Demo {
 		
 		try {
 			
-			int c = b/a  ;
+			int c = b/a  ; // yaha par excception 
+			
 		}catch(ArithmeticException ae ){
 			
 		System.out.println(ae .getMessage());
@@ -28,6 +48,9 @@ public class Demo {
 		
 		System.out.println("sachin");
 		System.out.println("sachin");
+		
+		
+		
 		
 		
 		//Checked Exception -- compile time --- jab likh rahe the 
@@ -48,6 +71,20 @@ public class Demo {
 		
 		//int[] arr = {1,1,1} ;
 		
+		
+		
+//		try {
+//			
+//			
+//			// login yahi chek esxxcpetion throw kar rhahi hai toh likhte vakt hi pata chal jaayega ki yaha issue hai 
+//			
+//		} catch (LoginException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
+//	
+	//	login(100) ;
 		
 	}
 	
