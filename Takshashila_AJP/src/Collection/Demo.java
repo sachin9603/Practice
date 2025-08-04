@@ -42,6 +42,9 @@ public class Demo {
 		list.add("renu") ;
 		list.add(12) ;
 		list.add(true) ;
+		list.add(null)  ;
+		list.add(null) ;
+		list.add(null) ;
 		
 		
 		
@@ -75,8 +78,13 @@ public class Demo {
 		System.out.println(lst);
 		
 		
+		// vector is same as arraylist but it belongs to lagacy class 
+		// and it is thread safe
 		
 		
+		
+		// it is coming from  legacy class 
+		//
 		Stack<Integer> st  = new Stack<> ()  ;// LIFO last in first out 
 		
 		st.add(1212);
