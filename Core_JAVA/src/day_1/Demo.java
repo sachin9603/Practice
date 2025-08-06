@@ -13,6 +13,9 @@ public class Demo {
 	
 	public static void main(String[] args) {
 		
+	//	String aaaa  = "Sachin" ;
+		
+		
 		System.out.println("This is my first program ");
 		System.out.println("This is my first program ");
 		System.out.println("This is my first program ");
@@ -40,17 +43,21 @@ public class Demo {
 	Byte aa  = 23  ;
 	
 	
-	short jk  = 9023 ;
+	short jk  = 5000 ; //16-bits signed two-complement integer. Its range of values is -32,768 to 32,767.
+Short 
+
 	
-	int ll  = 999898 ;
+	int ll  = 999898 ; //
 	
-	long  kk  = 323232232 ;
+	long  kk  = 323232232 ; //
 	
-	char op  = 65 ;
+	char op  = '1' ;
 	
 	
 	
 	float  kkq  = 5.66f ; // 4 byte
+	Float ty  = 90.00f ;
+
 	
 	double lk  = 232323224.3 ; /// 8byte 
 	
@@ -69,6 +76,8 @@ public class Demo {
 	
 	int mm  = 20  ;
 	int nn  = 30 ;
+	Integer klk  = 30  ;
+	
 	
     int cc  = mm + nn ;
     
@@ -116,6 +125,41 @@ public class Demo {
 	
 	
 	System.out.println(Arrays.toString(km));
+	
+	Boolean kjk =  true ;
+	
+	int mam  = 90  ; // it does't not have any funtion 
+	
+	Integer lll = 7878  ;// it give addition function  
+	
+	String pop  = "788989" ; // it is string  isko integer mai covert karo 
+	
+	Integer hhhh  = Integer.parseInt(pop) ;
+	
+	System.out.println(hhhh+10 );
+	
+	
+	
+	
+	
+	
+	String gg  = "79827302378" ;
+	
+	System.out.println(gg+909090);
+	System.out.println(lll+909090 );
+	
+	System.out.println(Integer.MAX_VALUE);
+	
+	System.out.println(Integer.MIN_VALUE);
+	System.out.println(Integer.SIZE);
+	
+	
+	
+	
+
+	
+	
+	
 	
 	
 	
