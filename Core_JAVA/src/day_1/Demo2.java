@@ -70,7 +70,6 @@ public class Demo2 {
 	
 	// Switch statement 
 	
-	
 	switch(day) {
 	
 	case 1 :
@@ -101,7 +100,55 @@ public class Demo2 {
 	
 	
 	}
+	
+	
+	
+	/// Loops
+	
+	// for loop  , while loop  , dowhile loop  
+	
+	
+//	System.out.println("Sachin");
+//	System.out.println("Sachin");
+//	System.out.println("Sachin");
+//	System.out.println("Sachin");
+//	System.out.println("Sachin");
+//	System.out.println("Sachin");
+	
+	//0 1 2 3 4 
+	     /// 1        2     //4 ------>   1 2 3 4 --- 234  - 234  - 234  -234  -234  -234 
+	for(int i =  0 ; i< 10  ;i= i+1) {
 		
+		/// 3
+		
+		System.out.println(i);
+		
+		if (i ==7) {
+			break ;
+		}
+		
+		
+		if(i== 5) {
+			continue  ; // it will skip code after 5 
+		}
+		System.out.println("sachin");
+		
+	}
+	
+	
+	System.out.println("Game over");
+	
+	
+	
+	
+	
+	int kk  = 2  ;
+	 // 2 4 6 8 10
+	while (kk <12  ) {
+		System.out.println("welcome");
+		kk  = kk +2 ;
+		
+	}
 		
 		
 		
