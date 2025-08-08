@@ -44,7 +44,7 @@ public class Demo {
 	
 	
 	short jk  = 5000 ; //16-bits signed two-complement integer. Its range of values is -32,768 to 32,767.
-Short 
+
 
 	
 	int ll  = 999898 ; //
@@ -155,6 +155,10 @@ Short
 	
 	
 	
+	
+	
+	Demo3 kkk  = new Demo3()  ;
+	System.out.println(	kkk.totalProperty);
 	
 
 	

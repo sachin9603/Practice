@@ -2,6 +2,56 @@ package day_1;
 
 public class Demo2 {
 	
+	// method yaa function 
+	public void rightAngleTriangle() {
+		
+		
+		for( int i = 0 ; i<5  ; i++) {
+			// i = 0, 1 , 2 , 3 , 4
+			
+			                  //2
+			for(int  j =0  ; j<=i ; j++) {
+				System.out.print("*"+" ");
+			}
+			
+			// * 
+			// * * 
+			// * * * 
+			// * * * *
+			// * * * * *
+			
+			
+			
+			System.out.println();
+		}
+		
+		
+	}
+	
+	
+	
+	
+	// method yaa function 
+		public void reverseRightAngleTriangle() {
+			System.out.println();
+		
+				
+			for (int i =5  ;i>=0; i-- ) {
+				
+				for ( int j =0 ;j<=i ; j++) {
+					System.out.print("*" + " ");
+				}
+				
+				System.out.println();
+			}
+			
+			
+			
+		}
+		
+		
+		
+		
 	
 	public static void main(String[] args) {
 		
@@ -95,6 +145,7 @@ public class Demo2 {
 		
 	System.out.println("Friday");
 	break ;
+	
 	default  :
 		System.out.println("you have entered wrong day ");
 	
@@ -117,19 +168,23 @@ public class Demo2 {
 	
 	//0 1 2 3 4 
 	     /// 1        2     //4 ------>   1 2 3 4 --- 234  - 234  - 234  -234  -234  -234 
-	for(int i =  0 ; i< 10  ;i= i+1) {
+	for(int i =  0 ; i< 10  ;i = i+1) {
 		
 		/// 3
 		
+		// 0 1 2 3 4 5 6 7 8 9 
+		
 		System.out.println(i);
 		
-		if (i ==7) {
+		if (i == 7) {
 			break ;
 		}
 		
 		
-		if(i== 5) {
-			continue  ; // it will skip code after 5 
+		if(i== 5){
+			
+			continue  ; // it will skip code after 5  and will reach on 6 
+			
 		}
 		System.out.println("sachin");
 		
@@ -144,15 +199,37 @@ public class Demo2 {
 	
 	int kk  = 2  ;
 	 // 2 4 6 8 10
-	while (kk <12  ) {
+	while (kk < 12  ) {
+		
+		System.out.println(kk);
 		System.out.println("welcome");
+		
 		kk  = kk +2 ;
 		
 	}
 		
+	
+	
+	/*
+	 * *
+	 * * *
+	 * * * *
+	 * * * * *
+	 * * * * * *
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
 		
+	
+	
+	Demo2 obj  = new Demo2()  ;
+	
+	obj.rightAngleTriangle(); 
 		
-		
+	obj.reverseRightAngleTriangle() ;
+	
 		
 		
 	}
