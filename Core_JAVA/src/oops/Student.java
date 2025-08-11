@@ -46,6 +46,36 @@ public class Student {
 	
 	
 	
+	// constructor   --- banane vala 
+	
+	// return type --- none --> implicitly  it is returning object of that class
+	public Student() {
+		
+	}
+	
+	
+	// pamertise contructor 
+	
+	// there should be always a default con. when you are creating parameer
+	public Student (int roll  , String name  , String sub  , String add) {
+		
+		this.rollNumber = roll  ;
+		this.name  = name  ;
+		this.subject  = sub ;
+		this.address  = add  ;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
