@@ -36,7 +36,7 @@ public class Demo {
 		System.out.println(e1);
 		
 		Dog k  = new Dog()  ; // default cons
-		k.eating(); // it is coming from animal 
+		k.eating(); // it is coming from animal, run time polymorphism
 		k.bark()  ;
 		k.eye  = 2  ;
 		k.leg = 4  ;

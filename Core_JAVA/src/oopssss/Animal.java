@@ -6,7 +6,7 @@ public class Animal {
 	int eye  ;
 	int leg  ;  
 	
-	public void eating()  {
+	protected void eating()  {
 		System.out.println("yes all animal is eating something ");
 	}
 
@@ -17,6 +17,7 @@ public class Animal {
 		this.eye = eye;
 		this.leg = leg;
 	}
+	
 	 public Animal() {} ;
 	
 

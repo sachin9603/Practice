@@ -26,8 +26,11 @@ public class Dog extends Animal{
 	@Override
 	public void eating()  {
 		
+		System.out.println("here implementation part of method is different ");
 		System.out.println(" Dog is eating bones  ");
 		
+		
+				
 	}
 
 }

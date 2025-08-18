@@ -8,9 +8,10 @@ public class Demo {
 	// morph ---form ----
 	
 	
-	/// overriding --- is a realtion (parent child )-- only implementation will be change 
-	//---- overloading --- ek hi method hai or same clsss mai ,
-	//number of parameter change ho jayege and it is called complitime polymorphism 
+	/// overriding --- is a realtion (parent child )-- only implementation will be change , return type method name same hoga 
+	
+	//--- overloading --- ek hi method hai or same clsss mai  lekin,
+	//number of parameter change ho jayege and it is called compile time polymorphism 
 	
 	
 	public int cal( int a  , int b) {
@@ -31,7 +32,7 @@ public class Demo {
 		
 		Demo  obj = new Demo()  ;
 		
-	int n =	obj.cal(12, 12) ;
+	int n =	obj.cal(12, 12) ; // code likhte vakt hi pata chal gaya ki konsi method use hogi that is called complie time 
 		
 	System.out.println(n);
 	
@@ -39,7 +40,6 @@ public class Demo {
 	int ans  = obj.cal(12, 12, 12);
 	
 	System.out.println(ans);
-	
 	
 	
 	double d  = obj.cal(12.1, 12.2,12.3) ;
