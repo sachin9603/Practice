@@ -21,5 +21,28 @@ public class Demo {
 		b1.rateofIntrest()  ;
 		b1.BankLOGO();
 		
+		
+		
+		
+		
+		User u = new Admin()  ;
+		u.signup();
+		
+		User u2  = new Customer()  ;
+		u2.signup();
+		u2.appLogo();
+		
+		
+		
+		Emoployee e1  = new EmployeeImpl() ;
+		e1.login();
+		e1.saveData();
+		
+		int s = e1.salary;
+		System.out.println(s);
+		
+		
+		
+		
 	}
 }
