@@ -1,7 +1,7 @@
 package Keyword;
 // final class bana di toh is class ko koi extend dnahi kar payga 
 
-public class Finalll {
+public  class Finalll {
 	
 	final String adhar; //non--initialise final varibale 
 	
@@ -21,6 +21,8 @@ public class Finalll {
 		System.out.println(" 10 to 6 ");
 	}
 	
+	
+	
 	public static void main(String[] args) {
 	final String a  = "welcome" ; // once a varibld declare by final , it wll nevere be change 
 	
@@ -29,7 +31,7 @@ public class Finalll {
 	
 	Finalll hhh  = new Finalll("84561239845612") ;
 	
-	//hhh.adhar  = "78789798798890" ;
+	hhh.adhar  = "78789798798890" ;
 	
 	System.out.println(hhh.adhar);
 	

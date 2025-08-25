@@ -10,14 +10,14 @@ public class Student {
 	
 	
 	public Student(String name, String sub, String email) {
-		super();
+		//super();
 		this.name = name;
 		this.sub = sub;
 		this.email = email;
 	}
 	
 	
-	public Student() {}
+//	public Student() {}
 
 
 	@Override

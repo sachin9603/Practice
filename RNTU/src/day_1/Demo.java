@@ -81,14 +81,109 @@ System.out.println("Welcome to Java Training by Anudip foundation and IBM");
   int aaa=5; //     // 6     7        7        8
   System.out.println(++aaa - ++aaa + aaa++  + aaa++ );
   
-  int aa=5;
+  System.out.println(aaa);// 9
+  
+  int aa=5;         // 4    3      4   4        2 + 2      2     +2    
   System.out.println((--aa+--aa)*(++aa-aa--)+(--aa+aa--)*(++aa + aa++));
 
   
   
   
+  int ak = 5;
+         //5       7    6      6 
+  int b = ak++ + ++ak + --ak + ak--;
+  System.out.println(ak + " " + b);
   
+  
+  int i = 1;
+        //1     2       2     3
+  int j = i++ + i++ + --i + ++i;
+  System.out.println(i + " " + j);
+  
+  
+   String s  = "Sachin" ;
+   
+   
+   // primitive datatype ----  int short long byte double float char boolean 
+   /// wrapper class  -------integer
+   // non primitive data type  -- means ye obj hote 
+   
+   
+   // class is frame work for creating obj
+   // choching-----{time --- 6 to 8 , sub - java advance , batch - 30  }
+   // batch 101 --
 		
+   
+   Student s1 = new Student() ; // s1 is object of student class 
+   
+   s1.name  = "Rakesh" ;
+   s1.roll = 7897 ;
+   s1.sub = "MATH";
+   
+   int e  = 90  ; // e is not object 
+   Integer  mn  = 90  ; // mn is object of Integer class 
+   
+   String qqq  = "23222" ;
+   
+   int  vcv  = Integer.parseInt(qqq) ;
+   
+   System.out.println(vcv+ 10);
+   
+  
+
+   
+   
+   
+   
+   System.out.println(Integer.MIN_VALUE);
+   
+   Short jhk = 80  ;
+   
+   Long opp = 900900L  ;
+   
+   Double bv  = 898.32 ;
+   
+   Boolean gf  = true  ;
+   
+   Byte  qwq  = 92;
+   
+   Character  bh = 'a';
+   
+   Float kdl = 898.2f ;
+   
+   
+   byte  gh  = 89  ;
+   
+   int y  = gh ; // this is doing automatic by jvm --->>>  implicit casting 
+   // when you are widing the data type then it will be automatic done by jvm 
+   
+   
+   int ii = 122  ;
+   
+  // byte hg  = ii  ; // when you are narrowing the data type then it would not be done by jvm automatic 
+   
+   
+   byte hg  = (byte) ii  ;
+   System.out.println(hg);
+   
+   
+   
+   
+   /// 
+   
+   
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 		
 	}
 	
