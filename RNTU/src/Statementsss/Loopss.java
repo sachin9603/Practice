@@ -37,6 +37,8 @@ public class Loopss {
 		// step 1 
 		int u  = 100  ; 
 		
+		boolean flg  = true  ;
+		
 		// check condition  2
 		while(u<100) {
 			// this line perform   3 
@@ -95,7 +97,7 @@ public class Loopss {
 			
 			// checking last number is even or not
 			if (lastnumber%2 == 0) {
-				sum =sum +lastnumber ;
+				sum++ ;
 			}
 			// eleminating last number 
 			jk = jk/10 ; //78945631 //7894563  // 789456//78945 //7894 //789 //78 //7
@@ -103,6 +105,10 @@ public class Loopss {
 			
 		}
 		System.out.println(sum);
+		
+		System.out.println(987578987/10)	 ;
+		
+		
 		
 		
 		

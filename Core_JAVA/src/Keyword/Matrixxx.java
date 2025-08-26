@@ -5,7 +5,7 @@ public class Matrixxx {
 		System.out.println();
 		
 		int[][] mat  = {{1,2,3},
-						{4,5,6},
+						{4,5,6}, // 11
 						{7,8,9} } ;
 		
 		for ( int i = mat.length-1 ;i>=0 ;i--) {
