@@ -1,22 +1,51 @@
 package Keyword;
 
 public class Matrixxx {
+	
+	public static void diamond_traversal() {
+		System.out.println();
+		int[][] mat  = {{1,2,3},
+						{4,5,6}, // 12
+						{7,8,9} } ;
+		
+		
+		for (int i =   (mat.length -1)/2 , j= mat[0].length-1  ;i>=0 && j>= (mat[0].length-1)/2 ;i--  , j--) {
+			System.out.print(mat[i][j]);
+		}
+		
+		
+		
+		
+		
+		
+	}
 	public static void n_traversal() {
 		System.out.println();
 		
-		int[][] mat  = {{1,2,3},
-						{4,5,6}, // 11
-						{7,8,9} } ;
+//		int[][] mat  = {{1,2,3},
+//						{4,5,6}, // 11
+//						{7,8,9} } ;
 		
-		for ( int i = mat.length-1 ;i>=0 ;i--) {
+		
+		int[][] mat = {
+			    { 1,  2,  3,  4,  5 },
+			    { 6,  7,  8,  9, 10 },
+			    {11, 12, 13, 14, 15 },
+			    {16, 17, 18, 19, 20 },
+			    {21, 22, 23, 24, 25 }
+			};
+		
+		for ( int i = mat.length-1 ;i>=0 ;i--) { //   7 4 1
 			System.out.print(mat[i][0]+" ");
 		}
 		
+	//	System.out.print(mat[1][1]);
 		
-		for ( int i = 1 ;i<mat.length-1 ;i++) {
+		for ( int i = 1 ;i<mat.length-1 ;i++) { // 5
 			System.out.print(mat[i][i]+" ");
 		}
-		for ( int i = mat.length-1 ;i>=0 ;i--) {
+		
+		for ( int i = mat.length-1 ;i>=0 ;i--) { //
 			System.out.print(mat[i][mat[0].length-1]+" ");
 		}
 		
@@ -26,15 +55,15 @@ public class Matrixxx {
 	
 	public static void reverseTraverse() {
 		               
-		int[][] mat  = {{1,8,9},
-						{2,7,10},
-						{3,6,11} ,
-						{4,5,12}} ;
+		int[][] mat  = {{1,8,9},   // 02   01
+						{2,7,10},    //  12 11
+						{3,6,11} ,    // 22   21
+						{4,5,12} } ; // 32  9 10 11 12 8 7 6 5 1 2 3 4
 		
-		             //2   1    0              
+		                  //2        1    0              
 		for ( int j  = mat[0].length-1 ; j>=0 ;j--) {
 			
-			
+			//0 1 2 3
 			for (int i =0  ;i<mat.length ;i++) {
 				System.out.print(mat[i][j]+" ");
 			}
@@ -91,6 +120,10 @@ public class Matrixxx {
 		transpose() ;
 		reverseTraverse()  ;
 		n_traversal()  ;
+		diamond_traversal() ;
+		
+		
+		
 		
 	}
 
