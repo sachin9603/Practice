@@ -1,5 +1,13 @@
 package day_1;
 
-public class Women {
+import oops.Human;
+
+public class Women extends Human{
+	
+	public static void main(String[] args) {
+		Women kk  = new Women()  ;
+		kk.haircolor = "Black";
+		
+	}
 
 }

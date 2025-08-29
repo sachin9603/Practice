@@ -10,7 +10,7 @@ public class Matrixxx {
 		
 		
 		for (int i =   (mat.length -1)/2 , j= mat[0].length-1  ;i>=0 && j>= (mat[0].length-1)/2 ;i--  , j--) {
-			System.out.print(mat[i][j]);
+			System.out.print(mat[i][j]+" ");
 		}
 		
 		

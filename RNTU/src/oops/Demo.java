@@ -46,6 +46,8 @@ public static void main(String[] args) {
     // jese hum sab human ko parents nai banaya 
     // jese ki car ko ek factory nai banaya hai 
     kelash.bodyweignt = "50";
+    kelash.haircolor  = "Burgundy" ;
+    
     
     
    //  vese hi saare object ko java mai constructor bana raha \

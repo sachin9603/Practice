@@ -1,5 +1,7 @@
 package day_1;
 
+import oops.Human;
+
 public class Demo {
 	
 	// block {}
@@ -166,8 +168,10 @@ System.out.println("Welcome to Java Training by Anudip foundation and IBM");
    byte hg  = (byte) ii  ;
    System.out.println(hg);
    
+   Human ssss = new Human()  ;
+   ssss.genticcode ="asdfasdf784512451564" ;
    
-   
+  
    
    /// 
    
