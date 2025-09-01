@@ -1,5 +1,6 @@
 package Exceptionall;
 
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 
 // java.lang package is already imported 
@@ -24,11 +25,12 @@ public class Demo {
 
 		//// calculation  this code is not runnng after line  
 		
-		
+		//int s = 10/0 ;
 		try {
 			int s = 10/0 ;
 			
 		}catch(Exception e ) {
+			
 			System.out.println(e.getMessage());
 		
 		}
@@ -60,7 +62,7 @@ public class Demo {
 		//checked ----- those exception whcih isdirectly extending exception class is know as checkeed 
 		
 		// compile time exception --- kyuki ye jab aap code likh rahe tabhi exception
-		//aayega esa pata lag jata hai matlab ki compilation time par hi pata lag jaayega 
+		//aayega,,,,,, esa pata lag jata hai matlab ki compilation time par hi pata lag jaayega 
 		
 		
 		
@@ -89,8 +91,53 @@ public class Demo {
 //		
 		
 		
+		// pehle hi code mai kuch problem aagya 
+		// try block k ander System.exit() 
+		try {
+		System.out.println("Sachin");
+	
+			
+		}finally {
+			
+			
+			System.out.println("It will always run no matter, is there is any exception or not ");
+		}
 		
 		
+		
+		
+		// Try block to check for exceptions
+        try (
+
+            // Creating an object of FileOutputStream
+            // to write stream or raw data
+
+            // Adding resource
+            FileOutputStream fos
+            = new FileOutputStream("sachinnn.txt")) {
+
+            // Custom string input
+            String text
+                = "Hello World. This is my java program";
+
+            // Converting string to bytes
+            byte arr[] = text.getBytes();
+
+            // Text written in the file
+            fos.write(arr);
+        }
+
+        // Catch block to handle exceptions
+        catch (Exception e) {
+
+            // Display message for the occurred exception
+            System.out.println(e);
+        }
+
+        // Display message for successful execution of
+        // program
+        System.out.println(
+            "Resource are closed and message has been written into the gfgtextfile.txt");
 		
 		
 	

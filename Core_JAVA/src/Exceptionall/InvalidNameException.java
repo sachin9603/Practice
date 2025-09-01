@@ -1,14 +1,14 @@
 package Exceptionall;
 
 // ye hai unchecked
-public class InvalidName extends RuntimeException {
+public class InvalidNameException extends RuntimeException {
 
-	public InvalidName() {
+	public InvalidNameException() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public InvalidName(String message) {
+	public InvalidNameException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
