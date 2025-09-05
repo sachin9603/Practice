@@ -6,8 +6,48 @@ public class Loopss {
 	  
 	  
 	  // for , while , do while 
+	
+	  public static void rightAngleTriagle(int N) {
+		  
+		         // 0 1 2 3 4
+		  for(int i =0  ;i<N ;i++) {
+			  
+			  for(int j =0  ;j<=i ;j++) {
+				System.out.print("* ");  
+				}
+			  //*
+			  //* *
+			  //* * *
+			  
+			  System.out.println();
+              }
+		  
+		  
+		  
+	  }
 	  
-	  
+	  public static int reverseNumber(int N) {
+		  
+		  //N =762132-- 231267
+		  //231
+		  int newNum  ;
+		  int ld = N%10 ;
+		  N= N/10 ;
+		  newNum= ld ;
+		  
+		  
+		  while(N>0) {
+			  
+			   ld = N%10 ;
+			  newNum = newNum*10 +ld ;
+			  N= N/10 ;
+			  
+		  }
+		  return  newNum ;
+		  
+		  
+		  
+	  }
 	   
 	   
 	  public static void main(String[] args) {
@@ -71,10 +111,74 @@ public class Loopss {
 		    System.out.println(sum);
 		    
 		    
+		    int count  = 0  ;
+		    for(int x =0  ; x<5; x++ ) { // x = 0
+		    	
+		    	
+		    	for(int u = 0  ; u<6; u++ ) {
+			    	System.out.println(" wecome ");
+			    	count++  ;
+			    	
+			    }
+			    
+		    	
+		    	
+		    }
+		    System.out.println(count);
+		   
+		    
+		    /// check prime number  
+		    
+		   // 2 3 5 7 11
+		    
+		    // brut force approch 
+		    
+		    
+		    checkPrime(2) ;
+		    
+		    
+		    int jhj = 100 ; //1 2 3 4 5 6
+		    
+		    
+		    for(int ii =1  ;ii<= jhj ; ii++) {
+		    	System.out.print(ii +" -----> ");
+		    	checkPrime(ii) ;
+		    }
+		    
+		    
+		   int resNumber = reverseNumber(1787946) ;
+		   
+		   System.out.println(resNumber);
+		    
+		   rightAngleTriagle(10) ;
+		   
+		    
 		    
 		 
 		 
 		 
 	}
+	  
+	  public static void checkPrime(int number) {
+		 
+		  if(number == 1 ) {
+			  System.out.println("number is not prime");
+			  return ;
+		  }
+		  int variable  = 0;
+		  
+		  for (int y = 2  ;y<number ; y++) {
+			  if(number%y == 0) {
+				  variable++ ; 
+			  }
+		  }
+		    if (variable != 0) {
+		    	System.out.println("number is not prime");
+		    }else {
+		    	System.out.println(" number is prime ");
+		    }
+	  }
+	  
+	  
 	  
 }
