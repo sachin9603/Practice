@@ -27,6 +27,9 @@ public class Student {
 	
 	// it is default cons. which is not returning anything explicitly  but internally it is returning object of same class
 	
+	
+	// in parameter you are giving 3 string 
+	
       public Student( String n , String ad  , String s) {
     	  
     	  this.address = ad  ;
@@ -35,7 +38,7 @@ public class Student {
     			  
 		
 	}
-      public Student() {};
+      public Student() {};// default constructor 
       
 	
 	

@@ -1,5 +1,7 @@
 package oopss;
 
+import oopss.Encapuslation.Employee;
+
 public class Demo {
 
 	
@@ -31,6 +33,21 @@ public class Demo {
 		s1.ProfileDispaly();
 		
 		s1.payfees();
+		
+		Student s3 = new Student() ; // default cost
+		
+		Student s5  = new Student("Rakesh" ,"Indore " , "MATH") ;
+		
+		s5.ProfileDispaly();
+		
+		
+		Employee jjj  = new Employee()  ; 
+		
+		String s   = jjj.companyName ;
+		
+		/// int paisa  = jjj.bonous ;
+		
+		
 		
 		
 		

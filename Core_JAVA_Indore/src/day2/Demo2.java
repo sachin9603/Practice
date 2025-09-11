@@ -69,8 +69,10 @@ public class Demo2 {
        // so you need to do explicitly like this 
      
      byte kls  =  (byte)uppi  ;
-		
-		
+		// left to right  ----- > widening  implicit 
+	// byte --- short  ---- int  --- long 	
+     // right to left -----> narrow --exlicit casting 
+     
 	}
 
 }
