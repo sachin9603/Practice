@@ -1,8 +1,8 @@
 package oopss.Encapuslation;
 
-// java bean  -----all varible private  , and getter setter , and constructor 
+// java bean   -----all varible private  , and getter setter , and constructor 
 public class Sttudentt {
-	
+	// Encapsulation  ----- wrapping thing into a capsule 
 	//for security reason  
 	
 	private String name ;
