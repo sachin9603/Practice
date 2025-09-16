@@ -2,13 +2,18 @@ package oopss.inheritance;
 
 public class St {
 
-	// this st class has Adress class as data type that's it is knon as has a realtion 
+	// this st class has Adrress class as data type that's why it is known as has a relation
+	
 	
 	
 	private  String name ;
 	private String email ;
 	private String sub  ;
+
+	// aggregation
 	private Address address ; // "indore  4000015  , state"  // address class is used as data type 
+	
+	Department studentDepart  ;
 	
 	
 	public Address getAddress() {
@@ -56,7 +61,7 @@ public class St {
 	
 	public static void main(String[] args) {
 		
-		St s  = new St()  ;
+		
 		
 		
 		
@@ -67,6 +72,7 @@ public class St {
 		ad.setState("MP");
 		ad.setPincode("465654");
 		
+		St s  = new St()  ;
 		s.setName("RAKA");
 		s.setEmail("Raka@gamil.com");
 		s.setSub("MATH");
