@@ -72,11 +72,13 @@ public class St {
 		s.setSub("MATH");
 		s.setAddress(ad);
 		
-		
-		
 		s.getAddress().setCity("Bhopal");
 		
 		System.out.println(s);
+		
+		
+		
+		
 		
 		
 		
