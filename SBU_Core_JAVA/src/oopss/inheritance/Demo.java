@@ -24,6 +24,16 @@ public class Demo {
 			
 			System.out.println(d);
 			
+			d.sum(78, 45);
+			d.sum(78, 78, 78);
+			d.doingJOB();
+			
+			/// poly --- morph 
+			
+			
+			// complie time  ---- overloading  ---- ek hi method k ek hi class mai changing type of and number parameter
+			//run time  --- overrideing ---  --- parent ki method child mai bhi with same method signature 
+			
 		
 	}
 

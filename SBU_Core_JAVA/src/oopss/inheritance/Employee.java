@@ -13,6 +13,9 @@ public class Employee {
 	public void takingScrum() {
 		System.out.println("doing planing ");
 	}
+	public void doingJOB() {
+		System.out.println("doing multiple task");
+	}
 
 
 	public Employee(String name, int salary, String email, String password, String userID) {

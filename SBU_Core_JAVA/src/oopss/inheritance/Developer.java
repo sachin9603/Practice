@@ -13,18 +13,38 @@ public class Developer extends Employee {
 		this.shift = shift;
 		this.bonus = bonus;
 	}
-
+     
+	@Override
+	public void doingJOB() {
+		System.out.println("doing code only");
+	}
+	
 
 	@Override
 	public String toString() {
 		return "Developer [shift=" + shift + ", bonus=" + bonus + ", name=" + name + ", salary=" + salary + ", email="
-				+ email + ", password=" + password + ", userID=" + userID + ", toString()=" + super.toString()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+				+ email + ", password=" + password + ", userID=" + userID + "]";
 	}
+
+
 
 
 	Developer() {
 		super() ; // parent defaut constructor ko access
 		
 	}
+	
+	
+	public void sum(int a , int b)  {
+		System.out.println(a+b);
+	}
+	
+	public void sum(int a , int b , int c)  {
+		System.out.println(a+b+c);
+	}
+	
+	public void sum(double a , int b)  {
+		System.out.println(a+b);
+	}
+	
 }
