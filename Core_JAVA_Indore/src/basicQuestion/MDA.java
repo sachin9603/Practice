@@ -8,6 +8,48 @@ public class MDA {
 //	             [7,8,9]  ] , 31 32 33 ----    20 21 22
 	
 	
+	
+	public void go_ZigZag() {
+		System.out.println();
+		// this is matrix by literal 
+		int[][] mat = {
+				// 0   1   2   3   4   <----- col
+			    {  1,  2,  3,  4,  5 },  // Row 0
+			    {  6,  7,  8,  9, 10 },  // Row 1
+			    { 11, 12, 13, 14, 15 },  // Row 2   // 24 13 02
+			    { 16, 17, 18, 19, 20 },  // Row 3
+			    { 21, 22, 23, 24, 25 }   // Row 4
+			};
+		
+		
+		// 0 mat.length() --- row  if row is even (last to first column )  if row is odd then first to last col 
+		
+		// col --fast 
+		// row -- slow  --- bahar vala  loop 
+		
+		// top to bottom row 
+		for ( int i =0 ; i<mat.length ; i++)	 {
+			
+			if (i%2 == 0) {
+				for (int j = mat[0].length -1 ;  j>=0 ;j--) {
+					System.out.print(mat[i][j]+" ");
+				}
+			}else {
+				for (int j = 0 ;  j<mat[0].length ;j++) {
+					System.out.print(mat[i][j]+" ");
+				}
+				}
+			}
+			
+			
+			
+		}
+		
+		
+		
+		
+
+	
 	public void dimond_Traversal() {
 		System.out.println();
 //		int [][] mat = {
@@ -144,7 +186,7 @@ public class MDA {
 		ob.traverse2DArray();
 		ob.n_traversal();
 		ob.dimond_Traversal() ;
-		
+		ob.go_ZigZag ()  ;
 		
 		
 		
