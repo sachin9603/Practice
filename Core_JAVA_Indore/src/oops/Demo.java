@@ -1,5 +1,7 @@
 package oops;
 
+import java.time.LocalDateTime;
+
 public class Demo {
 
 	
@@ -58,7 +60,24 @@ public class Demo {
 		
 		System.out.println(nLaptop);
 		
+		AccessModifierss obj  = new AccessModifierss()   ;
+		String s  = obj.username ;
+		String c = obj.carColor ;
+		String ss = obj.propertyDetails ;
 		
+		
+		
+		Flight f1  = new Flight()  ;
+		f1.setAirline("INDIGO");
+		f1.setDestination("US");
+		f1.setFare(50000.30);
+		f1.setSource("INDORE");
+		  LocalDateTime startDateTime = LocalDateTime.of(2025, 9, 26, 17, 30, 0);
+	        LocalDateTime endDateTime = LocalDateTime.of(2025, 9, 27, 10, 35, 30);
+
+	        
+	        System.out.println(f1);
+		f1.getDuration( startDateTime ,endDateTime);
 		
 		
 		

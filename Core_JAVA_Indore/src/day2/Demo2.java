@@ -1,5 +1,7 @@
 package day2;
 
+import oops.AccessModifierss;
+
 public class Demo2 {
 	
 	
@@ -72,6 +74,15 @@ public class Demo2 {
 		// left to right  ----- > widening  implicit 
 	// byte --- short  ---- int  --- long 	
      // right to left -----> narrow --exlicit casting 
+     
+     
+     AccessModifierss obj  = new AccessModifierss()   ;
+//		String s  = obj.username ;
+//		String c = obj.carColor ;
+     
+     int count  = obj.familyMember  ;
+    
+     
      
 	}
 
