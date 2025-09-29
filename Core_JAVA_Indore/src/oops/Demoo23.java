@@ -15,6 +15,22 @@ public class Demoo23 {
 		System.out.println(e1);
 		
 		
+		Employee e22  = new Employee()  ;
+		
+		//e22.enpName = "    " ;
+		
+		e22.setEnpName("Sachin");
+		e22.setEnpdeparment("CS");
+		e22.setEnpAddress("Indore");
+		
+		String name  = e22.getEnpName();
+		
+		System.out.println(name);
+		
+		
+		
+		
+		
 	}
 
 }

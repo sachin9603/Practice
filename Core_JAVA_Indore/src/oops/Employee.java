@@ -26,9 +26,7 @@ public class Employee {
 		}else {
 			this.enpName  = namee  ;
 		}
-		
-		
-	}
+		}
 
 	public String getEnpAddress() {
 		return enpAddress;
@@ -45,15 +43,16 @@ public class Employee {
 	public void setEnpdeparment(String enpdeparment) {
 		this.enpdeparment = enpdeparment;
 	}
-	public Employee() {
-		super();
-	}
 
 	public Employee(String enpName, String enpAddress, String enpdeparment) {
-		super();
+	
 		this.enpName = enpName;
 		this.enpAddress = enpAddress;
 		this.enpdeparment = enpdeparment;
+	}
+
+	public Employee() {
+		super();
 	}
 
 	@Override
@@ -61,5 +60,8 @@ public class Employee {
 		return "Employee [enpName=" + enpName + ", enpAddress=" + enpAddress + ", enpdeparment=" + enpdeparment + "]";
 	}
 	
-
+	
+	
+	
+	
 }

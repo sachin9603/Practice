@@ -63,7 +63,8 @@ public class Demo {
 		AccessModifierss obj  = new AccessModifierss()   ;
 		String s  = obj.username ;
 		String c = obj.carColor ;
-		String ss = obj.propertyDetails ;
+		String ss = obj.propertyDetails ; // it can be access easily 
+		
 		
 		
 		
@@ -80,7 +81,20 @@ public class Demo {
 		f1.getDuration( startDateTime ,endDateTime);
 		
 		
+		Book b1  = new Book()  ;
+		b1.setAuthor("Chetan Bhagat"); 
+		b1.setPrice(450.00);
+		b1.setTitle("2 state");
 		
+		
+		System.out.println(b1);
+		
+		b1.discountedPrice(10.00);
+		
+		
+		Book b2  = new Book("Power of positive thinking " , "Norman vincit" ,325)  ;
+		
+		System.out.println(b2);
 		
 	}
 }

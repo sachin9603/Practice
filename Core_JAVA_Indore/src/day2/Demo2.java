@@ -80,8 +80,11 @@ public class Demo2 {
 //		String s  = obj.username ;
 //		String c = obj.carColor ;
      
+     
+     
      int count  = obj.familyMember  ;
     
+     
      
      
 	}

@@ -15,4 +15,11 @@ public class AccessModifierss {
 	
 	protected String propertyDetails   = "10 cr " ;
 	// public protected default private 
+	
+	//public >>> protected (same package or otherpacakage(Child class))>>> default(package) >> private 
+	
+	protected void run() {
+		
+	}
+	
 }
