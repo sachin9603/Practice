@@ -14,18 +14,22 @@ public class StudentExample {
 		add1.setPincode("2456465");
 		add1.setState("MP");
 		
-		
+		System.out.println(add1.hashCode());
 		
 		Student s1  = new Student()  ;
 		s1.setStudentAddess(add1);
 		s1.setStudentName("RAKA");
 		s1.setStudentsubject("MCA");
 		
+		s1.getStudentAddess().setPincode("46546546");
+		
+		System.out.println(add1.hashCode());
+		
 		
 		System.out.println(s1);
 		
 		System.out.println(s1.getStudentAddess().getPincode());
-		
+		//System.out.println(s);
 	}
 
 }

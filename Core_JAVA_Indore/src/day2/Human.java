@@ -10,6 +10,10 @@ public class Human {
 	 int height  ;
 	 String haircolour   ;
 	 
+	
+	 
+	 
+	 
 		 
 	// some behaviour 
 	// its method is called behaviour 
