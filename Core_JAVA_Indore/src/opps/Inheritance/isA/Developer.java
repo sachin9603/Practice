@@ -4,15 +4,26 @@ package opps.Inheritance.isA;
 // Developer is a Employee 
 public class Developer extends Employee  {
 	
-	@Override
-	public String toString() {
-		return "Developer [bonus=" + bonus + ", workingMode=" + workingMode + ", Name()" + getName()
-				+ ", Department=" + getDepartment() + ", Salary=" + getSalary() + "]";
-	}
-
+	
 	int bonus  ;
 	
 	String workingMode  = "WFH";
+	
+	public void doingCoding() {
+		System.out.println("all employee are doing code ");
+	}
+
+	public Developer() {
+		System.out.println("i am developer constructor ");
+	}
+	public Developer(int bonus, String workingMode) {
+	              // parent k contructor ko access
+	
+		this()  ;
+		
+		this.bonus = bonus;
+		this.workingMode = workingMode;
+	}
 
 	public int getBonus() {
 		return bonus;
@@ -29,6 +40,12 @@ public class Developer extends Employee  {
 	public void setWorkingMode(String workingMode) {
 		this.workingMode = workingMode;
 	}
+	@Override
+	public String toString() {
+		return "Developer [bonus=" + bonus + ", workingMode=" + workingMode + ",Name = " + getName()
+				+ ", Department=" + getDepartment() + ", Salary=" + getSalary() + "]";
+	}
+
 	
 
 }

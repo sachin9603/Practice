@@ -6,12 +6,18 @@ public class Employee {
 	private String department ;
 	private int salary ;
 	
-	public Employee() {
-		super();
+	public void working() {
+		System.out.println("All employee are doing task ");
 	}
 	
+	public Employee() {
+		System.out.println("i am a employee cons");
+		
+	}
+//	this, this() , super , super() 
 	public Employee(String name, String department, int salary) {
-		super();
+		this() ;
+
 		this.name = name;
 		this.department = department;
 		this.salary = salary;

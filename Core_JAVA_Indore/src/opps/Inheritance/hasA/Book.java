@@ -1,7 +1,10 @@
 package opps.Inheritance.hasA;
 
 public class Book {
-	
+	// private varible 
+	// getter setter  
+	// toString
+	// both contructor
 	
 	private String title  ;
 	private String author  ;
@@ -12,12 +15,6 @@ public class Book {
 	@Override
 	public String toString() {
 		return "Book [title=" + title + ", author=" + author + "]";
-	}
-
-	public Book(String title, String author) {
-		super();
-		this.title = title;
-		this.author = author;
 	}
 
 	public String getTitle() {
@@ -45,6 +42,12 @@ public class Book {
 		System.out.println("lo mai aagaya, jab aapne object banaya ");
 	} ;
 	
+
+	public Book(String title, String author) {
+		super();
+		this.title = title;
+		this.author = author;
+	}
 	
 	
 	
