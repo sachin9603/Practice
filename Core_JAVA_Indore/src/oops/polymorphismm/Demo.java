@@ -63,14 +63,32 @@ public class Demo {
 		
 	}
 	
+	public void checkKaro(Student s) {
+		
+		if (s  instanceof SeniorStudent) {
+		System.out.println("ye hai senior student "); ;
+			s.deciplin();
+		}else {
+			System.out.println("ye hai real student "); ;
+			s.deciplin();
+
+		}
+	}
+	
 	public static void main(String[] args) {
 		
+		SeniorStudent s  = new SeniorStudent()  ;
+		
 		Demo d  = new Demo() ;
+		
+		d.checkKaro(s);
 		
 		 int dd  = d.cal(41, 12,12) ;
 		 double jk  =   d.cal(45.1, 45.2) ;
 		 System.out.println(jk);
 		 System.out.println(dd);
+		 
+		 
 		 
 		 
 		 

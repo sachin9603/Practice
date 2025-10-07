@@ -9,4 +9,7 @@ public class Student {
 		
 	}
 
+	public void deciplin() {
+		System.out.println("I am the real one ");
+	}
 }

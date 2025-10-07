@@ -9,6 +9,11 @@ public class SeniorStudent  extends Student {
 		
 	}
  
+    public void study_new() {
+		
+		System.out.println("Senio  new ");
+		
+	}
  
 
 
@@ -18,6 +23,8 @@ public static void main(String[] args) {
 	Student s  = new SeniorStudent()  ;
 	
 	    s.study(); 
+	    s.deciplin(); ;
+	    s.study_new() ;
 }
 
 }
