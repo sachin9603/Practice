@@ -1,9 +1,16 @@
 package opps.Inheritance.isA;
+
+import java.util.concurrent.Callable;
+
 // developer is a child of Employee 
 // developer is sub class of Employee  
 // Developer is a Employee 
-public class Developer extends Employee  {
+public class Developer extends Employee    {
 	
+// A ----B ---c
+// A ---- B, c
+// B , C --X--> A
+// 	
 	
 	int bonus  ;
 	
@@ -14,12 +21,12 @@ public class Developer extends Employee  {
 	}
 
 	public Developer() {
+		super()  ;
 		System.out.println("i am developer constructor ");
 	}
 	public Developer(int bonus, String workingMode) {
 	              // parent k contructor ko access
 	
-		this()  ;
 		
 		this.bonus = bonus;
 		this.workingMode = workingMode;

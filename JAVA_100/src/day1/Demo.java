@@ -45,7 +45,7 @@ public class Demo {
 		
 		
 		// Identifiers ---- > naam rakhne k tarike ko hi
-		// how to name to variable ,method  , class , interface this thing is called identifiers 
+		// how to name variable ,method  , class , interface this thing is called identifiers 
 		
 		
 		// class C----Capital case 

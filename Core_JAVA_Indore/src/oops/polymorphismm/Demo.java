@@ -20,7 +20,7 @@ public class Demo {
 		super();
 		this.name = name;
 	}
-	//poly morphism -----multiple form 
+	//poly morphism ----->>>multiple form 
 	
 	// when we can use one method into mutiple form that means we ar using polymorphsim 
 	
@@ -30,10 +30,12 @@ public class Demo {
 	
 	/// over riding --- we do not have change number of parameter  , two different method will be perform runtime poly morphism --- when these two classes in parent child relation and method signature will be same .
 	
+	//overloading
 	public int cal(int a ,int b) {
 		return a+b ;
 		
 	}
+	//overloading
 	public String  cal(int s) {
 		
 		return "sachin" ;
