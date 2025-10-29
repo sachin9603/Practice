@@ -5,7 +5,7 @@ public interface Employee {
 	int age  = 23 ; //public, static and final  
 	
 	
-	 abstract void saveDetails() ;
+	abstract void saveDetails() ;
 	
 	void updateDetails() ;
 	

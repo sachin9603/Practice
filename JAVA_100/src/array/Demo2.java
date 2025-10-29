@@ -14,6 +14,7 @@ public class Demo2 {
 	   // iteration ---- {12,2,121,54,6} for , while , do while for each loop 
 	   
 	   // 
+	 
 	   
 	   
 	   int len = ages.length ; // 5
@@ -49,13 +50,37 @@ public class Demo2 {
 	   }while(jj<len) ;
 	   
 	   
-	   
-	   for(int kk : ages ) {
+	  for(int kk : ages ) {
 		   System.out.println(kk);
 	   }
 	   
+	  
+	  
+	  Student s1 = new Student()  ;
+	  s1.student_name = "Ravi" ;
+	  s1.student_rollnumber = 789879 ;
+	  
+	  Student s2 = new Student()  ;
+	  s2.student_name = "Kelash" ;
+	  s2.student_rollnumber = 7879 ;
+	  
+	  
+	  Student [] sarray  = new Student[2];
+	  
+	  sarray[0] = s1;
+	  sarray[1] = s2 ;
+	  
+	  
+	  for(Student st : sarray) {
+		  System.out.println(st);
+	  }
+	  
+	  // 8 4 6 2 5 9
+	  
+	   int[] pp  = { 8, 4 ,6 ,2, 5, 9} ;
 	   
-	   
+	   // 4 5 6 8 9 5
+	  
 		
 		
 	}

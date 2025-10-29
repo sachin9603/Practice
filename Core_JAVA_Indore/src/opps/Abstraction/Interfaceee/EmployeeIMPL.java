@@ -1,7 +1,12 @@
 package opps.Abstraction.Interfaceee;
 
-public class EmployeeIMPL implements Employee {
+import java.io.Serializable;
 
+public class EmployeeIMPL implements Employee, Serializable {
+
+	String g  = "sac" ;
+	
+	
 	@Override
 	public void saveDetails() {
 		// TODO Auto-generated method stub
