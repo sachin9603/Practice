@@ -10,10 +10,12 @@ public class Human {
 	
 	// contructor 
 	
-	/// it is cons. and it will no return any thing explicitly 
+	/// it is cons. and it will not return any thing explicitly 
 	// but implicitly it is returning object 
 	// there will be always a default contructor 
-
+ 
+	
+	
 	public Human() {
 	System.out.println("yes i am getting called ");	
 	}

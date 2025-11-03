@@ -1,5 +1,7 @@
 package Java_statement;
 
+import OOPSS.Employee;
+
 public class Demo {
 	
 	
@@ -166,6 +168,11 @@ public class Demo {
 			System.out.println();
 		}
 		
+		Employee e1 = new Employee()  ;
+		//e1.empAddress = "indore" ;
+ //	e1.empName = "RAKA" ;
+		
+		e1.empAddress = "indore " ;
 		
 		
 		
