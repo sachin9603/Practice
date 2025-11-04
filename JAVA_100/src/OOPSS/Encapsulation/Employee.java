@@ -1,5 +1,7 @@
 package OOPSS.Encapsulation;
 
+// Employee has a Address 
+// this is example of aggregation 
 public class Employee {
 	
     private String empName  ;
