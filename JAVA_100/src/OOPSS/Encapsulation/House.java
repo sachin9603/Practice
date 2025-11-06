@@ -5,6 +5,7 @@ public class House {
 	
 	private Room room ;
 	
+	// that is the example of composition 
 	
 	public House(int roomNumber) {
 		room = new Room(roomNumber) ;
