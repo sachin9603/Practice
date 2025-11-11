@@ -37,7 +37,7 @@ public class Demo {
 		}
 		
 		
-		switch(day) {
+		switch(day) {// int, string, char, enum 
 		
 		case 1: 
 			System.out.println("mon");

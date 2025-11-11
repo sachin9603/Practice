@@ -1,6 +1,7 @@
 package Stubs;
 
 import static org.junit.Assert.assertTrue;
+import Business.Student;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -27,6 +28,10 @@ public class TodoSTestingWtihMock {
 	@Mock
 	TodosService  MockC ;
 	
+	@Mock
+	Student st  ;
+	
+	
 	
 	@InjectMocks
 	TodoBusinessImpl todoBusinessImpl ;
@@ -47,7 +52,7 @@ public class TodoSTestingWtihMock {
 		
 	//	TodosService  MockC  = mock(TodosService.class) ;
 		
- 	when(MockC.retriveToDosList("Sachin")).thenReturn(Arrays.asList("Collection pp  " ,"revise Mokito " )) ;
+ 	when(MockC.retriveToDosList("Sachin")).thenReturn(Arrays.asList("collection pp  " ,"revise Mokito " )) ;
 //		when(MockC.retriveToDosList("Nulll")).thenReturn(Arrays.asList(" pp  " ,"revise  " )) ;
 //		
 //       System.out.println("Sachin ");
@@ -55,10 +60,11 @@ public class TodoSTestingWtihMock {
 		
 		//TodoBusinessImpl  B  = new TodoBusinessImpl(MockC) ;
 		
-		List<String> ss  = todoBusinessImpl.retriveTodosRelatedToCollection("Sachin" ) ;
-		
-		Assert.assertEquals( 1,1 );
-		
+		List<String> ss = todoBusinessImpl.retriveTodosRelatedToCollection("Sachin" ) ;
+		System.out.println(ss);
+		System.out.println(ss.size());
+		Assert.assertEquals("wroking", 1, ss.size());
+	
 		
 	}
 	
@@ -72,6 +78,7 @@ public class TodoSTestingWtihMock {
 		List  listMock  = mock(List.class) ;
 		
 		when(listMock.size()).thenReturn(2).thenReturn(3).thenReturn(4) ;
+		when(listMock.get(0)).thenReturn(st);
 		
 		
 		Assert.assertEquals( 2, listMock.size());

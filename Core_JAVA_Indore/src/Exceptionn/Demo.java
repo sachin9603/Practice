@@ -5,11 +5,11 @@ public class Demo {
 	
 	//, an exception is an event that occurs during the execution of a program 
 	//that disrupts the normal flow of instructions.
-	// Throwable -------Exception  --- these can be handle 
+	// Throwable ------- Exception  --- these can be handle 
 	
-	//       --------------Error  --- which can not be handle 
+	//       --------------Error --- which can not be handle 
 	//Exception ----- checked exception  ---jo code likhte vakt hi pta lag jaaye ki ye like exception degi
-	       ///  ------ compile time exception ------SQL exception , IOException.... your custom exception 
+	       ///  ------ compile time exception ------ SQL exception , IOException.... your custom exception 
 	
 	//          -------- unchecked exception 
 	// jo code likhe baad pata lagewga ki ye line mai issue hai use unchecked bolenge 
