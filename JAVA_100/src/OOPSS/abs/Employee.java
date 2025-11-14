@@ -7,7 +7,7 @@ public interface Employee {
 	
 	/// all method will be abstract
 	// Java 8, we can have default and static methods in an interface.
-	public void saveEmployee() ;
+	 void saveEmployee() ;
 	
 	// after java 8
 	// this method can be overridden 

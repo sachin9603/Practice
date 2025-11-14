@@ -14,10 +14,11 @@ public class Custommm {
 	public static void main(String[] args) {
 		Custommm obj = new Custommm() ;
 		
+		
 		try {
 			
+		
 			obj.checkAge(12);
-			
 		}catch (AgeException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,6 +1,13 @@
 package Basic;
 
-public class Demo2 {
+public class Demo2 extends String_discusstion {
+	
+	///this method is final you can't override 
+	
+//	public final void  run()  {
+//		System.out.println(" final running is 4:28 sec for 1600");
+//	}
+	
 	
 	
 	public void bubble()  {
