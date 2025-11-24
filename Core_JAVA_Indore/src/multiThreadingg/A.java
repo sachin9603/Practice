@@ -1,7 +1,7 @@
 package multiThreadingg;
 //now you can create thread by two ways 
 	// by implementing Runnable 
-	// by extends Thread 
+	// by extends Thread -------
 
 public class A implements Runnable  {
 
