@@ -9,6 +9,7 @@ public class Demo {
 	// exception --- you can handle ----- Runntime(Unchecked exception)
 	
 	/// compile time exception (Checked exception)
+	
 	public void run() {
 		System.out.println("I am running ");
 		
