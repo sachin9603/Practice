@@ -4,18 +4,34 @@ public class Demo {
 	
 	public static void main(String[] args) {
 		
-		A a = new A() ;
-		Thread t1 = new Thread(a)  ;
-		//a.run(); /// but if you are calling run method directly it will act as normal method
-		t1.start(); // this starts method will create new Thread and run run() method 
-		
 		
 	     B b  = new B()  ;
 	     b.start();
-		
-		for ( int i=0 ;i<50 ;i++) {
-			System.out.println("main thread " +i);
+	     
+	     /// Time 
+	     // conditionally 
+	     // unconditionally
+	     
+//	     try {
+//			Thread.sleep(1000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+	     
+	     
+	     try {
+			b.join();// jab tak b ka kaam pura complete nahi ho yaa run() method complete nahi hoti 
+			// tab tak ---- after run() method complete this main method will work 
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+	     
+	     
+	     System.out.println(b.summ);
+		
+		
 		
 	}
 

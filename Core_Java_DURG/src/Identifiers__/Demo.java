@@ -8,10 +8,7 @@ public class Demo {
 	public static void main(String[] args) {
 		
 		// array of string -----
-		
-		for (String s :args) {
-			System.out.println(s);
-		}
+	
 	     
 		// syso+ctrl+space
    System.out.println("Welcome to day 1 of core java IBM Skills Build training");
@@ -24,6 +21,9 @@ public class Demo {
 		
    String name = "Sachin" ;
    Integer age = 26  ;
+   
+   age = 45 ;
+   
    
    
 		
@@ -66,6 +66,9 @@ public class Demo {
 	// naam  likhe k niyam ko identifiers 
 	
 	int sonuKiAge =  18  ;
+	
+
+	
 	//  Variable k liye niyam
 	//  capital se start nahi kar sakte 
 	//  no special character except  _ $
@@ -79,6 +82,45 @@ public class Demo {
 	
 	// camelcase --- sonuKiAge
 	// pascal case ----- it used for class only 
+	
+	
+	
+	int op  = 89  ;
+	
+	public void changeVarible()  {
+		
+	}
+	
+	// literal 
+	byte  l = 56  ; 
+	int  pp= 45645456  ;
+	
+	short p =  89  ;
+	
+	long i = 98797 ;
+	
+	float ui = 7898.55f ;
+	double q = 784984984.45 ;
+	
+	boolean k = true ;
+	String s = "564654654" ;
+
+	
+	
+	public void operation() {
+		
+		int a = 45 ;
+		int b  = 8 ;
+		System.out.println(a%b);
+		
+	}
+	
+	
+
+	
+	
+	
+	
 	
 	
 	

@@ -1,6 +1,34 @@
 package ST;
-abstract class A {
-A() {
-    System.out.println("Abstract class constructor");
+interface A {
+    void show();
 }
+
+interface B {
+    void show();
+}
+
+class C implements A, B {
+    public void show() {
+        System.out.println("Resolved using interfaces");
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
